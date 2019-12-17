@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1576402624">
-  <File Type="PA-TCL" Name="block_image.tcl"/>
-  <File Type="REPORTS-TCL" Name="block_image_reports.tcl"/>
-  <File Type="RDS-RDS" Name="block_image.vds"/>
-  <File Type="RDS-UTIL" Name="block_image_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="block_image_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="block_image.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1576587302">
+  <File Type="PA-TCL" Name="uart_rxd.tcl"/>
+  <File Type="REPORTS-TCL" Name="uart_rxd_reports.tcl"/>
+  <File Type="RDS-RDS" Name="uart_rxd.vds"/>
+  <File Type="RDS-UTIL" Name="uart_rxd_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="uart_rxd_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="uart_rxd.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/administrator/Documents/Tencent Files/1033690636/FileRecv/uart_txd.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Documents/Tencent Files/1033690636/FileRecv/uart_txd.v"/>
+        <Attr Name="ImportTime" Val="1576586998"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/ip/block_ram/block_ram.xci">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../project_1/project_1.srcs/sources_1/ip/block_ram/block_ram.xci"/>
-        <Attr Name="ImportTime" Val="1576403992"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../project_1/project_1.srcs/sources_1/ip/block_ram/block_ram.xci"/>
+        <Attr Name="ImportTime" Val="1576391637"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -19,7 +29,8 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/Desktop/clock_div.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/clock_div.v"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../Desktop/clock_div.v"/>
         <Attr Name="ImportTime" Val="1576391155"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -28,7 +39,8 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/sync.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../project_1/project_1.srcs/sources_1/new/sync.v"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../project_1/project_1.srcs/sources_1/new/sync.v"/>
         <Attr Name="ImportTime" Val="1576392771"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -37,7 +49,8 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/block_image.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../project_1/project_1.srcs/sources_1/new/block_image.v"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../project_1/project_1.srcs/sources_1/new/block_image.v"/>
         <Attr Name="ImportTime" Val="1576402598"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -47,7 +60,7 @@
     <File Path="$PSRCDIR/sources_1/imports/Desktop/colorlump.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/colorlump.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../Desktop/colorlump.v"/>
         <Attr Name="ImportTime" Val="1576392924"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -56,7 +69,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/Desktop/project_tips/vga_files/parrot.png.coe">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/project_tips/vga_files/parrot.png.coe"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../Desktop/project_tips/vga_files/parrot.png.coe"/>
         <Attr Name="ImportTime" Val="1575294605"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -65,37 +78,72 @@
     <File Path="$PSRCDIR/sources_1/ip/sdram/sdram.xci">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../project_1/project_1.srcs/sources_1/ip/sdram/sdram.xci"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../project_1/project_1.srcs/sources_1/ip/sdram/sdram.xci"/>
         <Attr Name="ImportTime" Val="1576401838"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/administrator/Downloads/simple_VGA-master/simple_VGA/archive_project_summary.txt">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Downloads/simple_VGA-master/simple_VGA/archive_project_summary.txt"/>
+        <Attr Name="ImportTime" Val="1576423567"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/ip/sdram/mig_a.prj">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../project_1/project_1.srcs/sources_1/ip/sdram/mig_a.prj"/>
-        <Attr Name="ImportTime" Val="1576401827"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Downloads/simple_VGA-master/simple_VGA/project_1.srcs/sources_1/ip/sdram/mig_a.prj"/>
+        <Attr Name="ImportTime" Val="1576423567"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="ScopedToCell" Val="sdram"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/UART_SDRAM.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Downloads/simple_VGA-master/simple_VGA/project_1.srcs/sources_1/new/UART_SDRAM.v"/>
+        <Attr Name="ImportTime" Val="1576590574"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/clk_400/clk_400.xci">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Downloads/simple_VGA-master/simple_VGA/project_1.srcs/sources_1/ip/clk_400/clk_400.xci"/>
+        <Attr Name="ImportTime" Val="1576581421"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="block_image"/>
+      <Option Name="TopModule" Val="uart_rxd"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/Desktop/constr_1.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/constr_1.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../Desktop/constr_1.xdc"/>
         <Attr Name="ImportTime" Val="1576393214"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/constrs_1/new/uart0.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/new/uart0.xdc"/>
+        <Attr Name="ImportTime" Val="1576587298"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/uart0.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>

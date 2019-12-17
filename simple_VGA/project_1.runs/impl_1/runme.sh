@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/users/administrator/project_1/project_1.runs/impl_1'
+HD_PWD='C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .write_bitstream.begin.rst
-EAStep vivado -log block_image.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source block_image.tcl -notrace
+EAStep vivado -log uart_rxd.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source uart_rxd.tcl -notrace
 
 

@@ -1,6 +1,6 @@
 
 *** Running vivado
-    with args -log block_image.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source block_image.tcl
+    with args -log uart_rxd.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_rxd.tcl
 
 
 ****** Vivado v2017.4 (64-bit)
@@ -8,222 +8,27 @@
   **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 
-source block_image.tcl -notrace
-Command: synth_design -top block_image -part xc7a100tfgg484-1
+source uart_rxd.tcl -notrace
+Command: synth_design -top uart_rxd -part xc7a100tfgg484-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 36844 
+INFO: Helper process launched with PID 3188 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 336.996 ; gain = 96.215
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 327.594 ; gain = 94.762
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'block_image' [C:/users/administrator/project_1/project_1.srcs/sources_1/new/block_image.v:4]
-	Parameter h_visible bound to: 10'b1010000000 
-	Parameter h_front bound to: 10'b0000010000 
-	Parameter h_sync_pulse bound to: 10'b0001100000 
-	Parameter h_back bound to: 10'b0000110000 
-	Parameter h_total bound to: 10'b1100100000 
-	Parameter v_visible bound to: 10'b0111100000 
-	Parameter v_front bound to: 10'b0000001010 
-	Parameter v_sync_pulse bound to: 10'b0000000010 
-	Parameter v_back bound to: 10'b0000100001 
-	Parameter v_total bound to: 10'b1000001101 
-INFO: [Synth 8-638] synthesizing module 'clock_div' [C:/users/administrator/Desktop/clock_div.v:2]
-	Parameter period bound to: 4 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'clock_div' (1#1) [C:/users/administrator/Desktop/clock_div.v:2]
-INFO: [Synth 8-638] synthesizing module 'sync' [C:/users/administrator/project_1/project_1.srcs/sources_1/new/sync.v:3]
-	Parameter h_visible bound to: 10'b1010000000 
-	Parameter h_front bound to: 10'b0000010000 
-	Parameter h_sync_pulse bound to: 10'b0001100000 
-	Parameter h_back bound to: 10'b0000110000 
-	Parameter h_total bound to: 10'b1100100000 
-	Parameter v_visible bound to: 10'b0111100000 
-	Parameter v_front bound to: 10'b0000001010 
-	Parameter v_sync_pulse bound to: 10'b0000000010 
-	Parameter v_back bound to: 10'b0000100001 
-	Parameter v_total bound to: 10'b1000001101 
-INFO: [Synth 8-256] done synthesizing module 'sync' (2#1) [C:/users/administrator/project_1/project_1.srcs/sources_1/new/sync.v:3]
-INFO: [Synth 8-638] synthesizing module 'block_ram' [c:/users/administrator/project_1/project_1.srcs/sources_1/ip/block_ram/synth/block_ram.vhd:70]
-	Parameter C_FAMILY bound to: artix7 - type: string 
-	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
-	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
-	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
-	Parameter C_AXI_TYPE bound to: 1 - type: integer 
-	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
-	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
-	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
-	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
-	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
-	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
-	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
-	Parameter C_ALGORITHM bound to: 1 - type: integer 
-	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
-	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
-	Parameter C_INIT_FILE_NAME bound to: block_ram.mif - type: string 
-	Parameter C_INIT_FILE bound to: block_ram.mem - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
-	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
-	Parameter C_HAS_RSTA bound to: 0 - type: integer 
-	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
-	Parameter C_RSTRAM_A bound to: 0 - type: integer 
-	Parameter C_INITA_VAL bound to: 0 - type: string 
-	Parameter C_HAS_ENA bound to: 1 - type: integer 
-	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
-	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
-	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
-	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
-	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
-	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 200000 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 200000 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 18 - type: integer 
-	Parameter C_HAS_RSTB bound to: 0 - type: integer 
-	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
-	Parameter C_RSTRAM_B bound to: 0 - type: integer 
-	Parameter C_INITB_VAL bound to: 0 - type: string 
-	Parameter C_HAS_ENB bound to: 0 - type: integer 
-	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
-	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
-	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
-	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
-	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_B bound to: 200000 - type: integer 
-	Parameter C_READ_DEPTH_B bound to: 200000 - type: integer 
-	Parameter C_ADDRB_WIDTH bound to: 18 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
-	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
-	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
-	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
-	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
-	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
-	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
-	Parameter C_USE_ECC bound to: 0 - type: integer 
-	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
-	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
-	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
-	Parameter C_COMMON_CLK bound to: 0 - type: integer 
-	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
-	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
-	Parameter C_USE_URAM bound to: 0 - type: integer 
-	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
-	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
-	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
-	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
-	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
-	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
-	Parameter C_COUNT_36K_BRAM bound to: 67 - type: string 
-	Parameter C_COUNT_18K_BRAM bound to: 2 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     8.213574 mW - type: string 
-INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_1' declared at 'c:/users/administrator/project_1/project_1.srcs/sources_1/ip/block_ram/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195313' bound to instance 'U0' of component 'blk_mem_gen_v8_4_1' [c:/users/administrator/project_1/project_1.srcs/sources_1/ip/block_ram/synth/block_ram.vhd:234]
-INFO: [Synth 8-256] done synthesizing module 'block_ram' (13#1) [c:/users/administrator/project_1/project_1.srcs/sources_1/ip/block_ram/synth/block_ram.vhd:70]
-INFO: [Synth 8-256] done synthesizing module 'block_image' (14#1) [C:/users/administrator/project_1/project_1.srcs/sources_1/new/block_image.v:4]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MUX_RST[0]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MEM_LAT_RST
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MEM_REG_RST
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MUX_REGCE[0]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MEM_REGCE
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port WE
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[17]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[16]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[15]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[14]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[13]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[12]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[11]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[10]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[9]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[8]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[7]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[6]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[5]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[4]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[3]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[2]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[1]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[0]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[767]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[766]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[765]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[764]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[763]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[762]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[761]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[760]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[759]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[758]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[757]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[756]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[755]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[754]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[753]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[752]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[751]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[750]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[749]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[748]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[747]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[746]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[745]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[744]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[743]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[742]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[741]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[740]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[739]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[738]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[737]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[736]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[735]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[734]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[733]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[732]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[731]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[730]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[729]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[728]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[727]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[726]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[725]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[724]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[723]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[722]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[721]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[720]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[719]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[718]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[717]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[716]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[715]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[714]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[713]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[712]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[711]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[710]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[709]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[708]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[707]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[706]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[705]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[704]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[703]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[702]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[701]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[700]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[699]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[698]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[697]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[696]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[695]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[694]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[693]
-WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[692]
-INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-638] synthesizing module 'uart_rxd' [C:/users/administrator/Documents/Tencent Files/1033690636/FileRecv/uart_txd.v:3]
+	Parameter C_BPS9600 bound to: 10416 - type: integer 
+	Parameter C_BPS19200 bound to: 5208 - type: integer 
+	Parameter C_BPS38400 bound to: 2604 - type: integer 
+	Parameter C_BPS57600 bound to: 1736 - type: integer 
+	Parameter C_BPS115200 bound to: 868 - type: integer 
+	Parameter C_BPS_SELECT bound to: 868 - type: integer 
+WARNING: [Synth 8-5788] Register O_para_data_reg in module uart_rxd is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/users/administrator/Documents/Tencent Files/1033690636/FileRecv/uart_txd.v:161]
+INFO: [Synth 8-256] done synthesizing module 'uart_rxd' (1#1) [C:/users/administrator/Documents/Tencent Files/1033690636/FileRecv/uart_txd.v:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:03:44 ; elapsed = 00:03:53 . Memory (MB): peak = 808.660 ; gain = 567.879
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 377.359 ; gain = 144.527
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -233,50 +38,160 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:45 ; elapsed = 00:03:54 . Memory (MB): peak = 808.660 ; gain = 567.879
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 377.359 ; gain = 144.527
 ---------------------------------------------------------------------------------
-INFO: [Netlist 29-17] Analyzing 69 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Device 21-403] Loading part xc7a100tfgg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/users/administrator/Desktop/constr_1.xdc]
-Finished Parsing XDC File [C:/users/administrator/Desktop/constr_1.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/users/administrator/Desktop/constr_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/block_image_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/block_image_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/users/administrator/project_1/project_1.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/users/administrator/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc]
+WARNING: [Vivado 12-584] No ports matched 'b_vga[3]'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b_vga[2]'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b_vga[1]'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b_vga[0]'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g_vga[3]'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g_vga[2]'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g_vga[1]'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g_vga[0]'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'r_vga[3]'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'r_vga[2]'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'r_vga[1]'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'r_vga[0]'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'h_sync'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rst_n'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'v_sync'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'r_vga[0]'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'r_vga[1]'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'r_vga[2]'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'r_vga[3]'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g_vga[0]'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g_vga[1]'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g_vga[2]'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g_vga[3]'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b_vga[0]'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b_vga[1]'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b_vga[2]'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b_vga[3]'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'h_sync'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rst_n'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'v_sync'. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc]
+Parsing XDC File [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/new/uart0.xdc]
+Finished Parsing XDC File [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/new/uart0.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/new/uart0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/uart_rxd_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/uart_rxd_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 826.461 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 711.352 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:03:59 ; elapsed = 00:04:12 . Memory (MB): peak = 826.461 ; gain = 585.680
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 711.352 ; gain = 478.520
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tfgg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:03:59 ; elapsed = 00:04:12 . Memory (MB): peak = 826.461 ; gain = 585.680
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 711.352 ; gain = 478.520
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for ram. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:03:59 ; elapsed = 00:04:12 . Memory (MB): peak = 826.461 ; gain = 585.680
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 711.352 ; gain = 478.520
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5544] ROM "clk_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5546] ROM "v_cnt" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element h_cnt_reg was removed.  [C:/users/administrator/project_1/project_1.srcs/sources_1/new/sync.v:24]
-WARNING: [Synth 8-6014] Unused sequential element v_cnt_reg was removed.  [C:/users/administrator/project_1/project_1.srcs/sources_1/new/sync.v:37]
+INFO: [Synth 8-802] inferred FSM for state register 'R_state_reg' in module 'uart_rxd'
+INFO: [Synth 8-5546] ROM "I_bps_rx_clk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "O_para_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R_para_data_reg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "O_rx_done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0000 |                             0000
+                 iSTATE0 |                             0001 |                             0001
+                 iSTATE1 |                             0010 |                             0010
+                 iSTATE2 |                             0011 |                             0011
+                 iSTATE3 |                             0100 |                             0100
+                 iSTATE4 |                             0101 |                             0101
+                 iSTATE5 |                             0110 |                             0110
+                 iSTATE6 |                             0111 |                             0111
+                 iSTATE7 |                             1000 |                             1000
+                 iSTATE8 |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'R_state_reg' using encoding 'sequential' in module 'uart_rxd'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:04:02 ; elapsed = 00:04:15 . Memory (MB): peak = 826.461 ; gain = 585.680
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 711.352 ; gain = 478.520
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -289,21 +204,18 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     18 Bit       Adders := 1     
-	   2 Input     10 Bit       Adders := 2     
-	   2 Input      4 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
 +---Registers : 
-	               18 Bit    Registers := 1     
-	               10 Bit    Registers := 2     
-	                6 Bit    Registers := 3     
-	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
 +---Muxes : 
-	   2 Input     18 Bit        Muxes := 2     
-	   2 Input     10 Bit        Muxes := 2     
-	   2 Input      4 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 130   
-	   3 Input      1 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	  10 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 3     
+	  12 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	  10 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -311,46 +223,21 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module block_image 
+Module uart_rxd 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     18 Bit       Adders := 1     
-+---Muxes : 
-	   2 Input     18 Bit        Muxes := 2     
-Module clock_div 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      4 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
 +---Registers : 
-	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
 +---Muxes : 
-	   2 Input      4 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
-Module sync 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     10 Bit       Adders := 2     
-+---Registers : 
-	               10 Bit    Registers := 2     
-+---Muxes : 
-	   2 Input     10 Bit        Muxes := 2     
-	   3 Input      1 Bit        Muxes := 1     
-Module bindec 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 64    
-Module blk_mem_gen_mux 
-Detailed RTL Component Info : 
-+---Registers : 
-	               18 Bit    Registers := 1     
-	                6 Bit    Registers := 2     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 1     
-Module blk_mem_gen_mux__parameterized0 
-Detailed RTL Component Info : 
-+---Registers : 
-	                6 Bit    Registers := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	  10 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 3     
+	  12 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	  10 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -366,30 +253,9 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element s/h_cnt_reg was removed.  [C:/users/administrator/project_1/project_1.srcs/sources_1/new/sync.v:24]
-WARNING: [Synth 8-6014] Unused sequential element s/v_cnt_reg was removed.  [C:/users/administrator/project_1/project_1.srcs/sources_1/new/sync.v:37]
-DSP Report: Generating DSP addra3, operation Mode is: A*(B:0x10e).
-DSP Report: operator addra3 is absorbed into DSP addra3.
-DSP Report: Generating DSP addra0, operation Mode is: (PCIN or 0)+((A:0x0):B or 0)+((C:0xffffffffff70) or 0).
-DSP Report: operator addra0 is absorbed into DSP addra0.
+INFO: [Synth 8-5546] ROM "I_bps_rx_clk" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:04 ; elapsed = 00:04:17 . Memory (MB): peak = 826.461 ; gain = 585.680
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP and Shift Register Reporting
----------------------------------------------------------------------------------
-
-DSP: Preliminary Mapping  Report (see note below)
-+------------+--------------------------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name | DSP Mapping                                            | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+------------+--------------------------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|block_image | A*(B:0x10e)                                            | 18     | 9      | -      | -      | 27     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|block_image | (PCIN or 0)+((A:0x0):B or 0)+((C:0xffffffffff70) or 0) | 30     | 10     | 9      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
-+------------+--------------------------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-
-Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP and Shift Register Reporting
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 711.352 ; gain = 478.520
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -401,13 +267,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:20 ; elapsed = 00:04:34 . Memory (MB): peak = 915.391 ; gain = 674.609
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:53 . Memory (MB): peak = 711.352 ; gain = 478.520
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:04:20 ; elapsed = 00:04:34 . Memory (MB): peak = 916.047 ; gain = 675.266
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:53 . Memory (MB): peak = 711.352 ; gain = 478.520
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -418,9 +284,8 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/users/administrator/project_1/project_1.srcs/sources_1/new/sync.v:24]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:04:20 ; elapsed = 00:04:34 . Memory (MB): peak = 936.398 ; gain = 695.617
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:53 . Memory (MB): peak = 722.496 ; gain = 489.664
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -444,7 +309,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:04:21 ; elapsed = 00:04:35 . Memory (MB): peak = 936.398 ; gain = 695.617
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:55 . Memory (MB): peak = 722.496 ; gain = 489.664
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -457,7 +322,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:04:21 ; elapsed = 00:04:35 . Memory (MB): peak = 936.398 ; gain = 695.617
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:55 . Memory (MB): peak = 722.496 ; gain = 489.664
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -469,25 +334,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:21 ; elapsed = 00:04:36 . Memory (MB): peak = 936.398 ; gain = 695.617
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:55 . Memory (MB): peak = 722.496 ; gain = 489.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:04:21 ; elapsed = 00:04:36 . Memory (MB): peak = 936.398 ; gain = 695.617
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:55 . Memory (MB): peak = 722.496 ; gain = 489.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:04:21 ; elapsed = 00:04:36 . Memory (MB): peak = 936.398 ; gain = 695.617
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:55 . Memory (MB): peak = 722.496 ; gain = 489.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:04:21 ; elapsed = 00:04:36 . Memory (MB): peak = 936.398 ; gain = 695.617
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:55 . Memory (MB): peak = 722.496 ; gain = 489.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -500,211 +365,37 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+------------+------+
-|      |Cell        |Count |
-+------+------------+------+
-|1     |BUFG        |     1|
-|2     |DSP48E1     |     1|
-|3     |DSP48E1_1   |     1|
-|4     |LUT1        |     3|
-|5     |LUT2        |    26|
-|6     |LUT3        |    15|
-|7     |LUT4        |     9|
-|8     |LUT5        |    75|
-|9     |LUT6        |   150|
-|10    |MUXF7       |    54|
-|11    |MUXF8       |    27|
-|12    |RAMB18E1    |     1|
-|13    |RAMB18E1_1  |     1|
-|14    |RAMB36E1    |     1|
-|15    |RAMB36E1_1  |     1|
-|16    |RAMB36E1_10 |     1|
-|17    |RAMB36E1_11 |     1|
-|18    |RAMB36E1_12 |     1|
-|19    |RAMB36E1_13 |     1|
-|20    |RAMB36E1_14 |     1|
-|21    |RAMB36E1_15 |     1|
-|22    |RAMB36E1_16 |     1|
-|23    |RAMB36E1_17 |     1|
-|24    |RAMB36E1_18 |     1|
-|25    |RAMB36E1_19 |     1|
-|26    |RAMB36E1_2  |     1|
-|27    |RAMB36E1_20 |     1|
-|28    |RAMB36E1_21 |     1|
-|29    |RAMB36E1_22 |     1|
-|30    |RAMB36E1_23 |     1|
-|31    |RAMB36E1_24 |     1|
-|32    |RAMB36E1_25 |     1|
-|33    |RAMB36E1_26 |     1|
-|34    |RAMB36E1_27 |     1|
-|35    |RAMB36E1_28 |     1|
-|36    |RAMB36E1_29 |     1|
-|37    |RAMB36E1_3  |     1|
-|38    |RAMB36E1_30 |     1|
-|39    |RAMB36E1_31 |     1|
-|40    |RAMB36E1_32 |     1|
-|41    |RAMB36E1_33 |     1|
-|42    |RAMB36E1_34 |     1|
-|43    |RAMB36E1_35 |     1|
-|44    |RAMB36E1_36 |     1|
-|45    |RAMB36E1_37 |     1|
-|46    |RAMB36E1_38 |     1|
-|47    |RAMB36E1_39 |     1|
-|48    |RAMB36E1_4  |     3|
-|49    |RAMB36E1_40 |    23|
-|50    |RAMB36E1_5  |     3|
-|51    |RAMB36E1_6  |     1|
-|52    |RAMB36E1_7  |     1|
-|53    |RAMB36E1_8  |     1|
-|54    |RAMB36E1_9  |     1|
-|55    |FDCE        |    25|
-|56    |FDRE        |    12|
-|57    |IBUF        |     2|
-|58    |OBUF        |    14|
-+------+------------+------+
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     4|
+|3     |LUT1   |     1|
+|4     |LUT2   |    16|
+|5     |LUT3   |     3|
+|6     |LUT4   |    10|
+|7     |LUT5   |    11|
+|8     |LUT6   |    13|
+|9     |FDCE   |    32|
+|10    |FDRE   |     8|
+|11    |IBUF   |     4|
+|12    |OBUF   |     9|
++------+-------+------+
 
 Report Instance Areas: 
-+------+-----------------------------------------------+-----------------------------------------------+------+
-|      |Instance                                       |Module                                         |Cells |
-+------+-----------------------------------------------+-----------------------------------------------+------+
-|1     |top                                            |                                               |   484|
-|2     |  ram                                          |block_ram                                      |   349|
-|3     |    U0                                         |blk_mem_gen_v8_4_1                             |   349|
-|4     |      inst_blk_mem_gen                         |blk_mem_gen_v8_4_1_synth                       |   349|
-|5     |        \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top                                |   349|
-|6     |          \valid.cstr                          |blk_mem_gen_generic_cstr                       |   349|
-|7     |            \has_mux_a.A                       |blk_mem_gen_mux                                |   226|
-|8     |            \ramloop[0].ram.r                  |blk_mem_gen_prim_width                         |     2|
-|9     |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init                  |     2|
-|10    |            \ramloop[10].ram.r                 |blk_mem_gen_prim_width__parameterized9         |     2|
-|11    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized9  |     2|
-|12    |            \ramloop[11].ram.r                 |blk_mem_gen_prim_width__parameterized10        |     2|
-|13    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized10 |     2|
-|14    |            \ramloop[12].ram.r                 |blk_mem_gen_prim_width__parameterized11        |     2|
-|15    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized11 |     2|
-|16    |            \ramloop[13].ram.r                 |blk_mem_gen_prim_width__parameterized12        |     2|
-|17    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized12 |     2|
-|18    |            \ramloop[14].ram.r                 |blk_mem_gen_prim_width__parameterized13        |     2|
-|19    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized13 |     2|
-|20    |            \ramloop[15].ram.r                 |blk_mem_gen_prim_width__parameterized14        |     2|
-|21    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized14 |     2|
-|22    |            \ramloop[16].ram.r                 |blk_mem_gen_prim_width__parameterized15        |     2|
-|23    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized15 |     2|
-|24    |            \ramloop[17].ram.r                 |blk_mem_gen_prim_width__parameterized16        |     2|
-|25    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized16 |     2|
-|26    |            \ramloop[18].ram.r                 |blk_mem_gen_prim_width__parameterized17        |     2|
-|27    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized17 |     2|
-|28    |            \ramloop[19].ram.r                 |blk_mem_gen_prim_width__parameterized18        |     2|
-|29    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized18 |     2|
-|30    |            \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized0         |     2|
-|31    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized0  |     2|
-|32    |            \ramloop[20].ram.r                 |blk_mem_gen_prim_width__parameterized19        |     2|
-|33    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized19 |     2|
-|34    |            \ramloop[21].ram.r                 |blk_mem_gen_prim_width__parameterized20        |     2|
-|35    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized20 |     2|
-|36    |            \ramloop[22].ram.r                 |blk_mem_gen_prim_width__parameterized21        |     2|
-|37    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized21 |     2|
-|38    |            \ramloop[23].ram.r                 |blk_mem_gen_prim_width__parameterized22        |     2|
-|39    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized22 |     2|
-|40    |            \ramloop[24].ram.r                 |blk_mem_gen_prim_width__parameterized23        |     2|
-|41    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized23 |     2|
-|42    |            \ramloop[25].ram.r                 |blk_mem_gen_prim_width__parameterized24        |     2|
-|43    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized24 |     2|
-|44    |            \ramloop[26].ram.r                 |blk_mem_gen_prim_width__parameterized25        |     2|
-|45    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized25 |     2|
-|46    |            \ramloop[27].ram.r                 |blk_mem_gen_prim_width__parameterized26        |     2|
-|47    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized26 |     2|
-|48    |            \ramloop[28].ram.r                 |blk_mem_gen_prim_width__parameterized27        |     2|
-|49    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized27 |     2|
-|50    |            \ramloop[29].ram.r                 |blk_mem_gen_prim_width__parameterized28        |     2|
-|51    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized28 |     2|
-|52    |            \ramloop[2].ram.r                  |blk_mem_gen_prim_width__parameterized1         |     2|
-|53    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized1  |     2|
-|54    |            \ramloop[30].ram.r                 |blk_mem_gen_prim_width__parameterized29        |     2|
-|55    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized29 |     2|
-|56    |            \ramloop[31].ram.r                 |blk_mem_gen_prim_width__parameterized30        |     2|
-|57    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized30 |     2|
-|58    |            \ramloop[32].ram.r                 |blk_mem_gen_prim_width__parameterized31        |     2|
-|59    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized31 |     2|
-|60    |            \ramloop[33].ram.r                 |blk_mem_gen_prim_width__parameterized32        |     2|
-|61    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized32 |     2|
-|62    |            \ramloop[34].ram.r                 |blk_mem_gen_prim_width__parameterized33        |     2|
-|63    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized33 |     2|
-|64    |            \ramloop[35].ram.r                 |blk_mem_gen_prim_width__parameterized34        |     2|
-|65    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized34 |     2|
-|66    |            \ramloop[36].ram.r                 |blk_mem_gen_prim_width__parameterized35        |     2|
-|67    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized35 |     2|
-|68    |            \ramloop[37].ram.r                 |blk_mem_gen_prim_width__parameterized36        |     2|
-|69    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized36 |     2|
-|70    |            \ramloop[38].ram.r                 |blk_mem_gen_prim_width__parameterized37        |     2|
-|71    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized37 |     2|
-|72    |            \ramloop[39].ram.r                 |blk_mem_gen_prim_width__parameterized38        |     2|
-|73    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized38 |     2|
-|74    |            \ramloop[3].ram.r                  |blk_mem_gen_prim_width__parameterized2         |     2|
-|75    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized2  |     2|
-|76    |            \ramloop[40].ram.r                 |blk_mem_gen_prim_width__parameterized39        |     2|
-|77    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized39 |     2|
-|78    |            \ramloop[41].ram.r                 |blk_mem_gen_prim_width__parameterized40        |     2|
-|79    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized40 |     2|
-|80    |            \ramloop[42].ram.r                 |blk_mem_gen_prim_width__parameterized41        |     2|
-|81    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized41 |     2|
-|82    |            \ramloop[43].ram.r                 |blk_mem_gen_prim_width__parameterized42        |     2|
-|83    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized42 |     2|
-|84    |            \ramloop[44].ram.r                 |blk_mem_gen_prim_width__parameterized43        |     2|
-|85    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized43 |     2|
-|86    |            \ramloop[45].ram.r                 |blk_mem_gen_prim_width__parameterized44        |     2|
-|87    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized44 |     2|
-|88    |            \ramloop[46].ram.r                 |blk_mem_gen_prim_width__parameterized45        |     2|
-|89    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized45 |     2|
-|90    |            \ramloop[47].ram.r                 |blk_mem_gen_prim_width__parameterized46        |     2|
-|91    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized46 |     2|
-|92    |            \ramloop[48].ram.r                 |blk_mem_gen_prim_width__parameterized47        |     2|
-|93    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized47 |     2|
-|94    |            \ramloop[49].ram.r                 |blk_mem_gen_prim_width__parameterized48        |     2|
-|95    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized48 |     2|
-|96    |            \ramloop[4].ram.r                  |blk_mem_gen_prim_width__parameterized3         |     3|
-|97    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized3  |     3|
-|98    |            \ramloop[50].ram.r                 |blk_mem_gen_prim_width__parameterized49        |     2|
-|99    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized49 |     2|
-|100   |            \ramloop[51].ram.r                 |blk_mem_gen_prim_width__parameterized50        |     2|
-|101   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized50 |     2|
-|102   |            \ramloop[52].ram.r                 |blk_mem_gen_prim_width__parameterized51        |     2|
-|103   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized51 |     2|
-|104   |            \ramloop[53].ram.r                 |blk_mem_gen_prim_width__parameterized52        |     2|
-|105   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized52 |     2|
-|106   |            \ramloop[54].ram.r                 |blk_mem_gen_prim_width__parameterized53        |     2|
-|107   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized53 |     2|
-|108   |            \ramloop[55].ram.r                 |blk_mem_gen_prim_width__parameterized54        |     2|
-|109   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized54 |     2|
-|110   |            \ramloop[56].ram.r                 |blk_mem_gen_prim_width__parameterized55        |     2|
-|111   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized55 |     2|
-|112   |            \ramloop[57].ram.r                 |blk_mem_gen_prim_width__parameterized56        |     2|
-|113   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized56 |     2|
-|114   |            \ramloop[58].ram.r                 |blk_mem_gen_prim_width__parameterized57        |     2|
-|115   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized57 |     2|
-|116   |            \ramloop[59].ram.r                 |blk_mem_gen_prim_width__parameterized58        |     3|
-|117   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized58 |     3|
-|118   |            \ramloop[5].ram.r                  |blk_mem_gen_prim_width__parameterized4         |     3|
-|119   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized4  |     3|
-|120   |            \ramloop[6].ram.r                  |blk_mem_gen_prim_width__parameterized5         |     3|
-|121   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized5  |     3|
-|122   |            \ramloop[7].ram.r                  |blk_mem_gen_prim_width__parameterized6         |     1|
-|123   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized6  |     1|
-|124   |            \ramloop[8].ram.r                  |blk_mem_gen_prim_width__parameterized7         |     2|
-|125   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized7  |     2|
-|126   |            \ramloop[9].ram.r                  |blk_mem_gen_prim_width__parameterized8         |     2|
-|127   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized8  |     2|
-|128   |  s                                            |sync                                           |    88|
-|129   |  u                                            |clock_div                                      |    10|
-+------+-----------------------------------------------+-----------------------------------------------+------+
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   112|
++------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:04:21 ; elapsed = 00:04:36 . Memory (MB): peak = 936.398 ; gain = 695.617
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:55 . Memory (MB): peak = 722.496 ; gain = 489.664
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 167 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:04:24 . Memory (MB): peak = 936.398 ; gain = 677.816
-Synthesis Optimization Complete : Time (s): cpu = 00:04:21 ; elapsed = 00:04:36 . Memory (MB): peak = 936.398 ; gain = 695.617
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:43 . Memory (MB): peak = 722.496 ; gain = 155.672
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:55 . Memory (MB): peak = 722.496 ; gain = 489.664
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 154 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -712,10 +403,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-27 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+22 Infos, 33 Warnings, 32 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:04:24 ; elapsed = 00:04:41 . Memory (MB): peak = 936.398 ; gain = 707.082
-INFO: [Common 17-1381] The checkpoint 'C:/users/administrator/project_1/project_1.runs/synth_1/block_image.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file block_image_utilization_synth.rpt -pb block_image_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.133 . Memory (MB): peak = 936.398 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun Dec 15 17:42:10 2019...
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:01:02 . Memory (MB): peak = 722.496 ; gain = 495.785
+INFO: [Common 17-1381] The checkpoint 'C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.runs/synth_1/uart_rxd.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file uart_rxd_utilization_synth.rpt -pb uart_rxd_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.284 . Memory (MB): peak = 722.496 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 17 20:56:29 2019...

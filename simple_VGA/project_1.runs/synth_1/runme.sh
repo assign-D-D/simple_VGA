@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/users/administrator/project_1/project_1.runs/synth_1'
+HD_PWD='C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log block_image.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source block_image.tcl
+EAStep vivado -log uart_rxd.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_rxd.tcl

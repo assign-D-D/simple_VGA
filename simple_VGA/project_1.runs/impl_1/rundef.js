@@ -25,7 +25,7 @@ eval( EAInclude(ISEJScriptLib) );
 // pre-commands:
 ISETouchFile( "write_bitstream", "begin" );
 ISEStep( "vivado",
-         "-log block_image.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source block_image.tcl -notrace" );
+         "-log uart_rxd.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source uart_rxd.tcl -notrace" );
 
 
 

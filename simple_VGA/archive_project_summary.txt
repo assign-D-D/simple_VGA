@@ -45,7 +45,7 @@
 Section (1) - PROJECT INFORMATION
 ---------------------------------
 Name      = project_1
-Directory = C:/users/administrator/project_1
+Directory = C:/users/administrator/Downloads/simple_VGA-master/simple_VGA
 
 WARNING: Please verify the compiled library directory path for the following property in the
          current project. The path may point to an invalid location after opening this project.
@@ -90,43 +90,28 @@ Section (3.2) - REMOTE SOURCES
 List of referenced 'remote' design files that were 'imported' into the archived project:-
 
 <constrs_1>
-C:/users/administrator/Desktop/constr_1.xdc
+None
 
 <sim_1>
 None
 
 <sources_1>
-c:/users/administrator/Desktop/project_tips/vga_files/parrot.png.coe
-C:/users/administrator/Desktop/clock_div.v
-C:/users/administrator/Desktop/project_tips/vga_files/parrot.png.coe
+C:/users/administrator/Documents/Tencent Files/1033690636/FileRecv/uart_txd.v
+C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/archive_project_summary.txt
 
 Section (3.3) - SOURCES SUMMARY
 -------------------------------
 List of all the source files present in the archived project:-
 
 <sources_1>
-./project_1.srcs/sources_1/ip/block_ram/block_ram.xci
-./project_1.srcs/sources_1/ip/block_ram/doc/blk_mem_gen_v8_4_changelog.txt
-./project_1.srcs/sources_1/ip/block_ram/block_ram.vho
-./project_1.srcs/sources_1/ip/block_ram/block_ram.veo
-./project_1.srcs/sources_1/ip/block_ram/summary.log
-./project_1.srcs/sources_1/ip/block_ram/misc/blk_mem_gen_v8_4.vhd
-./project_1.srcs/sources_1/ip/block_ram/block_ram.mif
-./project_1.srcs/sources_1/ip/block_ram/simulation/blk_mem_gen_v8_4.v
-./project_1.srcs/sources_1/ip/block_ram/sim/block_ram.v
-./project_1.srcs/sources_1/ip/block_ram/block_ram_ooc.xdc
-./project_1.srcs/sources_1/ip/block_ram/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd
-./project_1.srcs/sources_1/ip/block_ram/synth/block_ram.vhd
-./project_1.srcs/sources_1/ip/block_ram/block_ram.xml
+./project_1.srcs/sources_1/imports/administrator/Documents/Tencent Files/1033690636/FileRecv/uart_txd.v
 ./project_1.srcs/sources_1/imports/Desktop/project_tips/vga_files/parrot.png.coe
-./project_1.srcs/sources_1/imports/Desktop/clock_div.v
-./project_1.srcs/sources_1/new/sync.v
-./project_1.srcs/sources_1/new/block_image.v
-./project_1.srcs/sources_1/imports/Desktop/project_tips/vga_files/parrot.png.coe
+./project_1.srcs/sources_1/imports/administrator/Downloads/simple_VGA-master/simple_VGA/archive_project_summary.txt
 ./project_1.srcs/sources_1/ip/sdram/mig_a.prj
 
 <constrs_1>
 ./project_1.srcs/constrs_1/imports/Desktop/constr_1.xdc
+./project_1.srcs/constrs_1/new/uart0.xdc
 
 <sim_1>
 None

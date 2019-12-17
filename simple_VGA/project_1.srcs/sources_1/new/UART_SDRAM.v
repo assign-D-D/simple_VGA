@@ -40,10 +40,10 @@ parameter v_back = 10'd33;
 parameter v_total = 10'd525;
 
 reg [3:0] frame;
-reg [11:0] width,height;
+reg [9:0] width,height;
 reg [28:0] address;
-reg [28:0] write_address;
-reg [28:0] read_address; 
+wire [28:0] write_address;
+wire [28:0] read_address; 
 reg [2:0] command;
 reg ram_enable;
 reg [127:0] write_data;
@@ -57,27 +57,32 @@ wire ram_ref_ack;
 wire ram_zq_ack;
 wire ui_clk;
 wire ui_clk_sync_rst;
-wire init_calib_complete;
 wire [11:0] device_temp;
-wire writable = ;\\TODO
-wire readable = ;\\TODO
-reg [?:0] state;\\TODO
-reg [?:0] accept_data;\\TODO
-reg has_writen;
+reg write_enable ;//TODO
+reg read_enable ;//TODO
+wire sync_clk;
+wire clk_400;
+wire visible;
+reg [3:0] state;//TODO
+reg [11:0] accept_data;//TODO
+reg [9:0] h_cnt;
+reg [9:0] v_cnt;
+wire locked;
 clock_div u(clk,rst_n,sync_clk);
-sync #(.h_visible(h_visible)
-        .h_front(h_front)
-        .h_sync_pulse(h_sync_pulse)
-        .h_back(h_back)
-        .h_total(h_total)
 
-        .v_visible(v_visible)
-        .v_front(v_front)
-        .v_sync_pulse(v_sync_pulse)
-        .v_back(v_back)
-        .v_total(v_total)) 
-        s(sync_clk,rst_n,h_sync,v_sync,h_cnt,v_cnt,visible);
+sync #( .h_visible(h_visible), 
+.h_front(h_front), 
+.h_sync_pulse(h_sync_pulse),
+.h_back(h_back),
+.h_total(h_total),
+.v_visible(v_visible),
+.v_front(v_front), 
+.v_sync_pulse(v_sync_pulse),
+.v_back(v_back),  
+.v_total(v_total)) 
+ii(sync_clk,rst_n,h_sync,v_sync,h_cnt,v_cnt,visible);
 
+clk_400 clk400(clk_400,rst_n,locked,clk);
 sdram r(ddr3_dq,
         ddr3_dqs_n,
         ddr3_dqs_p,
@@ -93,14 +98,14 @@ sdram r(ddr3_dq,
         ddr3_cs_n,
         ddr3_dm,
         ddr3_odt,
-        clk,
-        clk,
+        clk_400,
+        clk_400,
         address,
         command,
         ram_enable,
         write_data,
         writable,
-        16'b0,//Êé©Á†ÅÁõ¥Êé•Áªô0
+        16'b0,//—⁄¬Î÷±Ω”∏¯0
         writable,
         read_data,
         read_data_end,
@@ -118,7 +123,7 @@ sdram r(ddr3_dq,
         init_calib_complete,
         device_temp,
         rst_n
-        )
+        );
 // assign {r_vga,g_vga,b_vga} = visible?dout:12'b0;
 always@(posedge clk or negedge rst_n)
 begin
@@ -126,7 +131,7 @@ begin
     begin
         address <= 29'b0;
         ram_enable <= 1'b0;
-        writable <= 1'b0;
+        write_enable <= 1'b0;
         command <= 3'b010;//invalid
         state <= 0;
     end
@@ -137,20 +142,11 @@ begin
         begin
             address <= 29'b0;
             ram_enable <= 1'b0;
-            writable <= 1'b0;
             command <= 3'b000;//invalid
-            write_data <= 128'b0;
         end 
         4://write
         begin
-            if(accept_finished)
-            begin
-                state <= 5;
-                command <= 3'b001;
-                address <= 28'b0;
-                ram_enable <= 1'b0;
-            end
-            else if(writable & ram_ready & init_calib_complete & ram_write_rdy)
+            if(write_enable & ram_ready & init_calib_complete & ram_write_rdy)
             begin
                 command <= 3'b0;
                 ram_enable <= 1'b1;
@@ -163,14 +159,16 @@ begin
         end
         5://read
         begin
-            if(readable & init_calib_complete & ram_ready)
+            if(read_enable & init_calib_complete & ram_ready)
             begin
                 command <= 3'b001;
                 address <= read_address;
                 ram_enable <= 1'b1;
             end
-        end
-            default: 
+            else
+                ram_enable <= 1'b0;
+         end
+            default: ram_enable <= 1'b0;
         endcase
     end
 end

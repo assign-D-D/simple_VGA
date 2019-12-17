@@ -27,7 +27,16 @@ wire[11:0] dout;
 wire visible;
 
 clock_div u(clk,rst_n,sync_clk);
-sync s(sync_clk,rst_n,h_sync,v_sync,h_cnt,v_cnt,visible);
+sync #(.h_visible(h_visible)
+        .h_front(h_front)
+        .h_sync_pulse(h_sync_pulse)
+        .h_back(h_back)
+        .h_total(h_total)
+        .v_visible(v_visible)
+        .v_front(v_front)
+        .v_sync_pulse(v_sync_pulse)
+        .v_back(v_back)
+        .v_total(v_total)) s(sync_clk,rst_n,h_sync,v_sync,h_cnt,v_cnt,visible);
 block_ram ram(sync_clk,rst_n,1'b0,addra,12'b0,dout);
 
 assign {r_vga,g_vga,b_vga} = visible?dout:12'b0;

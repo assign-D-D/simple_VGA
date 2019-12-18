@@ -2,11 +2,11 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Tue Dec 17 20:59:04 2019
-# Process ID: 4068
-# Current directory: C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.runs/impl_1
-# Command line: vivado.exe -log uart_rxd.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source uart_rxd.tcl -notrace
-# Log file: C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.runs/impl_1/uart_rxd.vdi
-# Journal file: C:/users/administrator/Downloads/simple_VGA-master/simple_VGA/project_1.runs/impl_1\vivado.jou
+# Start of session at: Wed Dec 18 23:56:58 2019
+# Process ID: 12768
+# Current directory: C:/Users/lenovo/Desktop/project_1/project_1.runs/impl_1
+# Command line: vivado.exe -log UART_SDRAM.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source UART_SDRAM.tcl -notrace
+# Log file: C:/Users/lenovo/Desktop/project_1/project_1.runs/impl_1/UART_SDRAM.vdi
+# Journal file: C:/Users/lenovo/Desktop/project_1/project_1.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
-source uart_rxd.tcl -notrace
+source UART_SDRAM.tcl -notrace

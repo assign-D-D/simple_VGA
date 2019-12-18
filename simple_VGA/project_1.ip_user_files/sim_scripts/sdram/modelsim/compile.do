@@ -2,8 +2,16 @@ vlib modelsim_lib/work
 vlib modelsim_lib/msim
 
 vlib modelsim_lib/msim/xil_defaultlib
+vlib modelsim_lib/msim/xpm
 
 vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib
+vmap xpm modelsim_lib/msim/xpm
+
+vlog -work xil_defaultlib -64 -incr -sv \
+"D:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+
+vcom -work xpm -64 -93 \
+"D:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vlog -work xil_defaultlib -64 -incr \
 "../../../../project_1.srcs/sources_1/ip/sdram/sdram/user_design/rtl/clocking/mig_7series_v4_0_clk_ibuf.v" \
@@ -73,7 +81,6 @@ vlog -work xil_defaultlib -64 -incr \
 "../../../../project_1.srcs/sources_1/ip/sdram/sdram/user_design/rtl/ui/mig_7series_v4_0_ui_wr_data.v" \
 "../../../../project_1.srcs/sources_1/ip/sdram/sdram/user_design/rtl/sdram_mig_sim.v" \
 "../../../../project_1.srcs/sources_1/ip/sdram/sdram/user_design/rtl/sdram.v" \
-
 
 vlog -work xil_defaultlib \
 "glbl.v"

@@ -1,150 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1576587408">
-  <File Type="ROUTE-PWR" Name="uart_rxd_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="uart_rxd.tcl"/>
-  <File Type="PWROPT-DCP" Name="uart_rxd_pwropt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="uart_rxd_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="uart_rxd_reports.tcl"/>
-  <File Type="BG-DRC" Name="uart_rxd.drc"/>
-  <File Type="OPT-HWDEF" Name="uart_rxd.hwdef"/>
-  <File Type="OPT-DCP" Name="uart_rxd_opt.dcp"/>
-  <File Type="OPT-DRC" Name="uart_rxd_drc_opted.rpt"/>
-  <File Type="PLACE-DCP" Name="uart_rxd_placed.dcp"/>
-  <File Type="PLACE-IO" Name="uart_rxd_io_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="uart_rxd_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="uart_rxd_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="uart_rxd_control_sets_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="uart_rxd_incremental_reuse_pre_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="uart_rxd_postplace_pwropt.dcp"/>
-  <File Type="PHYSOPT-DCP" Name="uart_rxd_physopt.dcp"/>
-  <File Type="BG-BIT" Name="uart_rxd.bit"/>
-  <File Type="ROUTE-ERROR-DCP" Name="uart_rxd_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="uart_rxd_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="uart_rxd_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="uart_rxd_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="uart_rxd_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="uart_rxd_drc_routed.rpx"/>
-  <File Type="BITSTR-MSK" Name="uart_rxd.msk"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="uart_rxd_methodology_drc_routed.rpt"/>
-  <File Type="BG-BGN" Name="uart_rxd.bgn"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="uart_rxd_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-RBT" Name="uart_rxd.rbt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="uart_rxd_methodology_drc_routed.pb"/>
-  <File Type="BG-BIN" Name="uart_rxd.bin"/>
-  <File Type="ROUTE-PWR-RPX" Name="uart_rxd_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="uart_rxd_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="uart_rxd_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="uart_rxd_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="uart_rxd_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="uart_rxd_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-CLK" Name="uart_rxd_clock_utilization_routed.rpt"/>
-  <File Type="RDI-RDI" Name="uart_rxd.vdi"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="uart_rxd_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="uart_rxd_postroute_physopt_bb.dcp"/>
-  <File Type="BITSTR-NKY" Name="uart_rxd.nky"/>
-  <File Type="BITSTR-BMM" Name="uart_rxd_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="uart_rxd.mmi"/>
-  <File Type="BITSTR-LTX" Name="uart_rxd.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="uart_rxd.sysdef"/>
+<GenRun Id="impl_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1576684443">
+  <File Type="ROUTE-PWR" Name="UART_SDRAM_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="UART_SDRAM.tcl"/>
+  <File Type="PWROPT-DCP" Name="UART_SDRAM_pwropt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="UART_SDRAM_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="UART_SDRAM_reports.tcl"/>
+  <File Type="BG-DRC" Name="UART_SDRAM.drc"/>
+  <File Type="OPT-HWDEF" Name="UART_SDRAM.hwdef"/>
+  <File Type="OPT-DCP" Name="UART_SDRAM_opt.dcp"/>
+  <File Type="OPT-DRC" Name="UART_SDRAM_drc_opted.rpt"/>
+  <File Type="PLACE-DCP" Name="UART_SDRAM_placed.dcp"/>
+  <File Type="PLACE-IO" Name="UART_SDRAM_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="UART_SDRAM_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="UART_SDRAM_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="UART_SDRAM_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="UART_SDRAM_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="UART_SDRAM_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="UART_SDRAM_physopt.dcp"/>
+  <File Type="BG-BIT" Name="UART_SDRAM.bit"/>
+  <File Type="ROUTE-ERROR-DCP" Name="UART_SDRAM_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="UART_SDRAM_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="UART_SDRAM_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="UART_SDRAM_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="UART_SDRAM_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="UART_SDRAM_drc_routed.rpx"/>
+  <File Type="BITSTR-MSK" Name="UART_SDRAM.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="UART_SDRAM_methodology_drc_routed.rpt"/>
+  <File Type="BG-BGN" Name="UART_SDRAM.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="UART_SDRAM_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-RBT" Name="UART_SDRAM.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="UART_SDRAM_methodology_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="UART_SDRAM.bin"/>
+  <File Type="ROUTE-PWR-RPX" Name="UART_SDRAM_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="UART_SDRAM_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="UART_SDRAM_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="UART_SDRAM_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="UART_SDRAM_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="UART_SDRAM_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="UART_SDRAM_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="UART_SDRAM.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="UART_SDRAM_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="UART_SDRAM_postroute_physopt_bb.dcp"/>
+  <File Type="BITSTR-NKY" Name="UART_SDRAM.nky"/>
+  <File Type="BITSTR-BMM" Name="UART_SDRAM_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="UART_SDRAM.mmi"/>
+  <File Type="BITSTR-LTX" Name="UART_SDRAM.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="UART_SDRAM.sysdef"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/imports/administrator/Documents/Tencent Files/1033690636/FileRecv/uart_txd.v">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Documents/Tencent Files/1033690636/FileRecv/uart_txd.v"/>
-        <Attr Name="ImportTime" Val="1576586998"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/ip/block_ram/block_ram.xci">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../project_1/project_1.srcs/sources_1/ip/block_ram/block_ram.xci"/>
-        <Attr Name="ImportTime" Val="1576391637"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/Desktop/clock_div.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../Desktop/clock_div.v"/>
-        <Attr Name="ImportTime" Val="1576391155"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/sync.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../project_1/project_1.srcs/sources_1/new/sync.v"/>
-        <Attr Name="ImportTime" Val="1576392771"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/block_image.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../project_1/project_1.srcs/sources_1/new/block_image.v"/>
-        <Attr Name="ImportTime" Val="1576402598"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/Desktop/colorlump.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../Desktop/colorlump.v"/>
-        <Attr Name="ImportTime" Val="1576392924"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/Desktop/project_tips/vga_files/parrot.png.coe">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../Desktop/project_tips/vga_files/parrot.png.coe"/>
-        <Attr Name="ImportTime" Val="1575294605"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/ip/sdram/sdram.xci">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../project_1/project_1.srcs/sources_1/ip/sdram/sdram.xci"/>
-        <Attr Name="ImportTime" Val="1576401838"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/administrator/Downloads/simple_VGA-master/simple_VGA/archive_project_summary.txt">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Downloads/simple_VGA-master/simple_VGA/archive_project_summary.txt"/>
-        <Attr Name="ImportTime" Val="1576423567"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/ip/sdram/mig_a.prj">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Downloads/simple_VGA-master/simple_VGA/project_1.srcs/sources_1/ip/sdram/mig_a.prj"/>
-        <Attr Name="ImportTime" Val="1576423567"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="ScopedToCell" Val="sdram"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/UART_SDRAM.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Downloads/simple_VGA-master/simple_VGA/project_1.srcs/sources_1/new/UART_SDRAM.v"/>
-        <Attr Name="ImportTime" Val="1576590574"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/project_1/project_1.srcs/sources_1/ip/sdram/sdram.xci"/>
+        <Attr Name="ImportTime" Val="1576683290"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -152,39 +60,112 @@
     </File>
     <File Path="$PSRCDIR/sources_1/ip/clk_400/clk_400.xci">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Downloads/simple_VGA-master/simple_VGA/project_1.srcs/sources_1/ip/clk_400/clk_400.xci"/>
-        <Attr Name="ImportTime" Val="1576581421"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/project_1/project_1.srcs/sources_1/ip/clk_400/clk_400.xci"/>
+        <Attr Name="ImportTime" Val="1576681430"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/新建文件夹/clock_div.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/新建文件夹/新建文件夹/clock_div.v"/>
+        <Attr Name="ImportTime" Val="1576659054"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/新建文件夹/sync.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/新建文件夹/新建文件夹/sync.v"/>
+        <Attr Name="ImportTime" Val="1576665616"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/新建文件夹/uart_txd.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/新建文件夹/新建文件夹/uart_txd.v"/>
+        <Attr Name="ImportTime" Val="1576666078"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/新建文件夹/uart_vga_out.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/新建文件夹/新建文件夹/uart_vga_out.v"/>
+        <Attr Name="ImportTime" Val="1576677564"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/新建文件夹/UART_SDRAM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/新建文件夹/新建文件夹/UART_SDRAM.v"/>
+        <Attr Name="ImportTime" Val="1576684605"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/新建文件夹/block_image.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/新建文件夹/新建文件夹/block_image.v"/>
+        <Attr Name="ImportTime" Val="1576665684"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/新建文件夹/colorlump.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/新建文件夹/新建文件夹/colorlump.v"/>
+        <Attr Name="ImportTime" Val="1576665714"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/sdram/mig_a.prj">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/project_1/project_1.srcs/sources_1/ip/sdram/mig_a.prj"/>
+        <Attr Name="ImportTime" Val="1576683287"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="ScopedToCell" Val="sdram"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/sdram/mig_b.prj">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/project_1/project_1.srcs/sources_1/ip/sdram/mig_b.prj"/>
+        <Attr Name="ImportTime" Val="1576683287"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="ScopedToCell" Val="sdram"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="uart_rxd"/>
+      <Option Name="TopModule" Val="UART_SDRAM"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PSRCDIR/constrs_1/imports/Desktop/constr_1.xdc">
+    <File Path="$PSRCDIR/constrs_1/new/uart_sdram.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../Desktop/constr_1.xdc"/>
-        <Attr Name="ImportTime" Val="1576393214"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/constrs_1/new/uart0.xdc">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Downloads/simple_VGA-master/simple_VGA/project_1.srcs/constrs_1/new/uart0.xdc"/>
-        <Attr Name="ImportTime" Val="1576587298"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/project_1/project_1.srcs/constrs_1/new/uart_sdram.xdc"/>
+        <Attr Name="ImportTime" Val="1576684440"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
     <Config>
-      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/uart0.xdc"/>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/uart_sdram.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>

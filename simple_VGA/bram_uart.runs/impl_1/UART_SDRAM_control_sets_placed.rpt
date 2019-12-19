@@ -1,0 +1,82 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri Dec 20 00:15:46 2019
+| Host         : LAPTOP-69NJ2TNC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file UART_SDRAM_control_sets_placed.rpt
+| Design       : UART_SDRAM
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    18 |
+| Unused register locations in slices containing registers |    42 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              36 |           18 |
+| No           | No                    | Yes                    |              66 |           33 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              11 |            4 |
+| Yes          | No                    | Yes                    |             109 |           33 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+-------------------------------------------------------------------------------------------------+---------------------------------------------+------------------+----------------+
+|          Clock Signal         |                                          Enable Signal                                          |               Set/Reset Signal              | Slice Load Count | Bel Load Count |
++-------------------------------+-------------------------------------------------------------------------------------------------+---------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG                | uart_accept/FSM_sequential_R_state[3]_i_1_n_0                                                   | uart_accept/FSM_sequential_R_state_reg[3]_0 |                1 |              4 |
+|  clk_IBUF_BUFG                | uart_accept/rgb_data[3]_i_1_n_0                                                                 | uart_accept/FSM_sequential_R_state_reg[3]_0 |                1 |              4 |
+|  clk_IBUF_BUFG                | uart_accept/r_next[3]_i_1_n_0                                                                   |                                             |                3 |              4 |
+|  clk_IBUF_BUFG                | blk_r_a/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/p_2_out |                                             |                1 |              7 |
+|  clk_IBUF_BUFG                | uart_accept/O_data[7]_i_1_n_0                                                                   | uart_accept/FSM_sequential_R_state_reg[3]_0 |                3 |              8 |
+|  clk_IBUF_BUFG                | uart_accept/width[15]_i_1_n_0                                                                   | uart_accept/FSM_sequential_R_state_reg[3]_0 |                3 |              8 |
+|  clk_IBUF_BUFG                | uart_accept/height[7]_i_1_n_0                                                                   | uart_accept/FSM_sequential_R_state_reg[3]_0 |                2 |              8 |
+|  clk_IBUF_BUFG                | uart_accept/height[15]_i_1_n_0                                                                  | uart_accept/FSM_sequential_R_state_reg[3]_0 |                2 |              8 |
+|  clk_IBUF_BUFG                | uart_accept/rgb_data[11]_i_1_n_0                                                                | uart_accept/FSM_sequential_R_state_reg[3]_0 |                2 |              8 |
+|  clk_IBUF_BUFG                | uart_accept/width[7]_i_1_n_0                                                                    | uart_accept/FSM_sequential_R_state_reg[3]_0 |                2 |              8 |
+|  read_address_reg[18]_i_2_n_0 | ii/f_cnt0                                                                                       | uart_accept/FSM_sequential_R_state_reg[3]_0 |                4 |              8 |
+|  read_address_reg[18]_i_2_n_0 | ii/v_cnt0                                                                                       | uart_accept/FSM_sequential_R_state_reg[3]_0 |                3 |             10 |
+|  clk_IBUF_BUFG                | uart_accept/frame[7]_i_1_n_0                                                                    | uart_accept/FSM_sequential_R_state_reg[3]_0 |                5 |             16 |
+|  clk_IBUF_BUFG                |                                                                                                 |                                             |               12 |             17 |
+|  uart_accept/E[0]             |                                                                                                 |                                             |                6 |             19 |
+|  clk_IBUF_BUFG                | uart_accept/write_address[0]_i_1_n_0                                                            | uart_accept/FSM_sequential_R_state_reg[3]_0 |                5 |             19 |
+|  read_address_reg[18]_i_2_n_0 |                                                                                                 | uart_accept/FSM_sequential_R_state_reg[3]_0 |               16 |             29 |
+|  clk_IBUF_BUFG                |                                                                                                 | uart_accept/FSM_sequential_R_state_reg[3]_0 |               17 |             37 |
++-------------------------------+-------------------------------------------------------------------------------------------------+---------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 4      |                     3 |
+| 7      |                     1 |
+| 8      |                     7 |
+| 10     |                     1 |
+| 16+    |                     6 |
++--------+-----------------------+
+
+

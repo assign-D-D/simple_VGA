@@ -196,16 +196,26 @@ begin
                                 R_state <= 4'd0;
                             end 
                             
-                        default:R_state <= 4'd0;                                                      
+                        default:
+                        begin
+                            R_state <= 4'd0;    
+                            write_enable<=1'b0;
+                            state <= 3'd5;
+                        end                                                  
                     endcase 
                 end
             else
+            begin
                 write_enable<=1'b0;
+                state <= 3'd5;
+            end
         end
     else
         begin
             R_state   <= 4'd0 ;
             R_para_data_reg   <= 8'd0 ;
+            state <= 3'd5;
+            write_enable <= 1'b0;
             //O_bps_rx_clk_en     <= 1'b0 ;
         end        
 end

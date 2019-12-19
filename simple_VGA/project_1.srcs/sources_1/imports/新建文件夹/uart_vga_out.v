@@ -10,8 +10,7 @@ module uart_vga_out(
     input [15:0] width,
     input [15:0] height,
     input [28:0] address_max,
-    output reg [28:0] read_address,
-    output read_enable
+    output reg [28:0] read_address
     );
     parameter h_visible = 10'd640;
     parameter h_front = 10'd16;

@@ -16,8 +16,6 @@ module UART_SDRAM(
     output [0:0]    ddr3_cs_n,
     output [1:0]    ddr3_dm,
     output [0:0]    ddr3_odt,
-    input sys_clk_i,
-    input clk_ref_i,
     input clk,
     input rst_n,
     output h_sync,
@@ -108,7 +106,7 @@ sdram r(ddr3_dq,
         ram_enable,
         write_data,
         write_enable,
-        16'b0,//����ֱ�Ӹ�0
+        16'b0,
         write_enable,
         read_data,
         read_data_end,
@@ -160,8 +158,7 @@ uart_vga_out #( .h_visible(h_visible),
         width,
         height,
         write_address,
-        read_address,
-        read_enable
+        read_address
         );
 // assign {r_vga,g_vga,b_vga} = visible?dout:12'b0;
 always@(posedge clk_100 or negedge rst_n)

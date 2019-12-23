@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Fri Dec 20 00:16:24 2019
-| Host             : LAPTOP-69NJ2TNC running 64-bit major release  (build 9200)
+| Date             : Sat Dec 21 20:45:35 2019
+| Host             : 40818 running 64-bit Service Pack 1  (build 7601)
 | Command          : report_power -file UART_SDRAM_power_routed.rpt -pb UART_SDRAM_power_summary_routed.pb -rpx UART_SDRAM_power_routed.rpx
 | Design           : UART_SDRAM
 | Device           : xc7a100tfgg484-1
@@ -30,15 +30,15 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 22.099       |
+| Total On-Chip Power (W)  | 0.238        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 21.804       |
-| Device Static (W)        | 0.295        |
+| Dynamic (W)              | 0.134        |
+| Device Static (W)        | 0.104        |
 | Effective TJA (C/W)      | 2.7          |
-| Max Ambient (C)          | 25.9         |
-| Junction Temperature (C) | 84.1         |
-| Confidence Level         | Low          |
+| Max Ambient (C)          | 84.4         |
+| Junction Temperature (C) | 25.6         |
+| Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
 | Design Nets Matched      | NA           |
@@ -52,19 +52,20 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.775 |     1592 |       --- |             --- |
-|   LUT as Logic |     0.688 |      758 |     63400 |            1.20 |
-|   CARRY4       |     0.030 |       28 |     15850 |            0.18 |
-|   F7/F8 Muxes  |     0.024 |      174 |     63400 |            0.27 |
-|   Register     |     0.023 |      222 |    126800 |            0.18 |
-|   BUFG         |     0.009 |        2 |        32 |            6.25 |
-|   Others       |     0.000 |      358 |       --- |             --- |
-| Signals        |     1.651 |     1816 |       --- |             --- |
-| Block RAM      |     0.792 |      135 |       135 |          100.00 |
-| DSPs           |     0.198 |        4 |       240 |            1.67 |
-| I/O            |    18.388 |       34 |       285 |           11.93 |
-| Static Power   |     0.295 |          |           |                 |
-| Total          |    22.099 |          |           |                 |
+| Clocks         |     0.002 |        6 |       --- |             --- |
+| Slice Logic    |    <0.001 |     1512 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      731 |     63400 |            1.15 |
+|   F7/F8 Muxes  |    <0.001 |      174 |     63400 |            0.27 |
+|   Register     |    <0.001 |      200 |    126800 |            0.16 |
+|   CARRY4       |    <0.001 |       28 |     15850 |            0.18 |
+|   Others       |     0.000 |      357 |       --- |             --- |
+| Signals        |     0.002 |     1756 |       --- |             --- |
+| Block RAM      |     0.003 |      135 |       135 |          100.00 |
+| MMCM           |     0.122 |        1 |         6 |           16.67 |
+| DSPs           |    <0.001 |        4 |       240 |            1.67 |
+| I/O            |     0.005 |       34 |       285 |           11.93 |
+| Static Power   |     0.104 |          |           |                 |
+| Total          |     0.238 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,16 +75,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     3.522 |       3.359 |      0.163 |
-| Vccaux    |       1.800 |     0.709 |       0.673 |      0.035 |
-| Vcco33    |       3.300 |     5.205 |       5.201 |      0.004 |
+| Vccint    |       1.000 |     0.026 |       0.007 |      0.018 |
+| Vccaux    |       1.800 |     0.086 |       0.068 |      0.018 |
+| Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.088 |       0.069 |      0.018 |
+| Vccbram   |       1.000 |     0.004 |       0.000 |      0.003 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -93,17 +94,17 @@ Table of Contents
 1.3 Confidence Level
 --------------------
 
-+-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
-+-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
-| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
-| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
-| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
-| Device models               | High       | Device models are Production                           |                                                                                                                    |
-|                             |            |                                                        |                                                                                                                    |
-| Overall confidence level    | Low        |                                                        |                                                                                                                    |
-+-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
++-----------------------------+------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                               | Action                                                                                                     |
++-----------------------------+------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                      |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                |                                                                                                            |
+| I/O nodes activity          | Medium     | More than 5% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes        | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                          |                                                                                                            |
+|                             |            |                                                       |                                                                                                            |
+| Overall confidence level    | Medium     |                                                       |                                                                                                            |
++-----------------------------+------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
 
 
 2. Settings
@@ -127,9 +128,14 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+-------+--------+-----------------+
-| Clock | Domain | Constraint (ns) |
-+-------+--------+-----------------+
++-------------------+-----------------------------------+-----------------+
+| Clock             | Domain                            | Constraint (ns) |
++-------------------+-----------------------------------+-----------------+
+| clk               | clk                               |            10.0 |
+| clk_25_clk_uart   | uart_clk_9/inst/clk_25_clk_uart   |            40.0 |
+| clk_9_clk_uart    | uart_clk_9/inst/clk_9_clk_uart    |           108.5 |
+| clkfbout_clk_uart | uart_clk_9/inst/clkfbout_clk_uart |            10.0 |
++-------------------+-----------------------------------+-----------------+
 
 
 3. Detailed Reports
@@ -141,15 +147,15 @@ Table of Contents
 +----------------------------------------------+-----------+
 | Name                                         | Power (W) |
 +----------------------------------------------+-----------+
-| UART_SDRAM                                   |    21.804 |
-|   blk_r_a                                    |     1.465 |
-|     U0                                       |     1.465 |
-|       inst_blk_mem_gen                       |     1.465 |
-|         gnbram.gnativebmg.native_blk_mem_gen |     1.465 |
-|           valid.cstr                         |     1.465 |
-|             has_mux_a.A                      |     0.513 |
-|             ramloop[0].ram.r                 |     0.233 |
-|               prim_noinit.ram                |     0.233 |
+| UART_SDRAM                                   |     0.134 |
+|   blk_r_a                                    |     0.005 |
+|     U0                                       |     0.005 |
+|       inst_blk_mem_gen                       |     0.005 |
+|         gnbram.gnativebmg.native_blk_mem_gen |     0.005 |
+|           valid.cstr                         |     0.005 |
+|             has_mux_a.A                      |    <0.001 |
+|             ramloop[0].ram.r                 |    <0.001 |
+|               prim_noinit.ram                |    <0.001 |
 |             ramloop[100].ram.r               |    <0.001 |
 |               prim_noinit.ram                |    <0.001 |
 |             ramloop[101].ram.r               |    <0.001 |
@@ -188,48 +194,48 @@ Table of Contents
 |               prim_noinit.ram                |    <0.001 |
 |             ramloop[117].ram.r               |    <0.001 |
 |               prim_noinit.ram                |    <0.001 |
-|             ramloop[11].ram.r                |     0.005 |
-|               prim_noinit.ram                |     0.005 |
+|             ramloop[11].ram.r                |    <0.001 |
+|               prim_noinit.ram                |    <0.001 |
 |             ramloop[12].ram.r                |    <0.001 |
 |               prim_noinit.ram                |    <0.001 |
 |             ramloop[13].ram.r                |    <0.001 |
 |               prim_noinit.ram                |    <0.001 |
-|             ramloop[14].ram.r                |     0.222 |
-|               prim_noinit.ram                |     0.222 |
-|             ramloop[15].ram.r                |     0.004 |
-|               prim_noinit.ram                |     0.004 |
-|             ramloop[16].ram.r                |     0.004 |
-|               prim_noinit.ram                |     0.004 |
+|             ramloop[14].ram.r                |    <0.001 |
+|               prim_noinit.ram                |    <0.001 |
+|             ramloop[15].ram.r                |    <0.001 |
+|               prim_noinit.ram                |    <0.001 |
+|             ramloop[16].ram.r                |    <0.001 |
+|               prim_noinit.ram                |    <0.001 |
 |             ramloop[17].ram.r                |    <0.001 |
 |               prim_noinit.ram                |    <0.001 |
-|             ramloop[18].ram.r                |     0.004 |
-|               prim_noinit.ram                |     0.004 |
+|             ramloop[18].ram.r                |    <0.001 |
+|               prim_noinit.ram                |    <0.001 |
 |             ramloop[19].ram.r                |    <0.001 |
 |               prim_noinit.ram                |    <0.001 |
-|             ramloop[1].ram.r                 |     0.005 |
-|               prim_noinit.ram                |     0.005 |
-|             ramloop[20].ram.r                |     0.180 |
-|               prim_noinit.ram                |     0.180 |
-|             ramloop[21].ram.r                |     0.005 |
-|               prim_noinit.ram                |     0.005 |
-|             ramloop[22].ram.r                |     0.005 |
-|               prim_noinit.ram                |     0.005 |
+|             ramloop[1].ram.r                 |    <0.001 |
+|               prim_noinit.ram                |    <0.001 |
+|             ramloop[20].ram.r                |    <0.001 |
+|               prim_noinit.ram                |    <0.001 |
+|             ramloop[21].ram.r                |    <0.001 |
+|               prim_noinit.ram                |    <0.001 |
+|             ramloop[22].ram.r                |    <0.001 |
+|               prim_noinit.ram                |    <0.001 |
 |             ramloop[23].ram.r                |    <0.001 |
 |               prim_noinit.ram                |    <0.001 |
-|             ramloop[24].ram.r                |     0.003 |
-|               prim_noinit.ram                |     0.003 |
+|             ramloop[24].ram.r                |    <0.001 |
+|               prim_noinit.ram                |    <0.001 |
 |             ramloop[25].ram.r                |    <0.001 |
 |               prim_noinit.ram                |    <0.001 |
 |             ramloop[26].ram.r                |    <0.001 |
 |               prim_noinit.ram                |    <0.001 |
 |             ramloop[27].ram.r                |    <0.001 |
 |               prim_noinit.ram                |    <0.001 |
-|             ramloop[28].ram.r                |     0.002 |
-|               prim_noinit.ram                |     0.002 |
+|             ramloop[28].ram.r                |    <0.001 |
+|               prim_noinit.ram                |    <0.001 |
 |             ramloop[29].ram.r                |    <0.001 |
 |               prim_noinit.ram                |    <0.001 |
-|             ramloop[2].ram.r                 |     0.004 |
-|               prim_noinit.ram                |     0.004 |
+|             ramloop[2].ram.r                 |    <0.001 |
+|               prim_noinit.ram                |    <0.001 |
 |             ramloop[30].ram.r                |    <0.001 |
 |               prim_noinit.ram                |    <0.001 |
 |             ramloop[31].ram.r                |    <0.001 |
@@ -242,8 +248,8 @@ Table of Contents
 |               prim_noinit.ram                |    <0.001 |
 |             ramloop[35].ram.r                |    <0.001 |
 |               prim_noinit.ram                |    <0.001 |
-|             ramloop[36].ram.r                |     0.002 |
-|               prim_noinit.ram                |     0.002 |
+|             ramloop[36].ram.r                |    <0.001 |
+|               prim_noinit.ram                |    <0.001 |
 |             ramloop[37].ram.r                |    <0.001 |
 |               prim_noinit.ram                |    <0.001 |
 |             ramloop[38].ram.r                |    <0.001 |
@@ -272,14 +278,14 @@ Table of Contents
 |               prim_noinit.ram                |    <0.001 |
 |             ramloop[49].ram.r                |    <0.001 |
 |               prim_noinit.ram                |    <0.001 |
-|             ramloop[4].ram.r                 |     0.004 |
-|               prim_noinit.ram                |     0.004 |
+|             ramloop[4].ram.r                 |    <0.001 |
+|               prim_noinit.ram                |    <0.001 |
 |             ramloop[50].ram.r                |    <0.001 |
 |               prim_noinit.ram                |    <0.001 |
 |             ramloop[51].ram.r                |    <0.001 |
 |               prim_noinit.ram                |    <0.001 |
-|             ramloop[52].ram.r                |     0.002 |
-|               prim_noinit.ram                |     0.002 |
+|             ramloop[52].ram.r                |    <0.001 |
+|               prim_noinit.ram                |    <0.001 |
 |             ramloop[53].ram.r                |    <0.001 |
 |               prim_noinit.ram                |    <0.001 |
 |             ramloop[54].ram.r                |    <0.001 |
@@ -338,8 +344,8 @@ Table of Contents
 |               prim_noinit.ram                |    <0.001 |
 |             ramloop[79].ram.r                |    <0.001 |
 |               prim_noinit.ram                |    <0.001 |
-|             ramloop[7].ram.r                 |     0.235 |
-|               prim_noinit.ram                |     0.235 |
+|             ramloop[7].ram.r                 |    <0.001 |
+|               prim_noinit.ram                |    <0.001 |
 |             ramloop[80].ram.r                |    <0.001 |
 |               prim_noinit.ram                |    <0.001 |
 |             ramloop[81].ram.r                |    <0.001 |
@@ -348,8 +354,8 @@ Table of Contents
 |               prim_noinit.ram                |    <0.001 |
 |             ramloop[83].ram.r                |    <0.001 |
 |               prim_noinit.ram                |    <0.001 |
-|             ramloop[84].ram.r                |     0.002 |
-|               prim_noinit.ram                |     0.002 |
+|             ramloop[84].ram.r                |    <0.001 |
+|               prim_noinit.ram                |    <0.001 |
 |             ramloop[85].ram.r                |    <0.001 |
 |               prim_noinit.ram                |    <0.001 |
 |             ramloop[86].ram.r                |    <0.001 |
@@ -360,8 +366,8 @@ Table of Contents
 |               prim_noinit.ram                |    <0.001 |
 |             ramloop[89].ram.r                |    <0.001 |
 |               prim_noinit.ram                |    <0.001 |
-|             ramloop[8].ram.r                 |     0.006 |
-|               prim_noinit.ram                |     0.006 |
+|             ramloop[8].ram.r                 |    <0.001 |
+|               prim_noinit.ram                |    <0.001 |
 |             ramloop[90].ram.r                |    <0.001 |
 |               prim_noinit.ram                |    <0.001 |
 |             ramloop[91].ram.r                |    <0.001 |
@@ -382,12 +388,13 @@ Table of Contents
 |               prim_noinit.ram                |    <0.001 |
 |             ramloop[99].ram.r                |    <0.001 |
 |               prim_noinit.ram                |    <0.001 |
-|             ramloop[9].ram.r                 |     0.005 |
-|               prim_noinit.ram                |     0.005 |
-|   ii                                         |     0.240 |
-|   u                                          |     0.072 |
-|   uart_accept                                |     0.648 |
-|   uart_read                                  |     0.573 |
+|             ramloop[9].ram.r                 |    <0.001 |
+|               prim_noinit.ram                |    <0.001 |
+|   ii                                         |    <0.001 |
+|   uart_accept                                |     0.002 |
+|   uart_clk_9                                 |     0.123 |
+|     inst                                     |     0.123 |
+|   uart_read                                  |    <0.001 |
 +----------------------------------------------+-----------+
 
 

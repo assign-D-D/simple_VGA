@@ -6,4 +6,15 @@
 # IP: ip/block_ram_add/block_ram_add.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==block_ram_add || ORIG_REF_NAME==block_ram_add} -quiet] -quiet
 
+# IP: ip/clk_uart/clk_uart.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==clk_uart || ORIG_REF_NAME==clk_uart} -quiet] -quiet
+
 # XDC: ip/block_ram_add/block_ram_add_ooc.xdc
+
+# XDC: ip/clk_uart/clk_uart_board.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==clk_uart || ORIG_REF_NAME==clk_uart} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: ip/clk_uart/clk_uart.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==clk_uart || ORIG_REF_NAME==clk_uart} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: ip/clk_uart/clk_uart_ooc.xdc

@@ -60,6 +60,7 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step write_bitstream
 set ACTIVE_STEP write_bitstream
@@ -67,8 +68,8 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   set_param xicom.use_bs_reader 1
   open_checkpoint UART_SDRAM_routed.dcp
-  set_property webtalk.parent_dir C:/Users/lenovo/Desktop/bram_uart_9.xpr/bram_uart_9.xpr/bram_uart/bram_uart.cache/wt [current_project]
-  set_property XPM_LIBRARIES XPM_MEMORY [current_project]
+  set_property webtalk.parent_dir C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.cache/wt [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   catch { write_mem_info -force UART_SDRAM.mmi }
   write_bitstream -force UART_SDRAM.bit 
   catch {write_debug_probes -quiet -force UART_SDRAM}

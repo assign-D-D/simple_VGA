@@ -45,7 +45,7 @@ always@(posedge sync_clk,negedge rst_n)
                 if(h_cnt==h_total-1'd1)
                     v_cnt<=v_cnt+1'd1;
                 else
-                    ;
+                    v_cnt<=v_cnt;
         end
     end
 always@(posedge sync_clk,negedge rst_n)
@@ -57,7 +57,7 @@ always@(posedge sync_clk,negedge rst_n)
             if(f_cnt==frame-1'd1&&v_cnt==v_total-1'd1&&h_cnt==h_total-1'd1)      
                 f_cnt<=8'd0;
             else
-                if(v_cnt==v_total-1'd1)
+                if(v_cnt==v_total-1'd1&&h_cnt==h_total-1'd1)
                     f_cnt<=f_cnt+1'd1;
                 else
                     f_cnt<=f_cnt;

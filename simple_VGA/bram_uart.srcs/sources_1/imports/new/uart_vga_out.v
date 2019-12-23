@@ -30,8 +30,8 @@ begin
         read_address <= 19'd0;
     else
          if(h_cnt >= (h_sync_pulse+h_back) && h_cnt < (h_sync_pulse + h_back + width) && v_cnt >= (v_sync_pulse + v_back) && v_cnt < (v_sync_pulse + v_back + height)
-             && (width*height*f_cnt +(v_cnt - v_sync_pulse - v_back)*height + h_cnt - h_sync_pulse - h_back < address_max))
-               read_address <= width*height*f_cnt + (v_cnt - v_sync_pulse - v_back)*height + h_cnt - h_sync_pulse - h_back ;
+             && (width*height*f_cnt +(v_cnt - v_sync_pulse - v_back)*width + h_cnt - h_sync_pulse - h_back < address_max))
+               read_address <= 19'd1*(width*height)*f_cnt + (v_cnt - v_sync_pulse - v_back)*width + h_cnt - h_sync_pulse - h_back ;
          else
                read_address <= 19'b0;
     

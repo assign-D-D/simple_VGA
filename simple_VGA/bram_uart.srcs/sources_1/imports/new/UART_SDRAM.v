@@ -4,9 +4,9 @@ module UART_SDRAM(
     input rst_n,
     output h_sync,
     output v_sync,
-    output reg [3:0] r_vga,
-    output reg [3:0] g_vga,
-    output reg [3:0] b_vga,
+    output [3:0] r_vga,
+    output [3:0] g_vga,
+    output [3:0] b_vga,
     output [7:0] frame,
     output [7:0] O_data,
     input uart_input,
@@ -25,20 +25,23 @@ parameter v_back = 10'd33;
 parameter v_total = 10'd525;
 
 wire [15:0] width,height;
-reg [18:0] address;
+wire [18:0] address;
 wire [18:0] write_address;
 wire [18:0] read_address;
 wire [11:0] write_data;
 wire [11:0] read_data;
 wire write_enable ;//TODO
 wire sync_clk;
+wire clk_9;
+wire clk_100;
 wire visible;
 wire [2:0] state;
 wire [9:0] h_cnt;
 wire [9:0] v_cnt;
 wire [7:0] f_cnt;
 
-clock_div u(clk,rst_n,sync_clk);
+//clock_div u(clk,rst_n,sync_clk);
+clk_uart uart_clk_9(clk_9,sync_clk,clk_100,rst_n,clk);
 
 sync #( .h_visible(h_visible), 
 .h_front(h_front), 
@@ -52,10 +55,10 @@ sync #( .h_visible(h_visible),
 .v_total(v_total)) 
 ii(sync_clk,rst_n,frame,h_sync,v_sync,h_cnt,v_cnt,f_cnt,visible);
 
-block_ram_add blk_r_a(clk,write_enable,address,write_data,read_data);
+block_ram_add blk_r_a(sync_clk,write_enable,address,write_data,read_data);//clock!
 
-uart_rxd uart_accept(
-        clk,
+uart_rxd_16 uart_accept(
+        clk_9,
         rst_n,
         uart_start,//外部控制 接收书籍
         uart_input,//接串口
@@ -91,23 +94,8 @@ uart_vga_out #( .h_visible(h_visible),
         read_address//要读取的地址
         );
 // assign {r_vga,g_vga,b_vga} = visible?dout:12'b0;
-always@(*)
-    begin
-        case (state)
-        3'd0,3'd1,3'd2:
-            address = 19'b0;
-        3'd3://write
-            address = write_address;
-        3'd4://read
-            address = read_address;
-        default: ;
-        endcase
-    end
 
-always@(*)
-if(read_address==0)
-    {r_vga,g_vga,b_vga} = 12'b111100000000;
-else
-    {r_vga,g_vga,b_vga} = read_data;
+assign address = (write_enable==1'b1)? write_address:read_address;
+assign {r_vga,g_vga,b_vga} = read_data;
 
 endmodule // 

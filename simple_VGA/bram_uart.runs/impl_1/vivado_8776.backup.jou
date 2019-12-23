@@ -2,11 +2,11 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Fri Dec 20 00:14:59 2019
-# Process ID: 15452
-# Current directory: C:/Users/lenovo/Desktop/bram_uart_9.xpr/bram_uart_9.xpr/bram_uart/bram_uart.runs/impl_1
+# Start of session at: Sat Dec 21 20:37:10 2019
+# Process ID: 8776
+# Current directory: C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1
 # Command line: vivado.exe -log UART_SDRAM.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source UART_SDRAM.tcl -notrace
-# Log file: C:/Users/lenovo/Desktop/bram_uart_9.xpr/bram_uart_9.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.vdi
-# Journal file: C:/Users/lenovo/Desktop/bram_uart_9.xpr/bram_uart_9.xpr/bram_uart/bram_uart.runs/impl_1\vivado.jou
+# Log file: C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.vdi
+# Journal file: C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source UART_SDRAM.tcl -notrace

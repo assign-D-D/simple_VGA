@@ -3,17 +3,17 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="35" Path="C:/Users/lenovo/Desktop/bram_uart_9.xpr/bram_uart_9.xpr/bram_uart/.Xil/Vivado-15852-LAPTOP-69NJ2TNC/PrjAr/_X_/bram_uart.xpr">
+<Project Version="7" Minor="35" Path="C:/users/administrator/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1444-40818/PrjAr/_X_/bram_uart.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="9ae4e187dff442ec9192fb5eee9931e7"/>
+    <Option Name="Id" Val="a24653d31c4042b7aec64f475f47009d"/>
     <Option Name="Part" Val="xc7a100tfgg484-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
     <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
     <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
     <Option Name="CompiledLibDirIES" Val="$PCACHEDIR/compile_simlib/ies"/>
-    <Option Name="CompiledLibDirXcelium" Val="$PPRDIR/../../../../../../../../../../../../Desktop/bram_uart/bram_uart.cache/compile_simlib/xcelium"/>
+    <Option Name="CompiledLibDirXcelium" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../Desktop/bram_uart/bram_uart.cache/compile_simlib/xcelium"/>
     <Option Name="CompiledLibDirVCS" Val="$PCACHEDIR/compile_simlib/vcs"/>
     <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
     <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
@@ -37,13 +37,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="1"/>
-    <Option Name="WTModelSimExportSim" Val="1"/>
-    <Option Name="WTQuestaExportSim" Val="1"/>
-    <Option Name="WTIesExportSim" Val="1"/>
-    <Option Name="WTVcsExportSim" Val="1"/>
-    <Option Name="WTRivieraExportSim" Val="1"/>
-    <Option Name="WTActivehdlExportSim" Val="1"/>
+    <Option Name="WTXSimExportSim" Val="4"/>
+    <Option Name="WTModelSimExportSim" Val="4"/>
+    <Option Name="WTQuestaExportSim" Val="4"/>
+    <Option Name="WTIesExportSim" Val="4"/>
+    <Option Name="WTVcsExportSim" Val="4"/>
+    <Option Name="WTRivieraExportSim" Val="4"/>
+    <Option Name="WTActivehdlExportSim" Val="4"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -56,17 +56,17 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/ip/block_ram_add/block_ram_add.xci">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../Desktop/bram_uart/bram_uart.srcs/sources_1/ip/block_ram_add/block_ram_add.xci"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../Desktop/bram_uart/bram_uart.srcs/sources_1/ip/block_ram_add/block_ram_add.xci"/>
           <Attr Name="ImportTime" Val="1576755376"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/clock_div.v">
+      <File Path="$PSRCDIR/sources_1/ip/clk_uart/clk_uart.xci">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../Documents/Tencent Files/1033690636/FileRecv/UARTblr.xpr/UARTblr/UARTblr.srcs/sources_1/imports/new/clock_div.v"/>
-          <Attr Name="ImportTime" Val="1576743912"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.srcs/sources_1/ip/clk_uart/clk_uart.xci"/>
+          <Attr Name="ImportTime" Val="1576899116"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -74,17 +74,17 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/new/sync.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../Documents/Tencent Files/1033690636/FileRecv/UARTblr.xpr/UARTblr/UARTblr.srcs/sources_1/imports/new/sync.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../Documents/Tencent Files/1033690636/FileRecv/UARTblr.xpr/UARTblr/UARTblr.srcs/sources_1/imports/new/sync.v"/>
           <Attr Name="ImportTime" Val="1576756018"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/uart_txd.v">
+      <File Path="$PSRCDIR/sources_1/imports/new/uart_txd_16.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../Documents/Tencent Files/1033690636/FileRecv/UARTblr.xpr/UARTblr/UARTblr.srcs/sources_1/imports/new/uart_txd.v"/>
-          <Attr Name="ImportTime" Val="1576764573"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.srcs/sources_1/imports/new/uart_txd_16.v"/>
+          <Attr Name="ImportTime" Val="1576931464"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -92,7 +92,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/new/uart_vga_out.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../Documents/Tencent Files/1033690636/FileRecv/UARTblr.xpr/UARTblr/UARTblr.srcs/sources_1/imports/new/uart_vga_out.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../Documents/Tencent Files/1033690636/FileRecv/UARTblr.xpr/UARTblr/UARTblr.srcs/sources_1/imports/new/uart_vga_out.v"/>
           <Attr Name="ImportTime" Val="1576759830"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -101,17 +101,31 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/new/UART_SDRAM.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../Documents/Tencent Files/1033690636/FileRecv/UARTblr.xpr/UARTblr/UARTblr.srcs/sources_1/imports/new/UART_SDRAM.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../Documents/Tencent Files/1033690636/FileRecv/UARTblr.xpr/UARTblr/UARTblr.srcs/sources_1/imports/new/UART_SDRAM.v"/>
           <Attr Name="ImportTime" Val="1576763643"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/bram_uart/archive_project_summary.txt">
+      <File Path="$PSRCDIR/sources_1/imports/new/uart_txd.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../archive_project_summary.txt"/>
-          <Attr Name="ImportTime" Val="1576765438"/>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../Documents/Tencent Files/1033690636/FileRecv/UARTblr.xpr/UARTblr/UARTblr.srcs/sources_1/imports/new/uart_txd.v"/>
+          <Attr Name="ImportTime" Val="1576764573"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/clock_div.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../Documents/Tencent Files/1033690636/FileRecv/UARTblr.xpr/UARTblr/UARTblr.srcs/sources_1/imports/new/clock_div.v"/>
+          <Attr Name="ImportTime" Val="1576743912"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PPRDIR/archive_project_summary.txt"/>
@@ -125,7 +139,7 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/new/uart_bram.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../Desktop/bram_uart/bram_uart.srcs/constrs_1/new/uart_bram.xdc"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../Desktop/bram_uart/bram_uart.srcs/constrs_1/new/uart_bram.xdc"/>
           <Attr Name="ImportTime" Val="1576763124"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

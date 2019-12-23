@@ -2,66 +2,304 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Thu Dec 19 23:18:23 2019
-# Process ID: 15852
-# Current directory: C:/Users/lenovo/Desktop/bram_uart_9.xpr/bram_uart_9.xpr/bram_uart
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8460 C:\Users\lenovo\Desktop\bram_uart_9.xpr\bram_uart_9.xpr\bram_uart\bram_uart.xpr
-# Log file: C:/Users/lenovo/Desktop/bram_uart_9.xpr/bram_uart_9.xpr/bram_uart/vivado.log
-# Journal file: C:/Users/lenovo/Desktop/bram_uart_9.xpr/bram_uart_9.xpr/bram_uart\vivado.jou
+# Start of session at: Sat Dec 21 09:39:11 2019
+# Process ID: 1444
+# Current directory: C:/users/administrator/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3344
+# Log file: C:/users/administrator/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/users/administrator/AppData/Roaming/Xilinx/Vivado\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/lenovo/Desktop/bram_uart_9.xpr/bram_uart_9.xpr/bram_uart/bram_uart.xpr
+open_project C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.xpr
 update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/archive_project_summary.txt] -no_script -reset -force -quiet
+remove_files  C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/archive_project_summary.txt
+export_ip_user_files -of_objects  [get_files C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.srcs/sources_1/imports/bram_uart/archive_project_summary.txt] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.srcs/sources_1/imports/simple_VGA/archive_project_summary.txt] -no_script -reset -force -quiet
+remove_files  {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.srcs/sources_1/imports/bram_uart/archive_project_summary.txt C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.srcs/sources_1/imports/simple_VGA/archive_project_summary.txt}
+file delete -force C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.srcs/sources_1/imports/bram_uart/archive_project_summary.txt C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.srcs/sources_1/imports/simple_VGA/archive_project_summary.txt
 reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-launch_runs impl_1 -jobs 8
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
+launch_runs impl_1 -to_step write_bitstream -jobs 4
 wait_on_run impl_1
 open_hw
 connect_hw_server
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server
 open_hw_target
-set_property PROGRAM.FILE {C:/Users/lenovo/Desktop/bram_uart_9.xpr/bram_uart_9.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
 current_hw_device [get_hw_devices xc7a100t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/lenovo/Desktop/bram_uart_9.xpr/bram_uart_9.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 5.4 -module_name clk_uart -dir c:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {clk_uart} CONFIG.CLK_OUT1_PORT {clk_9} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {9.216} CONFIG.MMCM_DIVCLK_DIVIDE {7} CONFIG.MMCM_CLKFBOUT_MULT_F {63.625} CONFIG.MMCM_CLKOUT0_DIVIDE_F {98.625} CONFIG.CLKOUT1_JITTER {465.966} CONFIG.CLKOUT1_PHASE_ERROR {518.789}] [get_ips clk_uart]
+generate_target {instantiation_template} [get_files c:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.srcs/sources_1/ip/clk_uart/clk_uart.xci]
+update_compile_order -fileset sources_1
+set_property generate_synth_checkpoint false [get_files  c:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.srcs/sources_1/ip/clk_uart/clk_uart.xci]
+generate_target all [get_files  c:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.srcs/sources_1/ip/clk_uart/clk_uart.xci]
+export_ip_user_files -of_objects [get_files c:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.srcs/sources_1/ip/clk_uart/clk_uart.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files c:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.srcs/sources_1/ip/clk_uart/clk_uart.xci] -directory C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.ip_user_files/sim_scripts -ip_user_files_dir C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.ip_user_files -ipstatic_source_dir C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.cache/compile_simlib/modelsim} {questa=C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.cache/compile_simlib/questa} {riviera=C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.cache/compile_simlib/riviera} {activehdl=C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.USE_LOCKED {false} CONFIG.RESET_TYPE {ACTIVE_LOW} CONFIG.RESET_PORT {resetn}] [get_ips clk_uart]
+generate_target all [get_files  c:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.srcs/sources_1/ip/clk_uart/clk_uart.xci]
+export_ip_user_files -of_objects [get_files c:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.srcs/sources_1/ip/clk_uart/clk_uart.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files c:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.srcs/sources_1/ip/clk_uart/clk_uart.xci] -directory C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.ip_user_files/sim_scripts -ip_user_files_dir C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.ip_user_files -ipstatic_source_dir C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.cache/compile_simlib/modelsim} {questa=C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.cache/compile_simlib/questa} {riviera=C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.cache/compile_simlib/riviera} {activehdl=C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property -dict [list CONFIG.CLKOUT2_USED {true} CONFIG.CLKOUT3_USED {true} CONFIG.CLKOUT4_USED {false} CONFIG.CLK_OUT2_PORT {clk_25} CONFIG.CLK_OUT3_PORT {clk_100} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {25} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {108.500} CONFIG.MMCM_CLKOUT1_DIVIDE {40} CONFIG.MMCM_CLKOUT2_DIVIDE {10} CONFIG.MMCM_CLKOUT3_DIVIDE {1} CONFIG.NUM_OUT_CLKS {3} CONFIG.CLKOUT1_JITTER {212.898} CONFIG.CLKOUT1_PHASE_ERROR {98.575} CONFIG.CLKOUT2_JITTER {175.402} CONFIG.CLKOUT2_PHASE_ERROR {98.575} CONFIG.CLKOUT3_JITTER {130.958} CONFIG.CLKOUT3_PHASE_ERROR {98.575} CONFIG.CLKOUT4_JITTER {130.958} CONFIG.CLKOUT4_PHASE_ERROR {98.575}] [get_ips clk_uart]
+generate_target all [get_files  c:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.srcs/sources_1/ip/clk_uart/clk_uart.xci]
+export_ip_user_files -of_objects [get_files c:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.srcs/sources_1/ip/clk_uart/clk_uart.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files c:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.srcs/sources_1/ip/clk_uart/clk_uart.xci] -directory C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.ip_user_files/sim_scripts -ip_user_files_dir C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.ip_user_files -ipstatic_source_dir C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.cache/compile_simlib/modelsim} {questa=C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.cache/compile_simlib/questa} {riviera=C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.cache/compile_simlib/riviera} {activehdl=C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+archive_project C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart_1217.xpr.zip -temp_dir C:/users/administrator/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1444-40818 -force -include_local_ip_cache
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-launch_runs impl_1 -jobs 8
+launch_runs impl_1 -to_step write_bitstream -jobs 4
 wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
+open_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/lenovo/Desktop/bram_uart_9.xpr/bram_uart_9.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/lenovo/Desktop/bram_uart_9.xpr/bram_uart_9.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-archive_project C:/Users/lenovo/Desktop/bram_uart.xpr.zip -temp_dir C:/Users/lenovo/Desktop/bram_uart_9.xpr/bram_uart_9.xpr/bram_uart/.Xil/Vivado-15852-LAPTOP-69NJ2TNC -force -include_runs_in_progress -include_local_ip_cache -include_config_settings
-launch_runs impl_1 -jobs 8
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
+launch_runs impl_1 -to_step write_bitstream -jobs 4
 wait_on_run impl_1
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/lenovo/Desktop/bram_uart_9.xpr/bram_uart_9.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/lenovo/Desktop/bram_uart_9.xpr/bram_uart_9.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-archive_project C:/Users/lenovo/Desktop/bram_uart.xpr.zip -temp_dir C:/Users/lenovo/Desktop/bram_uart_9.xpr/bram_uart_9.xpr/bram_uart/.Xil/Vivado-15852-LAPTOP-69NJ2TNC -force -include_local_ip_cache -include_config_settings
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+archive_project C:/Users/Administrator/Desktop/bram_uart_OK.xpr.zip -temp_dir C:/users/administrator/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1444-40818 -force -include_local_ip_cache
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+add_files -norecurse C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.srcs/sources_1/imports/new/uart_txd_16.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+archive_project C:/Users/Administrator/Desktop/bram_uart_12211819.xpr.zip -temp_dir C:/users/administrator/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1444-40818 -force -include_local_ip_cache -include_config_settings
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/users/administrator/Desktop/bram_uart_2234.xpr/bram_uart/bram_uart.runs/impl_1/UART_SDRAM.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+archive_project C:/Users/Administrator/Desktop/bram_uart_OKOK.xpr.zip -temp_dir C:/users/administrator/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1444-40818 -force -include_local_ip_cache -include_config_settings

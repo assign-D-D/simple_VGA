@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/users/administrator/project_1/project_1.runs/impl_1'
+HD_PWD='C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
-EAStep vivado -log block_image.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source block_image.tcl -notrace
+/bin/touch .init_design.begin.rst
+EAStep vivado -log block_image_rom.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source block_image_rom.tcl -notrace
 
 

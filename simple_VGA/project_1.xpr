@@ -3,17 +3,17 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="35" Path="C:/users/administrator/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-34064-40228/PrjAr/_X_/project_1.xpr">
+<Project Version="7" Minor="35" Path="C:/Users/Lori/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-18748-Diamond-lori/PrjAr/_X_/project_1.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="bd98ef8bf7a647dab3659a118c7067d3"/>
+    <Option Name="Id" Val="8c68fd6c9f474c738e5bffc6d954ec49"/>
     <Option Name="Part" Val="xc7a100tfgg484-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
     <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
     <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
     <Option Name="CompiledLibDirIES" Val="$PCACHEDIR/compile_simlib/ies"/>
-    <Option Name="CompiledLibDirXcelium" Val="$PPRDIR/../../../../../../../../project_1/project_1.cache/compile_simlib/xcelium"/>
+    <Option Name="CompiledLibDirXcelium" Val="$PPRDIR/../../../../../../../../../../../../../../../project_1/project_1.cache/compile_simlib/xcelium"/>
     <Option Name="CompiledLibDirVCS" Val="$PCACHEDIR/compile_simlib/vcs"/>
     <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
     <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
@@ -30,20 +30,20 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="0"/>
+    <Option Name="WTXSimLaunchSim" Val="26"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="2"/>
-    <Option Name="WTModelSimExportSim" Val="2"/>
-    <Option Name="WTQuestaExportSim" Val="2"/>
-    <Option Name="WTIesExportSim" Val="2"/>
-    <Option Name="WTVcsExportSim" Val="2"/>
-    <Option Name="WTRivieraExportSim" Val="2"/>
-    <Option Name="WTActivehdlExportSim" Val="2"/>
+    <Option Name="WTXSimExportSim" Val="8"/>
+    <Option Name="WTModelSimExportSim" Val="8"/>
+    <Option Name="WTQuestaExportSim" Val="8"/>
+    <Option Name="WTIesExportSim" Val="8"/>
+    <Option Name="WTVcsExportSim" Val="8"/>
+    <Option Name="WTRivieraExportSim" Val="8"/>
+    <Option Name="WTActivehdlExportSim" Val="8"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -54,37 +54,65 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/ip/block_ram/block_ram.xci">
+      <File Path="$PSRCDIR/sources_1/ip/rom/rom.xci">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../project_1/project_1.srcs/sources_1/ip/block_ram/block_ram.xci"/>
-          <Attr Name="ImportTime" Val="1576391637"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/simple_VGA-master/simple_VGA/project_1.srcs/sources_1/ip/rom/rom.xci"/>
+          <Attr Name="ImportTime" Val="1576909492"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/Desktop/clock_div.v">
+      <File Path="$PSRCDIR/sources_1/ip/various_clk/various_clk.xci">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/clock_div.v"/>
-          <Attr Name="ImportTime" Val="1576391155"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.srcs/sources_1/ip/various_clk/various_clk.xci"/>
+          <Attr Name="ImportTime" Val="1577155014"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/sync.v">
+      <File Path="$PSRCDIR/sources_1/new/display_seg.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../project_1/project_1.srcs/sources_1/new/sync.v"/>
-          <Attr Name="ImportTime" Val="1576392771"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.srcs/sources_1/new/display_seg.v"/>
+          <Attr Name="ImportTime" Val="1577156069"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/block_image.v">
+      <File Path="$PSRCDIR/sources_1/new/switch_resolution.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../project_1/project_1.srcs/sources_1/new/block_image.v"/>
-          <Attr Name="ImportTime" Val="1576402598"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.srcs/sources_1/new/switch_resolution.v"/>
+          <Attr Name="ImportTime" Val="1577156133"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/sync_pre.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/simple_VGA-master/simple_VGA/project_1.srcs/sources_1/new/sync_pre.v"/>
+          <Attr Name="ImportTime" Val="1576996759"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/block_image_rom.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/simple_VGA-master/simple_VGA/project_1.srcs/sources_1/new/block_image_rom.v"/>
+          <Attr Name="ImportTime" Val="1577001568"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.srcs/sources_1/imports/new/clock_div.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.srcs/sources_1/imports/new/clock_div.v"/>
+          <Attr Name="ImportTime" Val="1576715390"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -93,8 +121,137 @@
       <File Path="$PSRCDIR/sources_1/imports/Desktop/colorlump.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/colorlump.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../Desktop/colorlump.v"/>
           <Attr Name="ImportTime" Val="1576392924"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.runs/impl_1/UART_SDRAM_routed.dcp">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.runs/impl_1/UART_SDRAM_routed.dcp"/>
+          <Attr Name="ImportTime" Val="1576932326"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/block_ram_add/block_ram_add.xci">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.srcs/sources_1/ip/block_ram_add/block_ram_add.xci"/>
+          <Attr Name="ImportTime" Val="1576715390"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/clk_uart/clk_uart.xci">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.srcs/sources_1/ip/clk_uart/clk_uart.xci"/>
+          <Attr Name="ImportTime" Val="1576899116"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.srcs/sources_1/imports/new/UART_SDRAM.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.srcs/sources_1/imports/new/UART_SDRAM.v"/>
+          <Attr Name="ImportTime" Val="1576995346"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/sync.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.srcs/sources_1/imports/new/sync.v"/>
+          <Attr Name="ImportTime" Val="1576996657"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.srcs/sources_1/imports/new/uart_txd_16.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.srcs/sources_1/imports/new/uart_txd_16.v"/>
+          <Attr Name="ImportTime" Val="1576931464"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.srcs/sources_1/imports/new/uart_vga_out.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.srcs/sources_1/imports/new/uart_vga_out.v"/>
+          <Attr Name="ImportTime" Val="1576918886"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/Main.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/simple_VGA-master/simple_VGA/project_1.srcs/sources_1/new/Main.v"/>
+          <Attr Name="ImportTime" Val="1576996796"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.srcs/sources_1/imports/new/sync.v">
+        <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.srcs/sources_1/imports/new/sync.v"/>
+          <Attr Name="ImportTime" Val="1576829466"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/clock_div.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../Desktop/clock_div.v"/>
+          <Attr Name="ImportTime" Val="1576391155"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/sdram/sdram.xci">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../project_1/project_1.srcs/sources_1/ip/sdram/sdram.xci"/>
+          <Attr Name="ImportTime" Val="1576401838"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/block_ram/block_ram.xci">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../project_1/project_1.srcs/sources_1/ip/block_ram/block_ram.xci"/>
+          <Attr Name="ImportTime" Val="1576391637"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/block_image.v">
+        <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../project_1/project_1.srcs/sources_1/new/block_image.v"/>
+          <Attr Name="ImportTime" Val="1576402598"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -102,34 +259,285 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/Desktop/project_tips/vga_files/parrot.png.coe">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/project_tips/vga_files/parrot.png.coe"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../Desktop/project_tips/vga_files/parrot.png.coe"/>
           <Attr Name="ImportTime" Val="1575294605"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/ip/sdram/sdram.xci">
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/simple_VGA-master/simple_VGA/archive_project_summary.txt">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/simple_VGA-master/simple_VGA/archive_project_summary.txt"/>
+          <Attr Name="ImportTime" Val="1576751926"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/Digital Design/project_tips/project_tips/vga_files/parrot.png.coe">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/Digital Design/project_tips/project_tips/vga_files/parrot.png.coe"/>
+          <Attr Name="ImportTime" Val="1575294605"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.ip_user_files/ipstatic/mmcm_pll_drp_func_us_mmcm.vh">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../project_1/project_1.srcs/sources_1/ip/sdram/sdram.xci"/>
-          <Attr Name="ImportTime" Val="1576401838"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.ip_user_files/ipstatic/mmcm_pll_drp_func_us_mmcm.vh"/>
+          <Attr Name="ImportTime" Val="1576899126"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.ip_user_files/sim_scripts/clk_uart/ies/glbl.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.ip_user_files/sim_scripts/clk_uart/ies/glbl.v"/>
+          <Attr Name="ImportTime" Val="1513215258"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.ip_user_files/ipstatic/mmcm_pll_drp_func_7s_mmcm.vh">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.ip_user_files/ipstatic/mmcm_pll_drp_func_7s_mmcm.vh"/>
+          <Attr Name="ImportTime" Val="1576899126"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.ip_user_files/ipstatic/mmcm_pll_drp_func_7s_pll.vh">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.ip_user_files/ipstatic/mmcm_pll_drp_func_7s_pll.vh"/>
+          <Attr Name="ImportTime" Val="1576899126"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.ip_user_files/sim_scripts/clk_uart/questa/glbl.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.ip_user_files/sim_scripts/clk_uart/questa/glbl.v"/>
+          <Attr Name="ImportTime" Val="1513215258"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.ip_user_files/sim_scripts/clk_uart/xsim/glbl.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.ip_user_files/sim_scripts/clk_uart/xsim/glbl.v"/>
+          <Attr Name="ImportTime" Val="1513215258"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.ip_user_files/sim_scripts/block_ram_add/activehdl/glbl.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.ip_user_files/sim_scripts/block_ram_add/activehdl/glbl.v"/>
+          <Attr Name="ImportTime" Val="1576715390"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.runs/impl_1/UART_SDRAM_opt.dcp">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.runs/impl_1/UART_SDRAM_opt.dcp"/>
+          <Attr Name="ImportTime" Val="1576931880"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.runs/impl_1/UART_SDRAM_placed.dcp">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.runs/impl_1/UART_SDRAM_placed.dcp"/>
+          <Attr Name="ImportTime" Val="1576931934"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.ip_user_files/sim_scripts/clk_uart/modelsim/glbl.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.ip_user_files/sim_scripts/clk_uart/modelsim/glbl.v"/>
+          <Attr Name="ImportTime" Val="1513215258"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.ip_user_files/sim_scripts/block_ram_add/riviera/glbl.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.ip_user_files/sim_scripts/block_ram_add/riviera/glbl.v"/>
+          <Attr Name="ImportTime" Val="1576715390"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.ip_user_files/ipstatic/mmcm_pll_drp_func_us_plus_mmcm.vh">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.ip_user_files/ipstatic/mmcm_pll_drp_func_us_plus_mmcm.vh"/>
+          <Attr Name="ImportTime" Val="1576899126"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.ip_user_files/ipstatic/mmcm_pll_drp_func_us_plus_pll.vh">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.ip_user_files/ipstatic/mmcm_pll_drp_func_us_plus_pll.vh"/>
+          <Attr Name="ImportTime" Val="1576899126"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.ip_user_files/sim_scripts/clk_uart/vcs/glbl.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.ip_user_files/sim_scripts/clk_uart/vcs/glbl.v"/>
+          <Attr Name="ImportTime" Val="1513215258"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.runs/synth_1/UART_SDRAM.dcp">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.runs/synth_1/UART_SDRAM.dcp"/>
+          <Attr Name="ImportTime" Val="1576931810"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.ip_user_files/sim_scripts/block_ram_add/xsim/glbl.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.ip_user_files/sim_scripts/block_ram_add/xsim/glbl.v"/>
+          <Attr Name="ImportTime" Val="1576715390"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.ip_user_files/sim_scripts/clk_uart/activehdl/glbl.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.ip_user_files/sim_scripts/clk_uart/activehdl/glbl.v"/>
+          <Attr Name="ImportTime" Val="1513215258"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.ip_user_files/ipstatic/mmcm_pll_drp_func_us_pll.vh">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.ip_user_files/ipstatic/mmcm_pll_drp_func_us_pll.vh"/>
+          <Attr Name="ImportTime" Val="1576899126"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.ip_user_files/sim_scripts/block_ram_add/modelsim/glbl.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.ip_user_files/sim_scripts/block_ram_add/modelsim/glbl.v"/>
+          <Attr Name="ImportTime" Val="1576715390"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.ip_user_files/sim_scripts/block_ram_add/questa/glbl.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.ip_user_files/sim_scripts/block_ram_add/questa/glbl.v"/>
+          <Attr Name="ImportTime" Val="1576715390"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.srcs/sources_1/imports/new/uart_txd.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.srcs/sources_1/imports/new/uart_txd.v"/>
+          <Attr Name="ImportTime" Val="1576920504"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.ip_user_files/sim_scripts/block_ram_add/vcs/glbl.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.ip_user_files/sim_scripts/block_ram_add/vcs/glbl.v"/>
+          <Attr Name="ImportTime" Val="1576715390"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.ip_user_files/sim_scripts/clk_uart/riviera/glbl.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.ip_user_files/sim_scripts/clk_uart/riviera/glbl.v"/>
+          <Attr Name="ImportTime" Val="1513215258"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.ip_user_files/sim_scripts/block_ram_add/ies/glbl.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.ip_user_files/sim_scripts/block_ram_add/ies/glbl.v"/>
+          <Attr Name="ImportTime" Val="1576715390"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/bram_uart/bram_uart.ip_user_files/ipstatic/simulation/blk_mem_gen_v8_4.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/bram_uart/bram_uart.ip_user_files/ipstatic/simulation/blk_mem_gen_v8_4.v"/>
+          <Attr Name="ImportTime" Val="1576715390"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/project_1/archive_project_summary.txt">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/archive_project_summary.txt"/>
+          <Attr Name="ImportTime" Val="1577005422"/>
+        </FileInfo>
+      </File>
       <File Path="$PPRDIR/archive_project_summary.txt"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="block_image"/>
+        <Option Name="TopModule" Val="block_image_rom"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PSRCDIR/constrs_1/imports/Desktop/constr_1.xdc">
+      <File Path="$PSRCDIR/constrs_1/new/constraint_bir.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/constr_1.xdc"/>
-          <Attr Name="ImportTime" Val="1576393214"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.srcs/constrs_1/new/constraint_bir.xdc"/>
+          <Attr Name="ImportTime" Val="1577156173"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
@@ -140,14 +548,53 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
       <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sim_1/new/image_rom_sim.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/simple_VGA-master/simple_VGA/project_1.srcs/sim_1/new/image_rom_sim.v"/>
+          <Attr Name="ImportTime" Val="1576909736"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/new/colorlump_sim.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/simple_VGA-master/simple_VGA/project_1.srcs/sim_1/new/colorlump_sim.v"/>
+          <Attr Name="ImportTime" Val="1576758956"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/new/sync_sim.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/simple_VGA-master/simple_VGA/project_1.srcs/sim_1/new/sync_sim.v"/>
+          <Attr Name="ImportTime" Val="1576755333"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/new/clock_div_sim.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/simple_VGA-master/simple_VGA/project_1.srcs/sim_1/new/clock_div_sim.v"/>
+          <Attr Name="ImportTime" Val="1576753075"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="colorlump"/>
+        <Option Name="TopModule" Val="image_rom_sim"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
-        <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
         <Option Name="SrcSet" Val="sources_1"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/../../../../../../../../../../Desktop/simple_VGA-master/simple_VGA/project_1.wf/clock_div_sim_behav.wcfg"/>
       </Config>
     </FileSet>
   </FileSets>

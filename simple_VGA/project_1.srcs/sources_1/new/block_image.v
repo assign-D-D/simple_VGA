@@ -1,6 +1,4 @@
 `timescale 1ns / 1ps
-
-
 module block_image(clk,rst_n,h_sync,v_sync,r_vga,g_vga,b_vga);
 parameter h_visible = 10'd640;
 parameter h_front = 10'd16;

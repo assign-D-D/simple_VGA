@@ -3,7 +3,7 @@
 module colorlump(clk,rst_n,h_sync,v_sync,r_vga,g_vga,b_vga);
 parameter h_visible = 10'd640;
 parameter h_front = 10'd16;
-parameter h_sync_pulse = 10'd96; 
+parameter h_sync_pulse = 10'd96;
 parameter h_back = 10'd48;
 parameter h_total = 10'd800;
 
@@ -17,7 +17,7 @@ wire [9:0] h_cnt;
 wire [9:0] v_cnt;
 wire visible;
 clock_div u(clk,rst_n,sync_clk);
-sync s(sync_clk,rst_n,h_sync,v_sync,h_cnt,v_cnt,visible);
+sync_pre s(sync_clk,rst_n,h_sync,v_sync,h_cnt,v_cnt,visible);
 //reg[11:0] rgb_vga;
 //assign {r_vga,g_vga,b_vga} = rgb_vga;
 always @(*)

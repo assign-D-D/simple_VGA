@@ -2,109 +2,152 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sun Dec 15 14:22:28 2019
-# Process ID: 34064
-# Current directory: C:/users/administrator/AppData/Roaming/Xilinx/Vivado
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent34120
-# Log file: C:/users/administrator/AppData/Roaming/Xilinx/Vivado/vivado.log
-# Journal file: C:/users/administrator/AppData/Roaming/Xilinx/Vivado\vivado.jou
+# Start of session at: Mon Dec 23 22:28:02 2019
+# Process ID: 18748
+# Current directory: C:/Users/Lori/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16664
+# Log file: C:/Users/Lori/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/Lori/AppData/Roaming/Xilinx/Vivado\vivado.jou
 #-----------------------------------------------------------
 start_gui
-create_project project_1 C:/users/administrator/project_1 -part xc7a100tfgg484-1
-add_files -norecurse {C:/users/administrator/Desktop/colorlump.v C:/users/administrator/Desktop/clock_div.v}
+open_project C:/Users/Lori/Desktop/pro_12230250/pro_12230250.xpr
 update_compile_order -fileset sources_1
-create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name block_ram -dir c:/users/administrator/project_1/project_1.srcs/sources_1/ip
-set_property -dict [list CONFIG.Component_Name {block_ram} CONFIG.Memory_Type {Single_Port_RAM} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {200000} CONFIG.Read_Width_A {12} CONFIG.Operating_Mode_A {NO_CHANGE} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/users/administrator/Desktop/project_tips/vga_files/parrot.png.coe} CONFIG.Fill_Remaining_Memory_Locations {true} CONFIG.Port_A_Write_Rate {50}] [get_ips block_ram]
-generate_target {instantiation_template} [get_files c:/users/administrator/project_1/project_1.srcs/sources_1/ip/block_ram/block_ram.xci]
+close_project
+open_project {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.xpr}
 update_compile_order -fileset sources_1
-set_property generate_synth_checkpoint false [get_files  c:/users/administrator/project_1/project_1.srcs/sources_1/ip/block_ram/block_ram.xci]
-generate_target all [get_files  c:/users/administrator/project_1/project_1.srcs/sources_1/ip/block_ram/block_ram.xci]
-export_ip_user_files -of_objects [get_files c:/users/administrator/project_1/project_1.srcs/sources_1/ip/block_ram/block_ram.xci] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files c:/users/administrator/project_1/project_1.srcs/sources_1/ip/block_ram/block_ram.xci] -directory C:/users/administrator/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/users/administrator/project_1/project_1.ip_user_files -ipstatic_source_dir C:/users/administrator/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/users/administrator/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/users/administrator/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/users/administrator/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/users/administrator/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-file mkdir C:/users/administrator/project_1/project_1.srcs/sources_1/new
-close [ open C:/users/administrator/project_1/project_1.srcs/sources_1/new/block_image.v w ]
-add_files C:/users/administrator/project_1/project_1.srcs/sources_1/new/block_image.v
-update_compile_order -fileset sources_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top block_image [current_fileset]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sources_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-close [ open C:/users/administrator/project_1/project_1.srcs/sources_1/new/sync.v w ]
-add_files C:/users/administrator/project_1/project_1.srcs/sources_1/new/sync.v
-update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -jobs 4
-wait_on_run impl_1
-open_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-close_design
-add_files -fileset constrs_1 -norecurse C:/users/administrator/Desktop/constr_1.xdc
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 4
 wait_on_run impl_1
 open_hw
 connect_hw_server
 open_hw_target
-set_property PROGRAM.FILE {C:/users/administrator/project_1/project_1.runs/impl_1/block_image.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.runs/impl_1/block_image_rom.bit} [get_hw_devices xc7a100t_0]
 current_hw_device [get_hw_devices xc7a100t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/users/administrator/project_1/project_1.runs/impl_1/block_image.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.runs/impl_1/block_image_rom.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-archive_project C:/users/administrator/Desktop/project_1.xpr.zip -temp_dir C:/users/administrator/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-34064-40228 -force -include_local_ip_cache -include_config_settings
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top colorlump [current_fileset]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sources_1
+close_hw
 reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-launch_runs impl_1 -jobs 4
-wait_on_run impl_1
 launch_runs impl_1 -to_step write_bitstream -jobs 4
 wait_on_run impl_1
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.runs/impl_1/block_image_rom.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/users/administrator/project_1/project_1.runs/impl_1/colorlump.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.runs/impl_1/block_image_rom.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-create_ip -name mig_7series -vendor xilinx.com -library ip -version 4.0 -module_name sdram
-set_property -dict [list CONFIG.XML_INPUT_FILE {mig_a.prj} CONFIG.RESET_BOARD_INTERFACE {Custom} CONFIG.MIG_DONT_TOUCH_PARAM {Custom} CONFIG.BOARD_MIG_PARAM {Custom}] [get_ips sdram]
-generate_target {instantiation_template} [get_files c:/users/administrator/project_1/project_1.srcs/sources_1/ip/sdram/sdram.xci]
-set_property generate_synth_checkpoint false [get_files  c:/users/administrator/project_1/project_1.srcs/sources_1/ip/sdram/sdram.xci]
-generate_target all [get_files  c:/users/administrator/project_1/project_1.srcs/sources_1/ip/sdram/sdram.xci]
-export_ip_user_files -of_objects [get_files c:/users/administrator/project_1/project_1.srcs/sources_1/ip/sdram/sdram.xci] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files c:/users/administrator/project_1/project_1.srcs/sources_1/ip/sdram/sdram.xci] -directory C:/users/administrator/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/users/administrator/project_1/project_1.ip_user_files -ipstatic_source_dir C:/users/administrator/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/users/administrator/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/users/administrator/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/users/administrator/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/users/administrator/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-update_compile_order -fileset sources_1
-archive_project C:/Users/Administrator/Desktop/project_1_.xpr.zip -temp_dir C:/users/administrator/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-34064-40228 -force -include_local_ip_cache -include_config_settings
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top block_image [current_fileset]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sources_1
+close_hw
 reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-launch_runs impl_1 -jobs 4
-wait_on_run impl_1
 launch_runs impl_1 -to_step write_bitstream -jobs 4
 wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.runs/impl_1/block_image_rom.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/users/administrator/project_1/project_1.runs/impl_1/block_image.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.runs/impl_1/block_image_rom.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-archive_project C:/Users/Administrator/Desktop/project_1_20191215.xpr.zip -temp_dir C:/users/administrator/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-34064-40228 -force -include_local_ip_cache -include_config_settings
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.runs/impl_1/block_image_rom.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.runs/impl_1/block_image_rom.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.runs/impl_1/block_image_rom.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.runs/impl_1/block_image_rom.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.runs/impl_1/block_image_rom.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.runs/impl_1/block_image_rom.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.runs/impl_1/block_image_rom.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.runs/impl_1/block_image_rom.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.runs/impl_1/block_image_rom.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.runs/impl_1/block_image_rom.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.runs/impl_1/block_image_rom.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+set_property -dict [list CONFIG.CLKOUT3_USED {true} CONFIG.CLKOUT4_USED {true} CONFIG.CLK_OUT3_PORT {clk_25} CONFIG.CLK_OUT4_PORT {clk_9} CONFIG.CLKOUT3_REQUESTED_OUT_FREQ {25} CONFIG.CLKOUT4_REQUESTED_OUT_FREQ {9.216} CONFIG.CLKOUT5_USED {false} CONFIG.CLKOUT6_USED {false} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {10.000} CONFIG.MMCM_CLKOUT1_DIVIDE {12} CONFIG.MMCM_CLKOUT2_DIVIDE {40} CONFIG.MMCM_CLKOUT3_DIVIDE {109} CONFIG.MMCM_CLKOUT4_DIVIDE {1} CONFIG.MMCM_CLKOUT5_DIVIDE {1} CONFIG.NUM_OUT_CLKS {4} CONFIG.CLKOUT1_JITTER {130.958} CONFIG.CLKOUT1_PHASE_ERROR {98.575} CONFIG.CLKOUT2_JITTER {135.981} CONFIG.CLKOUT2_PHASE_ERROR {98.575} CONFIG.CLKOUT3_JITTER {175.402} CONFIG.CLKOUT3_PHASE_ERROR {98.575} CONFIG.CLKOUT4_JITTER {213.086} CONFIG.CLKOUT4_PHASE_ERROR {98.575}] [get_ips various_clk]
+generate_target all [get_files  {{C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.srcs/sources_1/ip/various_clk/various_clk.xci}}]
+export_ip_user_files -of_objects [get_files {{C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.srcs/sources_1/ip/various_clk/various_clk.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.srcs/sources_1/ip/various_clk/various_clk.xci}}] -directory {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.ip_user_files} -ipstatic_source_dir {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.runs/impl_1/block_image_rom.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.runs/impl_1/block_image_rom.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+archive_project C:/Users/Lori/Desktop/resolutionGood1224.xpr.zip -temp_dir C:/Users/Lori/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-18748-Diamond-lori -force -include_local_ip_cache

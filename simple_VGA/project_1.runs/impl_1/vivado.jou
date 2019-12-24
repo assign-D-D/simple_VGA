@@ -2,11 +2,11 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sun Dec 15 17:45:21 2019
-# Process ID: 36536
-# Current directory: C:/users/administrator/project_1/project_1.runs/impl_1
-# Command line: vivado.exe -log block_image.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source block_image.tcl -notrace
-# Log file: C:/users/administrator/project_1/project_1.runs/impl_1/block_image.vdi
-# Journal file: C:/users/administrator/project_1/project_1.runs/impl_1\vivado.jou
+# Start of session at: Tue Dec 24 11:06:53 2019
+# Process ID: 22768
+# Current directory: C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.runs/impl_1
+# Command line: vivado.exe -log block_image_rom.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source block_image_rom.tcl -notrace
+# Log file: C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.runs/impl_1/block_image_rom.vdi
+# Journal file: C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
-source block_image.tcl -notrace
+source block_image_rom.tcl -notrace

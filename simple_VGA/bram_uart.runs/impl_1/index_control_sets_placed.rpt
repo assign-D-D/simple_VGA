@@ -1,0 +1,94 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed Dec 25 03:30:18 2019
+| Host         : Diamond-lori running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file index_control_sets_placed.rpt
+| Design       : index
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    26 |
+| Unused register locations in slices containing registers |    84 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              34 |           27 |
+| No           | No                    | Yes                    |             200 |           79 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              15 |            6 |
+| Yes          | No                    | Yes                    |             139 |           47 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------+---------------------------------------------------------------------------------------------------+--------------------------------+------------------+----------------+
+|     Clock Signal    |                                           Enable Signal                                           |        Set/Reset Signal        | Slice Load Count | Bel Load Count |
++---------------------+---------------------------------------------------------------------------------------------------+--------------------------------+------------------+----------------+
+|  bir/sr/s/clk_seg   |                                                                                                   | bir/sr/s/cnt[31]_i_2_n_0       |                1 |              3 |
+|  clock/inst/clk_9   | u/uart_accept/height[15]_i_1_n_0                                                                  | u/uart_accept/height_reg[13]_0 |                1 |              3 |
+|  clock/inst/clk_9   |                                                                                                   | u/uart_accept/height_reg[12]_0 |                3 |              4 |
+|  clock/inst/clk_9   | u/uart_accept/FSM_sequential_R_state[3]_i_1_n_0                                                   | u/uart_accept/height_reg[13]_0 |                1 |              4 |
+|  clock/inst/clk_9   | u/uart_accept/height[15]_i_1_n_0                                                                  | u/uart_accept/height_reg[12]_0 |                2 |              5 |
+|  clock/inst/clk_25  | u/blk_r_a/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/p_2_out |                                |                2 |              7 |
+|  clock/inst/clk_9   | u/uart_accept/height[7]_i_1_n_0                                                                   | u/uart_accept/height_reg[12]_0 |                4 |              8 |
+|  clock/inst/clk_9   | u/uart_accept/rg_data[7]_i_1_n_0                                                                  |                                |                4 |              8 |
+|  clock/inst/clk_9   | u/uart_accept/frame[7]_i_1_n_0                                                                    | u/uart_accept/height_reg[12]_0 |                1 |              8 |
+|  clock/inst/clk_9   | u/uart_accept/width[7]_i_1_n_0                                                                    | u/uart_accept/height_reg[12]_0 |                3 |              8 |
+|  clock/inst/clk_9   | u/uart_accept/width[15]_i_1_n_0                                                                   | u/uart_accept/height_reg[12]_0 |                2 |              8 |
+|  clock/inst/clk_25  | u/ii/v_cnt0                                                                                       | u/uart_accept/height_reg[12]_0 |                5 |             10 |
+|  clock/inst/clk_25  |                                                                                                   |                                |                8 |             11 |
+|  v_sync_4_BUFG      |                                                                                                   |                                |                8 |             11 |
+|  sync_clk           |                                                                                                   |                                |               11 |             12 |
+|  clock/inst/clk_25  |                                                                                                   | m/sy/h_cnt_reg[0]_0            |                6 |             16 |
+|  clock/inst/clk_25  | cl/s/v_cnt2                                                                                       | u/uart_accept/height_reg[13]_0 |                5 |             18 |
+|  clock/inst/clk_25  | m/sy/v_cnt2                                                                                       | m/sy/h_cnt_reg[0]_0            |                5 |             18 |
+|  sync_clk           |                                                                                                   | m/sy/h_cnt_reg[0]_0            |                5 |             18 |
+|  sync_clk           | bir/s/v_cnt2                                                                                      | m/sy/h_cnt_reg[0]_0            |                8 |             18 |
+|  clock/inst/clk_25  |                                                                                                   | u/uart_accept/height_reg[12]_0 |                6 |             19 |
+|  clock/inst/clk_9   |                                                                                                   | u/uart_accept/height_reg[13]_0 |               11 |             28 |
+|  clock/inst/clk_9   | u/uart_accept/rgb_data[11]_i_1_n_0                                                                | u/uart_accept/height_reg[12]_0 |               10 |             31 |
+|  v_sync_4_BUFG      |                                                                                                   | m/sy/h_cnt_reg[0]_0            |               16 |             31 |
+|  clock/inst/clk_100 |                                                                                                   | bir/sr/s/cnt[31]_i_2_n_0       |               15 |             33 |
+|  clock/inst/clk_25  |                                                                                                   | u/uart_accept/height_reg[13]_0 |               16 |             48 |
++---------------------+---------------------------------------------------------------------------------------------------+--------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 3      |                     2 |
+| 4      |                     2 |
+| 5      |                     1 |
+| 7      |                     1 |
+| 8      |                     5 |
+| 10     |                     1 |
+| 11     |                     2 |
+| 12     |                     1 |
+| 16+    |                    11 |
++--------+-----------------------+
+
+

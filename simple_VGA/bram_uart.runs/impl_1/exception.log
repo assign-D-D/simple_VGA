@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\users\administrator\Documents\Tencent Files\1033690636\FileRecv\bram_uart_OKOK.xpr\bram_uart\bram_uart.runs\impl_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: 没有权限

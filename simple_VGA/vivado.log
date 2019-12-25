@@ -2,96 +2,358 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sun Dec 15 14:22:28 2019
-# Process ID: 34064
-# Current directory: C:/users/administrator/AppData/Roaming/Xilinx/Vivado
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent34120
-# Log file: C:/users/administrator/AppData/Roaming/Xilinx/Vivado/vivado.log
-# Journal file: C:/users/administrator/AppData/Roaming/Xilinx/Vivado\vivado.jou
+# Start of session at: Tue Dec 24 19:45:17 2019
+# Process ID: 20324
+# Current directory: C:/Users/Lori/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22760
+# Log file: C:/Users/Lori/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/Lori/AppData/Roaming/Xilinx/Vivado\vivado.jou
 #-----------------------------------------------------------
 start_gui
-create_project project_1 C:/users/administrator/project_1 -part xc7a100tfgg484-1
+open_project C:/Users/Lori/DigitalDesign/colorLump/colorLump.xpr
+Scanning sources...
+Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
-create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 733.156 ; gain = 26.008
-add_files -norecurse {C:/users/administrator/Desktop/colorlump.v C:/users/administrator/Desktop/clock_div.v}
 update_compile_order -fileset sources_1
-INFO: [Device 21-403] Loading part xc7a100tfgg484-1
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name block_ram -dir c:/users/administrator/project_1/project_1.srcs/sources_1/ip
-set_property -dict [list CONFIG.Component_Name {block_ram} CONFIG.Memory_Type {Single_Port_RAM} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {200000} CONFIG.Read_Width_A {12} CONFIG.Operating_Mode_A {NO_CHANGE} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/users/administrator/Desktop/project_tips/vga_files/parrot.png.coe} CONFIG.Fill_Remaining_Memory_Locations {true} CONFIG.Port_A_Write_Rate {50}] [get_ips block_ram]
-WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'block_ram' to 'block_ram' is not allowed and is ignored.
-INFO: [IP_Flow 19-3484] Absolute path of file 'c:/users/administrator/Desktop/project_tips/vga_files/parrot.png.coe' provided. It will be converted relative to IP Instance files '../../../../../Desktop/project_tips/vga_files/parrot.png.coe'
-generate_target {instantiation_template} [get_files c:/users/administrator/project_1/project_1.srcs/sources_1/ip/block_ram/block_ram.xci]
-INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'block_ram'...
+close_project
+create_project vga_move C:/Users/Lori/DigitalDesign/vga_move -part xc7a100tfgg484-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+file mkdir C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/new
+close [ open C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/new/VGA.v w ]
+add_files C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/new/VGA.v
 update_compile_order -fileset sources_1
-set_property generate_synth_checkpoint false [get_files  c:/users/administrator/project_1/project_1.srcs/sources_1/ip/block_ram/block_ram.xci]
-generate_target all [get_files  c:/users/administrator/project_1/project_1.srcs/sources_1/ip/block_ram/block_ram.xci]
-INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'block_ram'...
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'block_ram'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'block_ram'...
-INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'block_ram'...
-INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'block_ram'...
-generate_target: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1027.477 ; gain = 1.590
-export_ip_user_files -of_objects [get_files c:/users/administrator/project_1/project_1.srcs/sources_1/ip/block_ram/block_ram.xci] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files c:/users/administrator/project_1/project_1.srcs/sources_1/ip/block_ram/block_ram.xci] -directory C:/users/administrator/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/users/administrator/project_1/project_1.ip_user_files -ipstatic_source_dir C:/users/administrator/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/users/administrator/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/users/administrator/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/users/administrator/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/users/administrator/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-file mkdir C:/users/administrator/project_1/project_1.srcs/sources_1/new
-close [ open C:/users/administrator/project_1/project_1.srcs/sources_1/new/block_image.v w ]
-add_files C:/users/administrator/project_1/project_1.srcs/sources_1/new/block_image.v
+open_project {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 838.344 ; gain = 53.605
 update_compile_order -fileset sources_1
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-set_property top block_image [current_fileset]
+current_project vga_move
+close [ open C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/new/sync.v w ]
+add_files C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/new/sync.v
 update_compile_order -fileset sources_1
-launch_runs synth_1 -jobs 4
-[Sun Dec 15 14:45:27 2019] Launched synth_1...
-Run output will be captured here: C:/users/administrator/project_1/project_1.runs/synth_1/runme.log
-launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 1045.484 ; gain = 0.000
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-[Sun Dec 15 14:46:08 2019] Launched synth_1...
-Run output will be captured here: C:/users/administrator/project_1/project_1.runs/synth_1/runme.log
-close [ open C:/users/administrator/project_1/project_1.srcs/sources_1/new/sync.v w ]
-add_files C:/users/administrator/project_1/project_1.srcs/sources_1/new/sync.v
+current_project project_1
+current_project vga_move
+current_project project_1
+current_project vga_move
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 5.4 -module_name div -dir c:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {div} CONFIG.CLKOUT2_USED {true} CONFIG.CLK_OUT1_PORT {clk_100} CONFIG.CLK_OUT2_PORT {clk_25} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {25} CONFIG.USE_LOCKED {false} CONFIG.RESET_TYPE {ACTIVE_LOW} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKOUT1_DIVIDE {40} CONFIG.NUM_OUT_CLKS {2} CONFIG.RESET_PORT {resetn} CONFIG.CLKOUT2_JITTER {175.402} CONFIG.CLKOUT2_PHASE_ERROR {98.575}] [get_ips div]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'div' to 'div' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files c:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/ip/div/div.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'div'...
+set_property generate_synth_checkpoint false [get_files  c:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/ip/div/div.xci]
+generate_target all [get_files  c:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/ip/div/div.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'div'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'div'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'div'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'div'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'div'...
+export_ip_user_files -of_objects [get_files c:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/ip/div/div.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files c:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/ip/div/div.xci] -directory C:/Users/Lori/DigitalDesign/vga_move/vga_move.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Lori/DigitalDesign/vga_move/vga_move.ip_user_files -ipstatic_source_dir C:/Users/Lori/DigitalDesign/vga_move/vga_move.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Lori/DigitalDesign/vga_move/vga_move.cache/compile_simlib/modelsim} {questa=C:/Users/Lori/DigitalDesign/vga_move/vga_move.cache/compile_simlib/questa} {riviera=C:/Users/Lori/DigitalDesign/vga_move/vga_move.cache/compile_simlib/riviera} {activehdl=C:/Users/Lori/DigitalDesign/vga_move/vga_move.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
 update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -jobs 4
-[Sun Dec 15 14:51:33 2019] Launched synth_1...
-Run output will be captured here: C:/users/administrator/project_1/project_1.runs/synth_1/runme.log
-[Sun Dec 15 14:51:33 2019] Launched impl_1...
-Run output will be captured here: C:/users/administrator/project_1/project_1.runs/impl_1/runme.log
-launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1071.137 ; gain = 0.000
-open_run impl_1
-INFO: [Netlist 29-17] Analyzing 154 Unisim elements for replacement
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+file mkdir C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/constrs_1
+file mkdir C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/constrs_1/new
+close [ open C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/constrs_1/new/const.xdc w ]
+add_files -fileset constrs_1 C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/constrs_1/new/const.xdc
+current_project project_1
+current_project vga_move
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tfgg484-1
+Top: VGA
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1132.965 ; gain = 104.484
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'VGA' [C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/new/VGA.v:3]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter HEIGHT bound to: 24 - type: integer 
+	Parameter DISV_TOP bound to: 10'b0111100000 
+	Parameter DISV_DOWN bound to: 10'b0000000000 
+	Parameter DISH_LEFT bound to: 10'b0000000000 
+	Parameter DISH_RIGHT bound to: 10'b1010000000 
+INFO: [Synth 8-638] synthesizing module 'div' [c:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/ip/div/div.v:71]
+INFO: [Synth 8-638] synthesizing module 'div_clk_wiz' [c:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/ip/div/div_clk_wiz.v:69]
+INFO: [Synth 8-638] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19468]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUF' (1#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19468]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25757]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 40 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (2#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25757]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (3#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'div_clk_wiz' (4#1) [c:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/ip/div/div_clk_wiz.v:69]
+INFO: [Synth 8-256] done synthesizing module 'div' (5#1) [c:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/ip/div/div.v:71]
+INFO: [Synth 8-638] synthesizing module 'sync' [C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/new/sync.v:3]
+	Parameter h_visible bound to: 640 - type: integer 
+	Parameter h_front bound to: 16 - type: integer 
+	Parameter h_sync_pulse bound to: 96 - type: integer 
+	Parameter h_back bound to: 48 - type: integer 
+	Parameter h_total bound to: 800 - type: integer 
+	Parameter v_visible bound to: 480 - type: integer 
+	Parameter v_front bound to: 10 - type: integer 
+	Parameter v_sync_pulse bound to: 2 - type: integer 
+	Parameter v_back bound to: 33 - type: integer 
+	Parameter v_total bound to: 525 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sync' (6#1) [C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/new/sync.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/new/VGA.v:51]
+WARNING: [Synth 8-5788] Register topbound_reg in module VGA is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/new/VGA.v:43]
+WARNING: [Synth 8-5788] Register downbound_reg in module VGA is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/new/VGA.v:44]
+WARNING: [Synth 8-5788] Register leftbound_reg in module VGA is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/new/VGA.v:45]
+WARNING: [Synth 8-5788] Register rightbound_reg in module VGA is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/new/VGA.v:46]
+INFO: [Synth 8-256] done synthesizing module 'VGA' (7#1) [C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/new/VGA.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1173.395 ; gain = 144.914
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1173.395 ; gain = 144.914
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.472 . Memory (MB): peak = 1180.840 ; gain = 2.895
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.473 . Memory (MB): peak = 1180.840 ; gain = 2.895
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/ip/div/div_board.xdc] for cell 'd/inst'
+Finished Parsing XDC File [c:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/ip/div/div_board.xdc] for cell 'd/inst'
+Parsing XDC File [c:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/ip/div/div.xdc] for cell 'd/inst'
+Finished Parsing XDC File [c:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/ip/div/div.xdc] for cell 'd/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/ip/div/div.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VGA_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VGA_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/constrs_1/new/const.xdc]
+Finished Parsing XDC File [C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/constrs_1/new/const.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1283.793 ; gain = 212.656
-WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:23 . Memory (MB): peak = 1395.438 ; gain = 366.957
+23 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:23 . Memory (MB): peak = 1395.438 ; gain = 366.957
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1554.781 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'VGA' [C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/new/VGA.v:3]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter HEIGHT bound to: 24 - type: integer 
+	Parameter DISV_TOP bound to: 10'b0111100000 
+	Parameter DISV_DOWN bound to: 10'b0000000000 
+	Parameter DISH_LEFT bound to: 10'b0000000000 
+	Parameter DISH_RIGHT bound to: 10'b1010000000 
+INFO: [Synth 8-638] synthesizing module 'div' [c:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/ip/div/div.v:71]
+INFO: [Synth 8-638] synthesizing module 'div_clk_wiz' [c:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/ip/div/div_clk_wiz.v:69]
+INFO: [Synth 8-638] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19468]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUF' (1#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19468]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25757]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 40 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (2#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25757]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (3#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'div_clk_wiz' (4#1) [c:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/ip/div/div_clk_wiz.v:69]
+INFO: [Synth 8-256] done synthesizing module 'div' (5#1) [c:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/ip/div/div.v:71]
+INFO: [Synth 8-638] synthesizing module 'sync' [C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/new/sync.v:3]
+	Parameter h_visible bound to: 640 - type: integer 
+	Parameter h_front bound to: 16 - type: integer 
+	Parameter h_sync_pulse bound to: 96 - type: integer 
+	Parameter h_back bound to: 48 - type: integer 
+	Parameter h_total bound to: 800 - type: integer 
+	Parameter v_visible bound to: 480 - type: integer 
+	Parameter v_front bound to: 10 - type: integer 
+	Parameter v_sync_pulse bound to: 2 - type: integer 
+	Parameter v_back bound to: 33 - type: integer 
+	Parameter v_total bound to: 525 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sync' (6#1) [C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/new/sync.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/new/VGA.v:51]
+WARNING: [Synth 8-5788] Register topbound_reg in module VGA is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/new/VGA.v:43]
+WARNING: [Synth 8-5788] Register downbound_reg in module VGA is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/new/VGA.v:44]
+WARNING: [Synth 8-5788] Register leftbound_reg in module VGA is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/new/VGA.v:45]
+WARNING: [Synth 8-5788] Register rightbound_reg in module VGA is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/new/VGA.v:46]
+INFO: [Synth 8-256] done synthesizing module 'VGA' (7#1) [C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/new/VGA.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1578.945 ; gain = 24.164
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1578.945 ; gain = 24.164
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/ip/div/div_board.xdc] for cell 'd/inst'
+Finished Parsing XDC File [c:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/ip/div/div_board.xdc] for cell 'd/inst'
+Parsing XDC File [c:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/ip/div/div.xdc] for cell 'd/inst'
+Finished Parsing XDC File [c:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/ip/div/div.xdc] for cell 'd/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/sources_1/ip/div/div.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VGA_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VGA_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/constrs_1/new/const.xdc]
+Finished Parsing XDC File [C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/constrs_1/new/const.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1578.945 ; gain = 24.164
+set_property IOSTANDARD LVCMOS33 [get_ports [list {color[11]} {color[10]} {color[9]} {color[8]} {color[7]} {color[6]} {color[5]} {color[4]} {color[3]} {color[2]} {color[1]} {color[0]}]]
+place_ports {color[11]} Y9
+place_ports {color[10]} W9
+place_ports {color[9]} Y7
+place_ports {color[9]} Y8
+place_ports {color[9]} Y7
+place_ports {color[8]} Y8
+place_ports {color[7]} AB8
+place_ports {color[6]} AA8
+place_ports {color[5]} V8
+place_ports {color[4]} V9
+place_ports {color[3]} AB6
+set_property package_pin "" [get_ports [list  {color[2]}]]
+set_property package_pin "" [get_ports [list  {color[3]}]]
+set_property package_pin "" [get_ports [list  {color[2]}]]
+place_ports {color[3]} AB6
+place_ports {color[2]} AB7
+set_property package_pin "" [get_ports [list  {color[1]}]]
+place_ports {color[1]} V7
+place_ports {color[0]} AA6
+set_property target_constrs_file C:/Users/Lori/DigitalDesign/vga_move/vga_move.srcs/constrs_1/new/const.xdc [current_fileset -constrset]
+save_constraints -force
 launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Sun Dec 15 14:58:58 2019] Launched impl_1...
-Run output will be captured here: C:/users/administrator/project_1/project_1.runs/impl_1/runme.log
-close_design
-add_files -fileset constrs_1 -norecurse C:/users/administrator/Desktop/constr_1.xdc
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Sun Dec 15 15:00:56 2019] Launched synth_1...
-Run output will be captured here: C:/users/administrator/project_1/project_1.runs/synth_1/runme.log
-[Sun Dec 15 15:00:56 2019] Launched impl_1...
-Run output will be captured here: C:/users/administrator/project_1/project_1.runs/impl_1/runme.log
+[Tue Dec 24 20:21:37 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Lori/DigitalDesign/vga_move/vga_move.runs/synth_1/runme.log
+[Tue Dec 24 20:21:37 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Lori/DigitalDesign/vga_move/vga_move.runs/impl_1/runme.log
 open_hw
-open_hw: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 1746.621 ; gain = 0.000
 connect_hw_server
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
 INFO: [Labtools 27-2222] Launching hw_server...
@@ -102,18 +364,16 @@ INFO: [Labtools 27-2221] Launch Output:
     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 
 
-connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:32 . Memory (MB): peak = 1746.621 ; gain = 0.000
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1578.945 ; gain = 0.000
 open_hw_target
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
-open_hw_target: Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 2142.516 ; gain = 395.895
-set_property PROGRAM.FILE {C:/users/administrator/project_1/project_1.runs/impl_1/block_image.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Lori/DigitalDesign/vga_move/vga_move.runs/impl_1/VGA.bit} [get_hw_devices xc7a100t_0]
 current_hw_device [get_hw_devices xc7a100t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
 INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
-refresh_hw_device: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2142.777 ; gain = 0.074
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/users/administrator/project_1/project_1.runs/impl_1/block_image.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Lori/DigitalDesign/vga_move/vga_move.runs/impl_1/VGA.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
@@ -123,48 +383,160 @@ Resolution:
 1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
 2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
 For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
-archive_project C:/users/administrator/Desktop/project_1.xpr.zip -temp_dir C:/users/administrator/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-34064-40228 -force -include_local_ip_cache -include_config_settings
-INFO: [Coretcl 2-137] starting archive...
-INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/users/administrator/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-34064-40228' for archiving project
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Lori/DigitalDesign/vga_move/vga_move.runs/impl_1/VGA.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+ERROR: [Labtools 27-3165] End of startup status: LOW
+ERROR: [Common 17-39] 'program_hw_devices' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Lori/DigitalDesign/vga_move/vga_move.runs/impl_1/VGA.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Dec 24 20:32:40 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Lori/DigitalDesign/vga_move/vga_move.runs/synth_1/runme.log
+[Tue Dec 24 20:32:40 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Lori/DigitalDesign/vga_move/vga_move.runs/impl_1/runme.log
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {C:/Users/Lori/DigitalDesign/vga_move/vga_move.runs/impl_1/VGA.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Lori/DigitalDesign/vga_move/vga_move.runs/impl_1/VGA.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+ERROR: [Labtools 27-3165] End of startup status: LOW
+ERROR: [Common 17-39] 'program_hw_devices' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Lori/DigitalDesign/vga_move/vga_move.runs/impl_1/VGA.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+ERROR: [Vivado 12-106] *** Exception: java.lang.NullPointerException (See C:/Users/Lori/AppData/Roaming/Xilinx/Vivado/vivado_pid20324.debug)
+current_project project_1
+close [ open {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.srcs/sources_1/new/vga_move.v} w ]
+add_files {{C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/ProjectNIE1222_1703.xpr/project_1/project_1.srcs/sources_1/new/vga_move.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+current_project vga_move
+close_project
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Lori/DigitalDesign/vga_move/vga_move.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Dec 25 01:17:45 2019...
+close_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2275.969 ; gain = 0.000
+close_project
+open_project {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/users/administrator/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-3848-40825/PrjAr/_X_' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
-INFO: [Coretcl 2-1211] Creating project copy for archival...
-INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
-Current project path is 'C:/users/administrator/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-34064-40228/PrjAr/_X_'.
-INFO: [Coretcl 2-1213] Including run results for 'synth_1'
-INFO: [Coretcl 2-1213] Including run results for 'impl_1'
-INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
-INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
-INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
-INFO: [Coretcl 2-1209] Adding archive summary file to the project...
-INFO: [Coretcl 2-1214] Preparing project files for archive...
-INFO: [Coretcl 2-1210] Compressing project files and data...
-INFO: [Coretcl 2-1215] Project archived (C:/users/administrator/Desktop/project_1.xpr.zip)
-INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
-archive_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:54 . Memory (MB): peak = 2175.957 ; gain = 6.262
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tfgg484-1
+Top: index
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'source' was cancelled
+2 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2275.969 ; gain = 0.000
+INFO: [Common 17-344] 'synth_design' was cancelled
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec 25 01:20:30 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.runs/synth_1/runme.log
+[Wed Dec 25 01:20:30 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2275.969 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.runs/impl_1/index.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.runs/impl_1/index.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.runs/impl_1/index.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
 ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
 INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
 WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property top colorlump [current_fileset]
-update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-[Sun Dec 15 16:33:21 2019] Launched synth_1...
-Run output will be captured here: C:/users/administrator/project_1/project_1.runs/synth_1/runme.log
-launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 2187.758 ; gain = 0.000
-launch_runs impl_1 -jobs 4
-[Sun Dec 15 16:34:42 2019] Launched impl_1...
-Run output will be captured here: C:/users/administrator/project_1/project_1.runs/impl_1/runme.log
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Sun Dec 15 16:36:34 2019] Launched impl_1...
-Run output will be captured here: C:/users/administrator/project_1/project_1.runs/impl_1/runme.log
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/users/administrator/project_1/project_1.runs/impl_1/colorlump.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.runs/impl_1/index.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
@@ -174,59 +546,53 @@ Resolution:
 1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
 2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
 For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
-create_ip -name mig_7series -vendor xilinx.com -library ip -version 4.0 -module_name sdram
-set_property -dict [list CONFIG.XML_INPUT_FILE {mig_a.prj} CONFIG.RESET_BOARD_INTERFACE {Custom} CONFIG.MIG_DONT_TOUCH_PARAM {Custom} CONFIG.BOARD_MIG_PARAM {Custom}] [get_ips sdram]
-generate_target {instantiation_template} [get_files c:/users/administrator/project_1/project_1.srcs/sources_1/ip/sdram/sdram.xci]
-INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'sdram'...
-set_property generate_synth_checkpoint false [get_files  c:/users/administrator/project_1/project_1.srcs/sources_1/ip/sdram/sdram.xci]
-generate_target all [get_files  c:/users/administrator/project_1/project_1.srcs/sources_1/ip/sdram/sdram.xci]
-INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'sdram'...
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'sdram'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'sdram'...
-INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'sdram'...
-INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'sdram'...
-generate_target: Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 2350.305 ; gain = 0.000
-export_ip_user_files -of_objects [get_files c:/users/administrator/project_1/project_1.srcs/sources_1/ip/sdram/sdram.xci] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files c:/users/administrator/project_1/project_1.srcs/sources_1/ip/sdram/sdram.xci] -directory C:/users/administrator/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/users/administrator/project_1/project_1.ip_user_files -ipstatic_source_dir C:/users/administrator/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/users/administrator/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/users/administrator/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/users/administrator/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/users/administrator/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-update_compile_order -fileset sources_1
-archive_project C:/Users/Administrator/Desktop/project_1_.xpr.zip -temp_dir C:/users/administrator/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-34064-40228 -force -include_local_ip_cache -include_config_settings
-INFO: [Coretcl 2-137] starting archive...
-INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/users/administrator/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-34064-40228' for archiving project
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+close_hw
+open_project C:/Users/Lori/DigitalDesign/vga_move/vga_move.xpr
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
-INFO: [Coretcl 2-1211] Creating project copy for archival...
-INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
-Current project path is 'C:/users/administrator/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-34064-40228/PrjAr/_X_'.
-INFO: [Coretcl 2-1213] Including run results for 'synth_1'
-INFO: [Coretcl 2-1213] Including run results for 'impl_1'
-INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
-INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
-INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
-INFO: [Coretcl 2-1209] Adding archive summary file to the project...
-INFO: [Coretcl 2-1214] Preparing project files for archive...
-INFO: [Coretcl 2-1210] Compressing project files and data...
-INFO: [Coretcl 2-1215] Project archived (C:/Users/Administrator/Desktop/project_1_.xpr.zip)
-INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
-archive_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:39 . Memory (MB): peak = 2366.168 ; gain = 4.281
-set_property top block_image [current_fileset]
+update_compile_order -fileset sources_1
+current_project bram_uart
+close [ open {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/vga_move.v} w ]
+add_files {{C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/vga_move.v}}
+update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 reset_run synth_1
-launch_runs synth_1 -jobs 4
-[Sun Dec 15 17:37:04 2019] Launched synth_1...
-Run output will be captured here: C:/users/administrator/project_1/project_1.runs/synth_1/runme.log
-launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 2371.844 ; gain = 0.000
-launch_runs impl_1 -jobs 4
-[Sun Dec 15 17:43:03 2019] Launched impl_1...
-Run output will be captured here: C:/users/administrator/project_1/project_1.runs/impl_1/runme.log
 launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Sun Dec 15 17:45:06 2019] Launched impl_1...
-Run output will be captured here: C:/users/administrator/project_1/project_1.runs/impl_1/runme.log
+[Wed Dec 25 02:45:20 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.runs/synth_1/runme.log
+[Wed Dec 25 02:45:20 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.runs/impl_1/runme.log
+current_project vga_move
+close_project
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.runs/impl_1/index.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/users/administrator/project_1/project_1.runs/impl_1/block_image.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.runs/impl_1/index.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
@@ -236,9 +602,71 @@ Resolution:
 1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
 2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
 For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
-archive_project C:/Users/Administrator/Desktop/project_1_20191215.xpr.zip -temp_dir C:/users/administrator/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-34064-40228 -force -include_local_ip_cache -include_config_settings
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.runs/impl_1/index.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec 25 03:17:54 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.runs/synth_1/runme.log
+[Wed Dec 25 03:17:54 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.runs/impl_1/index.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.runs/impl_1/index.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+ERROR: [Labtools 27-3165] End of startup status: LOW
+ERROR: [Common 17-39] 'program_hw_devices' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.runs/impl_1/index.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+close_hw
+archive_project C:/Users/Lori/Desktop/Project_Final_Edition.xpr.zip -temp_dir C:/Users/Lori/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-20324-Diamond-lori -force -include_local_ip_cache -include_config_settings
 INFO: [Coretcl 2-137] starting archive...
-INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/users/administrator/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-34064-40228' for archiving project
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/Lori/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-20324-Diamond-lori' for archiving project
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -246,9 +674,10 @@ INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
 INFO: [Coretcl 2-1211] Creating project copy for archival...
 INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
-Current project path is 'C:/users/administrator/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-34064-40228/PrjAr/_X_'.
+Current project path is 'C:/Users/Lori/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-20324-Diamond-lori/PrjAr/_X_'.
 INFO: [Coretcl 2-1213] Including run results for 'synth_1'
 INFO: [Coretcl 2-1213] Including run results for 'impl_1'
 INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
 INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
 INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

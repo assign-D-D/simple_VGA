@@ -1,0 +1,1503 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Dec 25 03:17:57 2019
+# Process ID: 19672
+# Current directory: C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.runs/synth_1
+# Command line: vivado.exe -log index.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source index.tcl
+# Log file: C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.runs/synth_1/index.vds
+# Journal file: C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source index.tcl -notrace
+Command: synth_design -top index -part xc7a100tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3832 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 344.766 ; gain = 103.453
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'index' [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/index.v:3]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [c:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:73]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_clk_wiz' [c:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:71]
+INFO: [Synth 8-638] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19468]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUF' (1#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19468]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25757]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 12 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 40 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 109 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (2#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25757]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (3#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_clk_wiz' (4#1) [c:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:71]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (5#1) [c:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:73]
+INFO: [Synth 8-638] synthesizing module 'colorlump' [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/colorlump.v:3]
+	Parameter h_visible bound to: 10'b1010000000 
+	Parameter h_front bound to: 10'b0000010000 
+	Parameter h_sync_pulse bound to: 10'b0001100000 
+	Parameter h_back bound to: 10'b0000110000 
+	Parameter h_total bound to: 10'b1100100000 
+	Parameter v_visible bound to: 480 - type: integer 
+	Parameter v_front bound to: 10 - type: integer 
+	Parameter v_sync_pulse bound to: 2 - type: integer 
+	Parameter v_back bound to: 33 - type: integer 
+	Parameter v_total bound to: 525 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sync_pre' [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/sync_pre.v:3]
+INFO: [Synth 8-256] done synthesizing module 'sync_pre' (6#1) [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/sync_pre.v:3]
+WARNING: [Synth 8-689] width (10) of port connection 'h_cnt' does not match port width (18) of module 'sync_pre' [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/colorlump.v:26]
+WARNING: [Synth 8-689] width (10) of port connection 'v_cnt' does not match port width (18) of module 'sync_pre' [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/colorlump.v:26]
+INFO: [Synth 8-256] done synthesizing module 'colorlump' (7#1) [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/colorlump.v:3]
+INFO: [Synth 8-638] synthesizing module 'block_image_rom' [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/block_image_rom.v:2]
+	Parameter normal bound to: 3'b000 
+	Parameter tile bound to: 3'b001 
+	Parameter stretch bound to: 3'b010 
+	Parameter center bound to: 3'b011 
+	Parameter fit bound to: 3'b100 
+	Parameter upsidedown bound to: 3'b101 
+INFO: [Synth 8-638] synthesizing module 'switch_resolution' [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/switch_resolution.v:2]
+	Parameter H_VISIBLE_640_350 bound to: 640 - type: integer 
+	Parameter H_FRONT_640_350 bound to: 16 - type: integer 
+	Parameter H_SYNC_PULSE_640_350 bound to: 96 - type: integer 
+	Parameter H_BACK_640_350 bound to: 48 - type: integer 
+	Parameter H_TOTAL_640_350 bound to: 800 - type: integer 
+	Parameter V_VISIBLE_640_350 bound to: 350 - type: integer 
+	Parameter V_FRONT_640_350 bound to: 37 - type: integer 
+	Parameter V_SYNC_PULSE_640_350 bound to: 2 - type: integer 
+	Parameter V_BACK_640_350 bound to: 60 - type: integer 
+	Parameter V_TOTAL_640_350 bound to: 449 - type: integer 
+	Parameter H_VISIBLE_640_400 bound to: 640 - type: integer 
+	Parameter H_FRONT_640_400 bound to: 16 - type: integer 
+	Parameter H_SYNC_PULSE_640_400 bound to: 96 - type: integer 
+	Parameter H_BACK_640_400 bound to: 48 - type: integer 
+	Parameter H_TOTAL_640_400 bound to: 800 - type: integer 
+	Parameter V_VISIBLE_640_400 bound to: 400 - type: integer 
+	Parameter V_FRONT_640_400 bound to: 12 - type: integer 
+	Parameter V_SYNC_PULSE_640_400 bound to: 2 - type: integer 
+	Parameter V_BACK_640_400 bound to: 35 - type: integer 
+	Parameter V_TOTAL_640_400 bound to: 449 - type: integer 
+	Parameter H_VISIBLE_640_480 bound to: 640 - type: integer 
+	Parameter H_FRONT_640_480 bound to: 16 - type: integer 
+	Parameter H_SYNC_PULSE_640_480 bound to: 96 - type: integer 
+	Parameter H_BACK_640_480 bound to: 48 - type: integer 
+	Parameter H_TOTAL_640_480 bound to: 800 - type: integer 
+	Parameter V_VISIBLE_640_480 bound to: 480 - type: integer 
+	Parameter V_FRONT_640_480 bound to: 10 - type: integer 
+	Parameter V_SYNC_PULSE_640_480 bound to: 2 - type: integer 
+	Parameter V_BACK_640_480 bound to: 33 - type: integer 
+	Parameter V_TOTAL_640_480 bound to: 525 - type: integer 
+	Parameter H_VISIBLE_1280_800 bound to: 1280 - type: integer 
+	Parameter H_FRONT_1280_800 bound to: 64 - type: integer 
+	Parameter H_SYNC_PULSE_1280_800 bound to: 136 - type: integer 
+	Parameter H_BACK_1280_800 bound to: 200 - type: integer 
+	Parameter H_TOTAL_1280_800 bound to: 1680 - type: integer 
+	Parameter V_VISIBLE_1280_800 bound to: 800 - type: integer 
+	Parameter V_FRONT_1280_800 bound to: 1 - type: integer 
+	Parameter V_SYNC_PULSE_1280_800 bound to: 3 - type: integer 
+	Parameter V_BACK_1280_800 bound to: 24 - type: integer 
+	Parameter V_TOTAL_1280_800 bound to: 828 - type: integer 
+	Parameter RESOLUTION_640_480 bound to: 2'b00 
+	Parameter RESOLUTION_1280_800 bound to: 2'b01 
+	Parameter RESOLUTION_640_350 bound to: 2'b10 
+	Parameter RESOLUTION_640_400 bound to: 2'b11 
+INFO: [Synth 8-638] synthesizing module 'display_seg' [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/display_seg.v:3]
+	Parameter period bound to: 200000 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/display_seg.v:51]
+INFO: [Synth 8-226] default block is never used [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/display_seg.v:69]
+WARNING: [Synth 8-567] referenced signal 'rst_n' should be on the sensitivity list [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/display_seg.v:64]
+WARNING: [Synth 8-567] referenced signal 'S' should be on the sensitivity list [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/display_seg.v:64]
+INFO: [Synth 8-256] done synthesizing module 'display_seg' (8#1) [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/display_seg.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/switch_resolution.v:126]
+INFO: [Synth 8-256] done synthesizing module 'switch_resolution' (9#1) [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/switch_resolution.v:2]
+WARNING: [Synth 8-689] width (3) of port connection 'S' does not match port width (2) of module 'switch_resolution' [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/block_image_rom.v:43]
+INFO: [Synth 8-638] synthesizing module 'rom' [c:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/ip/rom/synth/rom.vhd:67]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: rom.mif - type: string 
+	Parameter C_INIT_FILE bound to: rom.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 104000 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 104000 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 17 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 104000 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 104000 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 17 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 34 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 3 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     8.621603 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_1' declared at 'c:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/ip/block_ram_add/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195313' bound to instance 'U0' of component 'blk_mem_gen_v8_4_1' [c:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/ip/rom/synth/rom.vhd:228]
+INFO: [Synth 8-256] done synthesizing module 'rom' (20#1) [c:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/ip/rom/synth/rom.vhd:67]
+WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (17) of module 'rom' [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/block_image_rom.v:51]
+INFO: [Synth 8-256] done synthesizing module 'block_image_rom' (21#1) [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/block_image_rom.v:2]
+WARNING: [Synth 8-689] width (2) of port connection 'S_resolution' does not match port width (3) of module 'block_image_rom' [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/index.v:43]
+INFO: [Synth 8-638] synthesizing module 'UART' [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/imports/new/UART_SDRAM.v:2]
+	Parameter h_visible bound to: 10'b1010000000 
+	Parameter h_front bound to: 10'b0000010000 
+	Parameter h_sync_pulse bound to: 10'b0001100000 
+	Parameter h_back bound to: 10'b0000110000 
+	Parameter h_total bound to: 10'b1100100000 
+	Parameter v_visible bound to: 10'b0111100000 
+	Parameter v_front bound to: 10'b0000001010 
+	Parameter v_sync_pulse bound to: 10'b0000000010 
+	Parameter v_back bound to: 10'b0000100001 
+	Parameter v_total bound to: 10'b1000001101 
+INFO: [Synth 8-638] synthesizing module 'sync' [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/imports/new/sync.v:3]
+	Parameter h_visible bound to: 10'b1010000000 
+	Parameter h_front bound to: 10'b0000010000 
+	Parameter h_sync_pulse bound to: 10'b0001100000 
+	Parameter h_back bound to: 10'b0000110000 
+	Parameter h_total bound to: 10'b1100100000 
+	Parameter v_visible bound to: 10'b0111100000 
+	Parameter v_front bound to: 10'b0000001010 
+	Parameter v_sync_pulse bound to: 10'b0000000010 
+	Parameter v_back bound to: 10'b0000100001 
+	Parameter v_total bound to: 10'b1000001101 
+INFO: [Synth 8-256] done synthesizing module 'sync' (22#1) [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/imports/new/sync.v:3]
+INFO: [Synth 8-638] synthesizing module 'block_ram_add' [c:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/ip/block_ram_add/synth/block_ram_add.vhd:69]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: block_ram_add.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 290000 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 290000 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 19 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 290000 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 290000 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 19 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 98 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     8.297046 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_1' declared at 'c:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/ip/block_ram_add/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195313' bound to instance 'U0' of component 'blk_mem_gen_v8_4_1' [c:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/ip/block_ram_add/synth/block_ram_add.vhd:232]
+INFO: [Synth 8-256] done synthesizing module 'block_ram_add' (24#1) [c:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/ip/block_ram_add/synth/block_ram_add.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'uart_rxd_16' [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/imports/new/uart_txd_16.v:3]
+	Parameter BPS_SELECT bound to: 14'b00000001010000 
+WARNING: [Synth 8-5788] Register rg_data_reg in module uart_rxd_16 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/imports/new/uart_txd_16.v:202]
+INFO: [Synth 8-256] done synthesizing module 'uart_rxd_16' (25#1) [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/imports/new/uart_txd_16.v:3]
+INFO: [Synth 8-638] synthesizing module 'uart_vga_out' [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/imports/new/uart_vga_out.v:2]
+	Parameter h_visible bound to: 10'b1010000000 
+	Parameter h_front bound to: 10'b0000010000 
+	Parameter h_sync_pulse bound to: 10'b0001100000 
+	Parameter h_back bound to: 10'b0000110000 
+	Parameter h_total bound to: 10'b1100100000 
+	Parameter v_visible bound to: 10'b0111100000 
+	Parameter v_front bound to: 10'b0000001010 
+	Parameter v_sync_pulse bound to: 10'b0000000010 
+	Parameter v_back bound to: 10'b0000100001 
+	Parameter v_total bound to: 10'b1000001101 
+INFO: [Synth 8-256] done synthesizing module 'uart_vga_out' (26#1) [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/imports/new/uart_vga_out.v:2]
+INFO: [Synth 8-256] done synthesizing module 'UART' (27#1) [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/imports/new/UART_SDRAM.v:2]
+INFO: [Synth 8-638] synthesizing module 'vga_move' [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/vga_move.v:2]
+	Parameter H_VISIBLE bound to: 640 - type: integer 
+	Parameter H_FRONT bound to: 16 - type: integer 
+	Parameter H_SYNC_PULSE bound to: 96 - type: integer 
+	Parameter H_BACK bound to: 48 - type: integer 
+	Parameter H_TOTAL bound to: 800 - type: integer 
+	Parameter V_VISIBLE bound to: 480 - type: integer 
+	Parameter V_FRONT bound to: 10 - type: integer 
+	Parameter V_SYNC_PULSE bound to: 2 - type: integer 
+	Parameter V_BACK bound to: 33 - type: integer 
+	Parameter V_TOTAL bound to: 525 - type: integer 
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter HEIGHT bound to: 24 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/vga_move.v:48]
+WARNING: [Synth 8-5788] Register v_max_reg in module vga_move is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/vga_move.v:40]
+WARNING: [Synth 8-5788] Register v_min_reg in module vga_move is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/vga_move.v:41]
+WARNING: [Synth 8-5788] Register h_min_reg in module vga_move is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/vga_move.v:42]
+WARNING: [Synth 8-5788] Register h_max_reg in module vga_move is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/vga_move.v:43]
+INFO: [Synth 8-256] done synthesizing module 'vga_move' (28#1) [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/vga_move.v:2]
+INFO: [Synth 8-256] done synthesizing module 'index' (29#1) [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/index.v:3]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port h_front[17]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port h_front[16]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port h_front[15]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port h_front[14]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port h_front[13]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port h_front[12]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port h_front[11]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port h_front[10]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port h_front[9]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port h_front[8]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port h_front[7]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port h_front[6]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port h_front[5]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port h_front[4]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port h_front[3]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port h_front[2]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port h_front[1]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port h_front[0]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port v_front[17]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port v_front[16]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port v_front[15]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port v_front[14]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port v_front[13]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port v_front[12]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port v_front[11]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port v_front[10]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port v_front[9]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port v_front[8]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port v_front[7]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port v_front[6]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port v_front[5]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port v_front[4]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port v_front[3]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port v_front[2]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port v_front[1]
+WARNING: [Synth 8-3331] design sync_pre has unconnected port v_front[0]
+WARNING: [Synth 8-3331] design uart_vga_out has unconnected port visible
+WARNING: [Synth 8-3331] design uart_vga_out has unconnected port frame[7]
+WARNING: [Synth 8-3331] design uart_vga_out has unconnected port frame[6]
+WARNING: [Synth 8-3331] design uart_vga_out has unconnected port frame[5]
+WARNING: [Synth 8-3331] design uart_vga_out has unconnected port frame[4]
+WARNING: [Synth 8-3331] design uart_vga_out has unconnected port frame[3]
+WARNING: [Synth 8-3331] design uart_vga_out has unconnected port frame[2]
+WARNING: [Synth 8-3331] design uart_vga_out has unconnected port frame[1]
+WARNING: [Synth 8-3331] design uart_vga_out has unconnected port frame[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port MUX_RST[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port MEM_LAT_RST
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port MEM_REG_RST
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port MUX_REGCE[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port MEM_REGCE
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port WE
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port ADDR_IN[18]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port ADDR_IN[17]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port ADDR_IN[16]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port ADDR_IN[15]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port ADDR_IN[14]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port ADDR_IN[13]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port ADDR_IN[12]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port ADDR_IN[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port ADDR_IN[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port ADDR_IN[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port ADDR_IN[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port ADDR_IN[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port ADDR_IN[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port ADDR_IN[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port ADDR_IN[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port ADDR_IN[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port ADDR_IN[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port ADDR_IN[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port ADDR_IN[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1535]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1534]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1533]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1532]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1531]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1530]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1529]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1528]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1527]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1526]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1525]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1524]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1523]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1522]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1521]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1520]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1519]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1518]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1517]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1516]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1515]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1514]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1513]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1512]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1511]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1510]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1509]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1508]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1507]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port SBITERRIN[1506]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:08:10 ; elapsed = 00:08:13 . Memory (MB): peak = 878.199 ; gain = 636.887
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:08:11 ; elapsed = 00:08:14 . Memory (MB): peak = 878.199 ; gain = 636.887
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 137 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clock/inst'
+Finished Parsing XDC File [c:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clock/inst'
+Parsing XDC File [c:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clock/inst'
+Finished Parsing XDC File [c:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clock/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/index_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/index_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/constrs_1/new/uart_bram.xdc]
+Finished Parsing XDC File [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/constrs_1/new/uart_bram.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/constrs_1/new/uart_bram.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/index_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/index_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/index_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/index_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 885.383 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:08:31 ; elapsed = 00:08:35 . Memory (MB): peak = 885.383 ; gain = 644.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:08:31 ; elapsed = 00:08:35 . Memory (MB): peak = 885.383 ; gain = 644.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for clock/inst. (constraint file  {C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.runs/synth_1/dont_touch.xdc}, line 20).
+Applied set_property DONT_TOUCH = true for bir/rom1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clock. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u/blk_r_a. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:08:31 ; elapsed = 00:08:35 . Memory (MB): peak = 885.383 ; gain = 644.070
+---------------------------------------------------------------------------------
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/sync_pre.v:52]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/sync_pre.v:52]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/sync_pre.v:52]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/sync_pre.v:52]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/sync_pre.v:52]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/sync_pre.v:52]
+WARNING: [Synth 8-6014] Unused sequential element h_cnt_reg was removed.  [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/sync_pre.v:26]
+WARNING: [Synth 8-6014] Unused sequential element v_cnt_reg was removed.  [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/sync_pre.v:39]
+INFO: [Synth 8-5544] ROM "Y_r" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Y_r" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Y_r" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_seg" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/block_image_rom.v:71]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/block_image_rom.v:69]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/block_image_rom.v:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/block_image_rom.v:73]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/block_image_rom.v:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/block_image_rom.v:71]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/block_image_rom.v:69]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/block_image_rom.v:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/block_image_rom.v:73]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/block_image_rom.v:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/block_image_rom.v:84]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/block_image_rom.v:71]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/block_image_rom.v:69]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/block_image_rom.v:62]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/block_image_rom.v:85]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/block_image_rom.v:73]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/block_image_rom.v:62]
+INFO: [Synth 8-5546] ROM "v_cnt" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element h_cnt_reg was removed.  [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/imports/new/sync.v:27]
+WARNING: [Synth 8-6014] Unused sequential element v_cnt_reg was removed.  [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/imports/new/sync.v:40]
+INFO: [Synth 8-802] inferred FSM for state register 'R_state_reg' in module 'uart_rxd_16'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rxd_16'
+INFO: [Synth 8-5546] ROM "uart_receive_clk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "R_para_data_reg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "receive_done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frame" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "accept_count" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element write_address_reg was removed.  [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/imports/new/uart_txd_16.v:96]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/imports/new/uart_vga_out.v:32]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/imports/new/uart_vga_out.v:32]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/imports/new/uart_vga_out.v:32]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/imports/new/uart_vga_out.v:32]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/imports/new/uart_vga_out.v:32]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/imports/new/uart_vga_out.v:32]
+INFO: [Synth 8-5544] ROM "v_max" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v_max" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v_min" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v_min" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "h_min" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "h_min" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "h_max" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "h_max" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                              000
+                 iSTATE0 |                               01 |                              001
+                 iSTATE1 |                               10 |                              010
+                 iSTATE2 |                               11 |                              011
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_rxd_16'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0000 |                             0000
+                 iSTATE0 |                             0001 |                             0001
+                 iSTATE1 |                             0010 |                             0010
+                 iSTATE2 |                             0011 |                             0011
+                 iSTATE3 |                             0100 |                             0100
+                 iSTATE4 |                             0101 |                             0101
+                 iSTATE5 |                             0110 |                             0110
+                 iSTATE6 |                             0111 |                             0111
+                 iSTATE7 |                             1000 |                             1000
+                 iSTATE8 |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'R_state_reg' using encoding 'sequential' in module 'uart_rxd_16'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:08:37 ; elapsed = 00:08:42 . Memory (MB): peak = 885.383 ; gain = 644.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   4 Input     32 Bit       Adders := 2     
+	   6 Input     32 Bit       Adders := 1     
+	   3 Input     22 Bit       Adders := 2     
+	   5 Input     21 Bit       Adders := 1     
+	   3 Input     20 Bit       Adders := 1     
+	   2 Input     20 Bit       Adders := 1     
+	   3 Input     19 Bit       Adders := 11    
+	   4 Input     19 Bit       Adders := 3     
+	   5 Input     19 Bit       Adders := 7     
+	   2 Input     19 Bit       Adders := 3     
+	   2 Input     18 Bit       Adders := 25    
+	   3 Input     17 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 6     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               19 Bit    Registers := 2     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 6     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 3     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Multipliers : 
+	                 9x32  Multipliers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     19 Bit        Muxes := 13    
+	   2 Input     16 Bit        Muxes := 5     
+	   4 Input     16 Bit        Muxes := 2     
+	  10 Input     16 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 1     
+	   4 Input     11 Bit        Muxes := 2     
+	   4 Input     10 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 12    
+	   8 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 2     
+	  10 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 3     
+	   3 Input      7 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 3     
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 2     
+	   8 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	  12 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 8     
+	   2 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 399   
+	   4 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module index 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+Module sync_pre 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     19 Bit       Adders := 2     
+	   2 Input     18 Bit       Adders := 6     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module colorlump 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module display_seg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module switch_resolution 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     11 Bit        Muxes := 2     
+	   4 Input     10 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module bindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 64    
+Module blk_mem_gen_mux 
+Detailed RTL Component Info : 
++---Registers : 
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module blk_mem_gen_mux__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 1     
+Module block_image_rom 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   4 Input     32 Bit       Adders := 2     
+	   6 Input     32 Bit       Adders := 1     
+	   3 Input     22 Bit       Adders := 2     
+	   5 Input     21 Bit       Adders := 1     
+	   3 Input     20 Bit       Adders := 1     
+	   2 Input     20 Bit       Adders := 1     
+	   3 Input     19 Bit       Adders := 5     
+	   4 Input     19 Bit       Adders := 3     
+	   5 Input     19 Bit       Adders := 7     
+	   2 Input     19 Bit       Adders := 2     
+	   2 Input     18 Bit       Adders := 7     
++---Multipliers : 
+	                 9x32  Multipliers := 2     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 11    
+Module sync 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module bindec__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 128   
+Module blk_mem_gen_mux__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               19 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module blk_mem_gen_mux__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+Module uart_rxd_16 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 5     
+	   4 Input     16 Bit        Muxes := 2     
+	  10 Input     16 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 1     
+	  10 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 3     
+	  12 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 6     
+	  10 Input      1 Bit        Muxes := 9     
+Module uart_vga_out 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   3 Input     17 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 2     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 1     
+Module UART 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 1     
+Module vga_move 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 4     
++---Registers : 
+	               10 Bit    Registers := 4     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 10    
+	   2 Input      4 Bit        Muxes := 6     
+	   4 Input      2 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element s/h_cnt_reg was removed.  [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/sync_pre.v:26]
+WARNING: [Synth 8-6014] Unused sequential element s/v_cnt_reg was removed.  [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/sync_pre.v:39]
+INFO: [Synth 8-5545] ROM "s/cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "s/clk_seg" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element h_cnt_reg was removed.  [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/sync_pre.v:26]
+WARNING: [Synth 8-6014] Unused sequential element v_cnt_reg was removed.  [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/sync_pre.v:39]
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP addra6, operation Mode is: A*(B:0x87).
+DSP Report: operator addra6 is absorbed into DSP addra6.
+DSP Report: Generating DSP addra3, operation Mode is: A*(B:0x10e).
+DSP Report: operator addra3 is absorbed into DSP addra3.
+DSP Report: Generating DSP addra3, operation Mode is: A*(B:0x10e).
+DSP Report: operator addra3 is absorbed into DSP addra3.
+DSP Report: Generating DSP addra2, operation Mode is: A*(B:0x10e).
+DSP Report: operator addra2 is absorbed into DSP addra2.
+DSP Report: Generating DSP addra3, operation Mode is: A*(B:0x180).
+DSP Report: operator addra3 is absorbed into DSP addra3.
+DSP Report: Generating DSP addra0, operation Mode is: C+A*(B:0x10e).
+DSP Report: operator addra0 is absorbed into DSP addra0.
+DSP Report: operator addra1 is absorbed into DSP addra0.
+DSP Report: Generating DSP addra0, operation Mode is: C+A*(B:0x10e).
+DSP Report: operator addra0 is absorbed into DSP addra0.
+DSP Report: operator addra4 is absorbed into DSP addra0.
+DSP Report: Generating DSP addra0, operation Mode is: PCIN+(A:0x0):B+C.
+DSP Report: operator addra0 is absorbed into DSP addra0.
+DSP Report: Generating DSP addra7, operation Mode is: A*(B:0x2d).
+DSP Report: operator addra7 is absorbed into DSP addra7.
+DSP Report: Generating DSP addra0, operation Mode is: C+A*(B:0x10e)+1.
+DSP Report: operator addra0 is absorbed into DSP addra0.
+DSP Report: operator addra2 is absorbed into DSP addra0.
+INFO: [Synth 8-5546] ROM "uart_accept/uart_receive_clk" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element ii/h_cnt_reg was removed.  [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/imports/new/sync.v:27]
+WARNING: [Synth 8-6014] Unused sequential element ii/v_cnt_reg was removed.  [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/imports/new/sync.v:40]
+WARNING: [Synth 8-6014] Unused sequential element uart_accept/write_address_reg was removed.  [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/imports/new/uart_txd_16.v:96]
+DSP Report: Generating DSP uart_read/read_address8, operation Mode is: A*B.
+DSP Report: operator uart_read/read_address8 is absorbed into DSP uart_read/read_address8.
+DSP Report: Generating DSP uart_read/read_address7, operation Mode is: A*B.
+DSP Report: operator uart_read/read_address7 is absorbed into DSP uart_read/read_address7.
+WARNING: [Synth 8-6014] Unused sequential element sy/h_cnt_reg was removed.  [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/sync_pre.v:26]
+WARNING: [Synth 8-6014] Unused sequential element sy/v_cnt_reg was removed.  [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/sync_pre.v:39]
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.rdaddrecc_mux_reg[18]) is unused and will be removed from module blk_mem_gen_v8_4_1__parameterized1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.rdaddrecc_mux_reg[17]) is unused and will be removed from module blk_mem_gen_v8_4_1__parameterized1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.rdaddrecc_mux_reg[16]) is unused and will be removed from module blk_mem_gen_v8_4_1__parameterized1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.rdaddrecc_mux_reg[15]) is unused and will be removed from module blk_mem_gen_v8_4_1__parameterized1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.rdaddrecc_mux_reg[14]) is unused and will be removed from module blk_mem_gen_v8_4_1__parameterized1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.rdaddrecc_mux_reg[13]) is unused and will be removed from module blk_mem_gen_v8_4_1__parameterized1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.rdaddrecc_mux_reg[12]) is unused and will be removed from module blk_mem_gen_v8_4_1__parameterized1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.rdaddrecc_mux_reg[11]) is unused and will be removed from module blk_mem_gen_v8_4_1__parameterized1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.rdaddrecc_mux_reg[10]) is unused and will be removed from module blk_mem_gen_v8_4_1__parameterized1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.rdaddrecc_mux_reg[9]) is unused and will be removed from module blk_mem_gen_v8_4_1__parameterized1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.rdaddrecc_mux_reg[8]) is unused and will be removed from module blk_mem_gen_v8_4_1__parameterized1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.rdaddrecc_mux_reg[7]) is unused and will be removed from module blk_mem_gen_v8_4_1__parameterized1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.rdaddrecc_mux_reg[6]) is unused and will be removed from module blk_mem_gen_v8_4_1__parameterized1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.rdaddrecc_mux_reg[5]) is unused and will be removed from module blk_mem_gen_v8_4_1__parameterized1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.rdaddrecc_mux_reg[4]) is unused and will be removed from module blk_mem_gen_v8_4_1__parameterized1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.rdaddrecc_mux_reg[3]) is unused and will be removed from module blk_mem_gen_v8_4_1__parameterized1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.rdaddrecc_mux_reg[2]) is unused and will be removed from module blk_mem_gen_v8_4_1__parameterized1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.rdaddrecc_mux_reg[1]) is unused and will be removed from module blk_mem_gen_v8_4_1__parameterized1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.rdaddrecc_mux_reg[0]) is unused and will be removed from module blk_mem_gen_v8_4_1__parameterized1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_sel_reg.ce_pri.sel_pipe_reg[6]) is unused and will be removed from module blk_mem_gen_v8_4_1__parameterized1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_sel_reg.ce_pri.sel_pipe_reg[5]) is unused and will be removed from module blk_mem_gen_v8_4_1__parameterized1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_sel_reg.ce_pri.sel_pipe_reg[4]) is unused and will be removed from module blk_mem_gen_v8_4_1__parameterized1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_sel_reg.ce_pri.sel_pipe_reg[3]) is unused and will be removed from module blk_mem_gen_v8_4_1__parameterized1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_sel_reg.ce_pri.sel_pipe_reg[2]) is unused and will be removed from module blk_mem_gen_v8_4_1__parameterized1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_sel_reg.ce_pri.sel_pipe_reg[1]) is unused and will be removed from module blk_mem_gen_v8_4_1__parameterized1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_sel_reg.ce_pri.sel_pipe_reg[0]) is unused and will be removed from module blk_mem_gen_v8_4_1__parameterized1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:08:48 ; elapsed = 00:08:54 . Memory (MB): peak = 885.383 ; gain = 644.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++----------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|block_image_rom | A*(B:0x87)       | 18     | 8      | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|block_image_rom | A*(B:0x10e)      | 17     | 9      | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|block_image_rom | A*(B:0x10e)      | 17     | 9      | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|block_image_rom | A*(B:0x10e)      | 19     | 9      | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|block_image_rom | A*(B:0x180)      | 19     | 9      | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|block_image_rom | C+A*(B:0x10e)    | 17     | 9      | 17     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|block_image_rom | C+A*(B:0x10e)    | 17     | 9      | 17     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|block_image_rom | PCIN+(A:0x0):B+C | 30     | 17     | 17     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|block_image_rom | A*(B:0x2d)       | 18     | 6      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|block_image_rom | C+A*(B:0x10e)+1  | 17     | 9      | 17     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|uart_vga_out    | A*B              | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|uart_vga_out    | A*B              | 19     | 16     | -      | -      | 35     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++----------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:09:05 ; elapsed = 00:09:11 . Memory (MB): peak = 952.785 ; gain = 711.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:09:12 ; elapsed = 00:09:18 . Memory (MB): peak = 1032.969 ; gain = 791.656
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/new/sync_pre.v:26]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/imports/new/uart_txd_16.v:100]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/imports/new/uart_txd_16.v:101]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.srcs/sources_1/imports/new/uart_txd_16.v:100]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:09:15 ; elapsed = 00:09:21 . Memory (MB): peak = 1053.961 ; gain = 812.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:09:17 ; elapsed = 00:09:23 . Memory (MB): peak = 1053.961 ; gain = 812.648
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:09:17 ; elapsed = 00:09:23 . Memory (MB): peak = 1053.961 ; gain = 812.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:09:18 ; elapsed = 00:09:24 . Memory (MB): peak = 1053.961 ; gain = 812.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:09:18 ; elapsed = 00:09:24 . Memory (MB): peak = 1053.961 ; gain = 812.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:09:18 ; elapsed = 00:09:24 . Memory (MB): peak = 1053.961 ; gain = 812.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:09:18 ; elapsed = 00:09:24 . Memory (MB): peak = 1053.961 ; gain = 812.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |BUFG        |     7|
+|2     |CARRY4      |   834|
+|3     |DSP48E1     |     8|
+|4     |DSP48E1_1   |     3|
+|5     |DSP48E1_2   |     1|
+|6     |LUT1        |   296|
+|7     |LUT2        |  1628|
+|8     |LUT3        |   686|
+|9     |LUT4        |   683|
+|10    |LUT5        |   301|
+|11    |LUT6        |   587|
+|12    |MMCME2_ADV  |     1|
+|13    |MUXF7       |   108|
+|14    |MUXF8       |    36|
+|15    |RAMB18E1    |     1|
+|16    |RAMB18E1_1  |     1|
+|17    |RAMB18E1_2  |     1|
+|18    |RAMB36E1    |     1|
+|19    |RAMB36E1_1  |     1|
+|20    |RAMB36E1_10 |     1|
+|21    |RAMB36E1_11 |     1|
+|22    |RAMB36E1_12 |     1|
+|23    |RAMB36E1_13 |     1|
+|24    |RAMB36E1_14 |     1|
+|25    |RAMB36E1_15 |     1|
+|26    |RAMB36E1_16 |     1|
+|27    |RAMB36E1_17 |     1|
+|28    |RAMB36E1_18 |     1|
+|29    |RAMB36E1_19 |     1|
+|30    |RAMB36E1_2  |     1|
+|31    |RAMB36E1_20 |     1|
+|32    |RAMB36E1_21 |     1|
+|33    |RAMB36E1_22 |     1|
+|34    |RAMB36E1_23 |     1|
+|35    |RAMB36E1_24 |     1|
+|36    |RAMB36E1_25 |     1|
+|37    |RAMB36E1_26 |     1|
+|38    |RAMB36E1_27 |     1|
+|39    |RAMB36E1_28 |     1|
+|40    |RAMB36E1_29 |     1|
+|41    |RAMB36E1_3  |     1|
+|42    |RAMB36E1_30 |     1|
+|43    |RAMB36E1_31 |     1|
+|44    |RAMB36E1_32 |     1|
+|45    |RAMB36E1_33 |     1|
+|46    |RAMB36E1_34 |    12|
+|47    |RAMB36E1_35 |    12|
+|48    |RAMB36E1_36 |     3|
+|49    |RAMB36E1_37 |    71|
+|50    |RAMB36E1_4  |     1|
+|51    |RAMB36E1_5  |     1|
+|52    |RAMB36E1_6  |     1|
+|53    |RAMB36E1_7  |     1|
+|54    |RAMB36E1_8  |     1|
+|55    |RAMB36E1_9  |     1|
+|56    |FDCE        |   335|
+|57    |FDPE        |     4|
+|58    |FDRE        |    45|
+|59    |IBUF        |    23|
+|60    |OBUF        |    51|
++------+------------+------+
+
+Report Instance Areas: 
++------+-------------------------------------------------+-----------------------------------------------+------+
+|      |Instance                                         |Module                                         |Cells |
++------+-------------------------------------------------+-----------------------------------------------+------+
+|1     |top                                              |                                               |  5772|
+|2     |  clock                                          |clk_wiz_0                                      |     8|
+|3     |    inst                                         |clk_wiz_0_clk_wiz                              |     8|
+|4     |  bir                                            |block_image_rom                                |  3880|
+|5     |    rom1                                         |rom                                            |   183|
+|6     |      U0                                         |blk_mem_gen_v8_4_1                             |   183|
+|7     |        inst_blk_mem_gen                         |blk_mem_gen_v8_4_1_synth                       |   183|
+|8     |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top                                |   183|
+|9     |            \valid.cstr                          |blk_mem_gen_generic_cstr                       |   183|
+|10    |              \bindec_a.bindec_inst_a            |bindec                                         |     1|
+|11    |              \has_mux_a.A                       |blk_mem_gen_mux                                |   116|
+|12    |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width                         |     2|
+|13    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init                  |     2|
+|14    |              \ramloop[10].ram.r                 |blk_mem_gen_prim_width__parameterized9         |     2|
+|15    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized9  |     2|
+|16    |              \ramloop[11].ram.r                 |blk_mem_gen_prim_width__parameterized10        |     2|
+|17    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized10 |     2|
+|18    |              \ramloop[12].ram.r                 |blk_mem_gen_prim_width__parameterized11        |     2|
+|19    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized11 |     2|
+|20    |              \ramloop[13].ram.r                 |blk_mem_gen_prim_width__parameterized12        |     2|
+|21    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized12 |     2|
+|22    |              \ramloop[14].ram.r                 |blk_mem_gen_prim_width__parameterized13        |     2|
+|23    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized13 |     2|
+|24    |              \ramloop[15].ram.r                 |blk_mem_gen_prim_width__parameterized14        |     2|
+|25    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized14 |     2|
+|26    |              \ramloop[16].ram.r                 |blk_mem_gen_prim_width__parameterized15        |     2|
+|27    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized15 |     2|
+|28    |              \ramloop[17].ram.r                 |blk_mem_gen_prim_width__parameterized16        |     2|
+|29    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized16 |     2|
+|30    |              \ramloop[18].ram.r                 |blk_mem_gen_prim_width__parameterized17        |     2|
+|31    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized17 |     2|
+|32    |              \ramloop[19].ram.r                 |blk_mem_gen_prim_width__parameterized18        |     2|
+|33    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized18 |     2|
+|34    |              \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized0         |     1|
+|35    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized0  |     1|
+|36    |              \ramloop[20].ram.r                 |blk_mem_gen_prim_width__parameterized19        |     2|
+|37    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized19 |     2|
+|38    |              \ramloop[21].ram.r                 |blk_mem_gen_prim_width__parameterized20        |     2|
+|39    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized20 |     2|
+|40    |              \ramloop[22].ram.r                 |blk_mem_gen_prim_width__parameterized21        |     2|
+|41    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized21 |     2|
+|42    |              \ramloop[23].ram.r                 |blk_mem_gen_prim_width__parameterized22        |     2|
+|43    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized22 |     2|
+|44    |              \ramloop[24].ram.r                 |blk_mem_gen_prim_width__parameterized23        |     2|
+|45    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized23 |     2|
+|46    |              \ramloop[25].ram.r                 |blk_mem_gen_prim_width__parameterized24        |     2|
+|47    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized24 |     2|
+|48    |              \ramloop[26].ram.r                 |blk_mem_gen_prim_width__parameterized25        |     2|
+|49    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized25 |     2|
+|50    |              \ramloop[27].ram.r                 |blk_mem_gen_prim_width__parameterized26        |     2|
+|51    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized26 |     2|
+|52    |              \ramloop[28].ram.r                 |blk_mem_gen_prim_width__parameterized27        |     2|
+|53    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized27 |     2|
+|54    |              \ramloop[29].ram.r                 |blk_mem_gen_prim_width__parameterized28        |     2|
+|55    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized28 |     2|
+|56    |              \ramloop[2].ram.r                  |blk_mem_gen_prim_width__parameterized1         |     1|
+|57    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized1  |     1|
+|58    |              \ramloop[30].ram.r                 |blk_mem_gen_prim_width__parameterized29        |     2|
+|59    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized29 |     2|
+|60    |              \ramloop[31].ram.r                 |blk_mem_gen_prim_width__parameterized30        |     2|
+|61    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized30 |     2|
+|62    |              \ramloop[32].ram.r                 |blk_mem_gen_prim_width__parameterized31        |     2|
+|63    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized31 |     2|
+|64    |              \ramloop[33].ram.r                 |blk_mem_gen_prim_width__parameterized32        |     1|
+|65    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized32 |     1|
+|66    |              \ramloop[3].ram.r                  |blk_mem_gen_prim_width__parameterized2         |     2|
+|67    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized2  |     2|
+|68    |              \ramloop[4].ram.r                  |blk_mem_gen_prim_width__parameterized3         |     1|
+|69    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized3  |     1|
+|70    |              \ramloop[5].ram.r                  |blk_mem_gen_prim_width__parameterized4         |     2|
+|71    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized4  |     2|
+|72    |              \ramloop[6].ram.r                  |blk_mem_gen_prim_width__parameterized5         |     2|
+|73    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized5  |     2|
+|74    |              \ramloop[7].ram.r                  |blk_mem_gen_prim_width__parameterized6         |     1|
+|75    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized6  |     1|
+|76    |              \ramloop[8].ram.r                  |blk_mem_gen_prim_width__parameterized7         |     2|
+|77    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized7  |     2|
+|78    |              \ramloop[9].ram.r                  |blk_mem_gen_prim_width__parameterized8         |     2|
+|79    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized8  |     2|
+|80    |    s                                            |sync_pre_1                                     |  1130|
+|81    |    sr                                           |switch_resolution                              |   101|
+|82    |      s                                          |display_seg                                    |   101|
+|83    |  cl                                             |colorlump                                      |   219|
+|84    |    s                                            |sync_pre_0                                     |   219|
+|85    |  m                                              |vga_move                                       |   353|
+|86    |    sy                                           |sync_pre                                       |   207|
+|87    |  u                                              |UART                                           |  1030|
+|88    |    blk_r_a                                      |block_ram_add                                  |   496|
+|89    |      U0                                         |blk_mem_gen_v8_4_1__parameterized1             |   496|
+|90    |        inst_blk_mem_gen                         |blk_mem_gen_v8_4_1_synth__parameterized0       |   496|
+|91    |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized0                |   496|
+|92    |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized0       |   496|
+|93    |              \has_mux_a.A                       |blk_mem_gen_mux__parameterized1                |   318|
+|94    |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized33        |     2|
+|95    |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper                       |     2|
+|96    |              \ramloop[10].ram.r                 |blk_mem_gen_prim_width__parameterized43        |     2|
+|97    |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized9       |     2|
+|98    |              \ramloop[11].ram.r                 |blk_mem_gen_prim_width__parameterized44        |     2|
+|99    |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized10      |     2|
+|100   |              \ramloop[12].ram.r                 |blk_mem_gen_prim_width__parameterized45        |     2|
+|101   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized11      |     2|
+|102   |              \ramloop[13].ram.r                 |blk_mem_gen_prim_width__parameterized46        |     2|
+|103   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized12      |     2|
+|104   |              \ramloop[14].ram.r                 |blk_mem_gen_prim_width__parameterized47        |     2|
+|105   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized13      |     2|
+|106   |              \ramloop[15].ram.r                 |blk_mem_gen_prim_width__parameterized48        |     2|
+|107   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized14      |     2|
+|108   |              \ramloop[16].ram.r                 |blk_mem_gen_prim_width__parameterized49        |     2|
+|109   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized15      |     2|
+|110   |              \ramloop[17].ram.r                 |blk_mem_gen_prim_width__parameterized50        |     2|
+|111   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized16      |     2|
+|112   |              \ramloop[18].ram.r                 |blk_mem_gen_prim_width__parameterized51        |     2|
+|113   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized17      |     2|
+|114   |              \ramloop[19].ram.r                 |blk_mem_gen_prim_width__parameterized52        |     2|
+|115   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized18      |     2|
+|116   |              \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized34        |     2|
+|117   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized0       |     2|
+|118   |              \ramloop[20].ram.r                 |blk_mem_gen_prim_width__parameterized53        |     2|
+|119   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized19      |     2|
+|120   |              \ramloop[21].ram.r                 |blk_mem_gen_prim_width__parameterized54        |     2|
+|121   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized20      |     2|
+|122   |              \ramloop[22].ram.r                 |blk_mem_gen_prim_width__parameterized55        |     2|
+|123   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized21      |     2|
+|124   |              \ramloop[23].ram.r                 |blk_mem_gen_prim_width__parameterized56        |     2|
+|125   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized22      |     2|
+|126   |              \ramloop[24].ram.r                 |blk_mem_gen_prim_width__parameterized57        |     2|
+|127   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized23      |     2|
+|128   |              \ramloop[25].ram.r                 |blk_mem_gen_prim_width__parameterized58        |     2|
+|129   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized24      |     2|
+|130   |              \ramloop[26].ram.r                 |blk_mem_gen_prim_width__parameterized59        |     2|
+|131   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized25      |     2|
+|132   |              \ramloop[27].ram.r                 |blk_mem_gen_prim_width__parameterized60        |     2|
+|133   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized26      |     2|
+|134   |              \ramloop[28].ram.r                 |blk_mem_gen_prim_width__parameterized61        |     2|
+|135   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized27      |     2|
+|136   |              \ramloop[29].ram.r                 |blk_mem_gen_prim_width__parameterized62        |     2|
+|137   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized28      |     2|
+|138   |              \ramloop[2].ram.r                  |blk_mem_gen_prim_width__parameterized35        |     2|
+|139   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized1       |     2|
+|140   |              \ramloop[30].ram.r                 |blk_mem_gen_prim_width__parameterized63        |     2|
+|141   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized29      |     2|
+|142   |              \ramloop[31].ram.r                 |blk_mem_gen_prim_width__parameterized64        |     2|
+|143   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized30      |     2|
+|144   |              \ramloop[32].ram.r                 |blk_mem_gen_prim_width__parameterized65        |     2|
+|145   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized31      |     2|
+|146   |              \ramloop[33].ram.r                 |blk_mem_gen_prim_width__parameterized66        |     2|
+|147   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized32      |     2|
+|148   |              \ramloop[34].ram.r                 |blk_mem_gen_prim_width__parameterized67        |     2|
+|149   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized33      |     2|
+|150   |              \ramloop[35].ram.r                 |blk_mem_gen_prim_width__parameterized68        |     2|
+|151   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized34      |     2|
+|152   |              \ramloop[36].ram.r                 |blk_mem_gen_prim_width__parameterized69        |     2|
+|153   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized35      |     2|
+|154   |              \ramloop[37].ram.r                 |blk_mem_gen_prim_width__parameterized70        |     2|
+|155   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized36      |     2|
+|156   |              \ramloop[38].ram.r                 |blk_mem_gen_prim_width__parameterized71        |     3|
+|157   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized37      |     3|
+|158   |              \ramloop[39].ram.r                 |blk_mem_gen_prim_width__parameterized72        |     2|
+|159   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized38      |     2|
+|160   |              \ramloop[3].ram.r                  |blk_mem_gen_prim_width__parameterized36        |     2|
+|161   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized2       |     2|
+|162   |              \ramloop[40].ram.r                 |blk_mem_gen_prim_width__parameterized73        |     2|
+|163   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized39      |     2|
+|164   |              \ramloop[41].ram.r                 |blk_mem_gen_prim_width__parameterized74        |     2|
+|165   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized40      |     2|
+|166   |              \ramloop[42].ram.r                 |blk_mem_gen_prim_width__parameterized75        |     2|
+|167   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized41      |     2|
+|168   |              \ramloop[43].ram.r                 |blk_mem_gen_prim_width__parameterized76        |     2|
+|169   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized42      |     2|
+|170   |              \ramloop[44].ram.r                 |blk_mem_gen_prim_width__parameterized77        |     2|
+|171   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized43      |     2|
+|172   |              \ramloop[45].ram.r                 |blk_mem_gen_prim_width__parameterized78        |     2|
+|173   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized44      |     2|
+|174   |              \ramloop[46].ram.r                 |blk_mem_gen_prim_width__parameterized79        |     2|
+|175   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized45      |     2|
+|176   |              \ramloop[47].ram.r                 |blk_mem_gen_prim_width__parameterized80        |     2|
+|177   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized46      |     2|
+|178   |              \ramloop[48].ram.r                 |blk_mem_gen_prim_width__parameterized81        |     2|
+|179   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized47      |     2|
+|180   |              \ramloop[49].ram.r                 |blk_mem_gen_prim_width__parameterized82        |     2|
+|181   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized48      |     2|
+|182   |              \ramloop[4].ram.r                  |blk_mem_gen_prim_width__parameterized37        |     1|
+|183   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized3       |     1|
+|184   |              \ramloop[50].ram.r                 |blk_mem_gen_prim_width__parameterized83        |     2|
+|185   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized49      |     2|
+|186   |              \ramloop[51].ram.r                 |blk_mem_gen_prim_width__parameterized84        |     2|
+|187   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized50      |     2|
+|188   |              \ramloop[52].ram.r                 |blk_mem_gen_prim_width__parameterized85        |     2|
+|189   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized51      |     2|
+|190   |              \ramloop[53].ram.r                 |blk_mem_gen_prim_width__parameterized86        |     2|
+|191   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized52      |     2|
+|192   |              \ramloop[54].ram.r                 |blk_mem_gen_prim_width__parameterized87        |     2|
+|193   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized53      |     2|
+|194   |              \ramloop[55].ram.r                 |blk_mem_gen_prim_width__parameterized88        |     2|
+|195   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized54      |     2|
+|196   |              \ramloop[56].ram.r                 |blk_mem_gen_prim_width__parameterized89        |     2|
+|197   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized55      |     2|
+|198   |              \ramloop[57].ram.r                 |blk_mem_gen_prim_width__parameterized90        |     2|
+|199   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized56      |     2|
+|200   |              \ramloop[58].ram.r                 |blk_mem_gen_prim_width__parameterized91        |     2|
+|201   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized57      |     2|
+|202   |              \ramloop[59].ram.r                 |blk_mem_gen_prim_width__parameterized92        |     2|
+|203   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized58      |     2|
+|204   |              \ramloop[5].ram.r                  |blk_mem_gen_prim_width__parameterized38        |     3|
+|205   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized4       |     3|
+|206   |              \ramloop[60].ram.r                 |blk_mem_gen_prim_width__parameterized93        |     2|
+|207   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized59      |     2|
+|208   |              \ramloop[61].ram.r                 |blk_mem_gen_prim_width__parameterized94        |     2|
+|209   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized60      |     2|
+|210   |              \ramloop[62].ram.r                 |blk_mem_gen_prim_width__parameterized95        |     2|
+|211   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized61      |     2|
+|212   |              \ramloop[63].ram.r                 |blk_mem_gen_prim_width__parameterized96        |     2|
+|213   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized62      |     2|
+|214   |              \ramloop[64].ram.r                 |blk_mem_gen_prim_width__parameterized97        |     2|
+|215   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized63      |     2|
+|216   |              \ramloop[65].ram.r                 |blk_mem_gen_prim_width__parameterized98        |     2|
+|217   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized64      |     2|
+|218   |              \ramloop[66].ram.r                 |blk_mem_gen_prim_width__parameterized99        |     2|
+|219   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized65      |     2|
+|220   |              \ramloop[67].ram.r                 |blk_mem_gen_prim_width__parameterized100       |     2|
+|221   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized66      |     2|
+|222   |              \ramloop[68].ram.r                 |blk_mem_gen_prim_width__parameterized101       |     2|
+|223   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized67      |     2|
+|224   |              \ramloop[69].ram.r                 |blk_mem_gen_prim_width__parameterized102       |     2|
+|225   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized68      |     2|
+|226   |              \ramloop[6].ram.r                  |blk_mem_gen_prim_width__parameterized39        |     3|
+|227   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized5       |     3|
+|228   |              \ramloop[70].ram.r                 |blk_mem_gen_prim_width__parameterized103       |     2|
+|229   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized69      |     2|
+|230   |              \ramloop[71].ram.r                 |blk_mem_gen_prim_width__parameterized104       |     2|
+|231   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized70      |     2|
+|232   |              \ramloop[72].ram.r                 |blk_mem_gen_prim_width__parameterized105       |     2|
+|233   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized71      |     2|
+|234   |              \ramloop[73].ram.r                 |blk_mem_gen_prim_width__parameterized106       |     2|
+|235   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized72      |     2|
+|236   |              \ramloop[74].ram.r                 |blk_mem_gen_prim_width__parameterized107       |     2|
+|237   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized73      |     2|
+|238   |              \ramloop[75].ram.r                 |blk_mem_gen_prim_width__parameterized108       |     2|
+|239   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized74      |     2|
+|240   |              \ramloop[76].ram.r                 |blk_mem_gen_prim_width__parameterized109       |     2|
+|241   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized75      |     2|
+|242   |              \ramloop[77].ram.r                 |blk_mem_gen_prim_width__parameterized110       |     2|
+|243   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized76      |     2|
+|244   |              \ramloop[78].ram.r                 |blk_mem_gen_prim_width__parameterized111       |     2|
+|245   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized77      |     2|
+|246   |              \ramloop[79].ram.r                 |blk_mem_gen_prim_width__parameterized112       |     2|
+|247   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized78      |     2|
+|248   |              \ramloop[7].ram.r                  |blk_mem_gen_prim_width__parameterized40        |     3|
+|249   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized6       |     3|
+|250   |              \ramloop[80].ram.r                 |blk_mem_gen_prim_width__parameterized113       |     2|
+|251   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized79      |     2|
+|252   |              \ramloop[81].ram.r                 |blk_mem_gen_prim_width__parameterized114       |     2|
+|253   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized80      |     2|
+|254   |              \ramloop[82].ram.r                 |blk_mem_gen_prim_width__parameterized115       |     2|
+|255   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized81      |     2|
+|256   |              \ramloop[83].ram.r                 |blk_mem_gen_prim_width__parameterized116       |     3|
+|257   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized82      |     3|
+|258   |              \ramloop[84].ram.r                 |blk_mem_gen_prim_width__parameterized117       |     3|
+|259   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized83      |     3|
+|260   |              \ramloop[85].ram.r                 |blk_mem_gen_prim_width__parameterized118       |     3|
+|261   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized84      |     3|
+|262   |              \ramloop[8].ram.r                  |blk_mem_gen_prim_width__parameterized41        |     3|
+|263   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized7       |     3|
+|264   |              \ramloop[9].ram.r                  |blk_mem_gen_prim_width__parameterized42        |     1|
+|265   |                \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized8       |     1|
+|266   |    ii                                           |sync                                           |   141|
+|267   |    uart_accept                                  |uart_rxd_16                                    |   235|
+|268   |    uart_read                                    |uart_vga_out                                   |   149|
++------+-------------------------------------------------+-----------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:09:18 ; elapsed = 00:09:24 . Memory (MB): peak = 1053.961 ; gain = 812.648
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6610 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:55 ; elapsed = 00:09:12 . Memory (MB): peak = 1053.961 ; gain = 805.465
+Synthesis Optimization Complete : Time (s): cpu = 00:09:18 ; elapsed = 00:09:24 . Memory (MB): peak = 1053.961 ; gain = 812.648
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1149 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+203 Infos, 126 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:09:23 ; elapsed = 00:09:31 . Memory (MB): peak = 1053.961 ; gain = 824.117
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Lori/Documents/Tencent Files/695297502/FileRecv/Index.xpr/bram_uart/bram_uart.runs/synth_1/index.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file index_utilization_synth.rpt -pb index_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 1053.961 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 25 03:27:36 2019...
